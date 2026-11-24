@@ -64,7 +64,7 @@ Il corso richiede che le parti principali siano progettate in Figma e poi implem
 
 - Le regole contrattuali (riposi, ore, straordinari) producono **avvisi, mai blocchi**; i soli blocchi sono quelli elencati nelle specifiche.
 - La logica di validazione sta nel progetto Core (`src/PortPlanner`), non nei controller o nelle view, così si può provare senza interfaccia.
-- Il controller non usa mai il `DbContext` direttamente: passa dai servizi con oggetti Query e Command, come nell'esempio `Areas/Example/Users` del template.
+- Il controller non usa mai il `DbContext` direttamente: passa dai servizi con oggetti Query e Command, come nell'esempio Users del [template del docente](https://github.com/onitsmart/Unibo-Template) (cartella `src/Template.Web/Areas/Example/Users`, rimossa da questo repository).
 - Ogni nuova entità va aggiunta anche al seed (`DataGenerator`), altrimenti la demo parte vuota. I dati di esempio sono inventati: niente persone o codici reali.
 
 ## File generati
