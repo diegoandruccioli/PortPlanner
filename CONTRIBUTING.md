@@ -42,7 +42,7 @@ Il corpo del messaggio serve solo se il "perché" non si capisce dalla modifica.
 
 1. Apri la PR verso `main` quando il lavoro è pronto (o come bozza, se vuoi un parere prima).
 2. Descrivi in due righe cosa cambia e quale schermata o regola delle specifiche implementa.
-3. Serve l'approvazione di almeno un collega. Chi ha scritto la PR non la approva da sé.
+3. L'approvazione non è obbligatoria, ma se la modifica è grande o tocca regole di dominio conviene far guardare la PR a un collega.
 4. Merge con **squash**, poi si cancella il branch.
 
 Prima di aprire la PR controlla:
