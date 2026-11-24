@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<title>PortPlanner - Dettaglio utente (tutti-turni)</title>
+<rect id="Sfondo" width="1440" height="900" fill="#F8F9FA"/>
+<g id="Sidebar">
+<rect x="0" y="0" width="240" height="900" fill="#0D6EFD"/>
+<g transform="translate(20 22) scale(0.55)" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36 H58 L50 52 H14 Z"/><path d="M18 36 V22 H46 V36"/><path d="M26 22 V12 H38 V22"/><path d="M4 58 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0"/></g>
+<text x="64" y="50" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="start">PortPlanner</text>
+<line x1="16" y1="80" x2="224" y2="80" stroke="#FFFFFF" stroke-opacity="0.3"/>
+<g transform="translate(28 112)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 11 L12 3 L22 11"/><path d="M5 9 V20 H19 V9"/></g>
+<text x="64" y="128" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Home</text>
+<g transform="translate(28 164)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10 H21 M8 3 V7 M16 3 V7"/></g>
+<text x="64" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Pianificazione</text>
+<g transform="translate(26 212) scale(1.25)" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="4.5" r="2.8"/><path d="M0.8 14 q0 -5 5.2 -5 t5.2 5"/><circle cx="12.5" cy="5.5" r="2.2"/><path d="M13 9.4 q4 0.4 4.4 4.6"/></g>
+<text x="64" y="232" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Team</text>
+<g transform="translate(28 266)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7 L12 14 L22 7"/></g>
+<text x="64" y="284" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Richieste</text>
+<g id="Badge-richieste"><circle cx="206" cy="278" r="11" fill="#FFFFFF"/></g>
+<text x="206" y="283" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="middle">3</text>
+<rect id="Nav-Utenti-attivo" x="12" y="308" width="216" height="44" rx="6" fill="#FFFFFF" fill-opacity="0.2"/>
+<g transform="translate(28 316)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21 q0 -8 8 -8 t8 8"/></g>
+<text x="64" y="336" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start">Utenti</text>
+<g transform="translate(28 368)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7 V12 L15 14"/></g>
+<text x="64" y="388" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Ore</text><g id="Nav-Assenze-icona" transform="translate(28 420)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10 H21 M8 3 V7 M16 3 V7"/><path d="M9.5 14 L14.5 19 M14.5 14 L9.5 19"/></g><text x="64" y="440" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Assenze</text>
+<line x1="16" y1="812" x2="224" y2="812" stroke="#FFFFFF" stroke-opacity="0.3"/>
+<circle cx="44" cy="852" r="18" fill="#FFFFFF" fill-opacity="0.25"/>
+<text x="44" y="857" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">MR</text>
+<text x="72" y="848" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start">Mario Rossi</text>
+<text x="72" y="866" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#FFFFFF" text-anchor="start">Supervisore</text>
+<path d="M206 846 l5 5 l5 -5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Icona-indietro" transform="translate(272 36) scale(1)" fill="none" stroke="#0D6EFD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L2 8 L8 14 M2 8 H15"/></g>
+<text x="296" y="50" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#0D6EFD" text-anchor="start">Gestione utenti</text>
+<text x="272" y="88" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#212529" text-anchor="start">Giorgio Neri</text>
+<rect x="444.4" y="68" width="92" height="22" rx="11" fill="#FFF3CD"/>
+<g id="Badge-anomalia-icona" transform="translate(452.4 72) scale(0.875)" fill="none" stroke="#664D03" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="470.4" y="84" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#664D03" text-anchor="start">Anomalia</text>
+<text x="272" y="114" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Muletista, Gruista · A contratto</text>
+<g id="Pulsante-elimina"><rect x="1298" y="52" width="110" height="40" rx="6" fill="#FFFFFF" stroke="#DC3545"/>
+<g id="Pulsante-elimina-icona" transform="translate(1316.8 65.0) scale(0.875)" fill="none" stroke="#DC3545" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4 H13.5 M6 4 V2.5 H10 V4 M4 4 L4.8 14 H11.2 L12 4 M6.5 7 V11.5 M9.5 7 V11.5"/></g>
+<text x="1338.8" y="77.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#DC3545" text-anchor="start">Elimina</text>
+</g>
+<g id="Pulsante-modifica"><rect x="1170" y="52" width="120" height="40" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Pulsante-modifica-icona" transform="translate(1190.2 65.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 14 L2.8 10.8 L11.5 2.1 a1.5 1.5 0 0 1 2.1 2.1 L4.9 12.9 Z M10 3.6 L12.4 6"/></g>
+<text x="1212.2" y="77.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Modifica</text>
+</g>
+<g id="Avviso-attivo"><rect x="272" y="136" width="1136" height="52" rx="6" fill="#FFF3CD"/>
+<g id="Avviso-icona" transform="translate(288 152) scale(1.2)" fill="none" stroke="#664D03" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="318" y="160" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#664D03" text-anchor="start">Patente muletto scaduta il 02/11</text>
+<text x="318" y="178" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#664D03" text-anchor="start">Aggiorna la scadenza della patente per togliere l'avviso.</text>
+</g>
+<g id="Scheda-Anagrafica"><rect x="272" y="204" width="560" height="284" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="296" y="236" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Anagrafica</text>
+</g>
+<text x="296" y="268" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">NOME</text>
+<text x="296" y="298" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Giorgio</text>
+<text x="568" y="268" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">COGNOME</text>
+<text x="568" y="298" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Neri</text>
+<text x="296" y="344" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">RUOLI ABILITATI</text>
+<rect x="296" y="358" width="84.1" height="24" rx="12" fill="#CFE2FF"/>
+<text x="338.05" y="374" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="middle">Muletista</text>
+<rect x="386.1" y="358" width="70.30000000000001" height="24" rx="12" fill="#FFFFFF" stroke="#ADB5BD"/>
+<text x="421.25" y="374" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#212529" text-anchor="middle">Gruista</text>
+<text x="412" y="344" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">(azzurro = principale)</text>
+<text x="568" y="344" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">TIPO DI CONTRATTO</text>
+<text x="568" y="374" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">A contratto</text>
+<text x="808" y="344" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="end">Cambia contratto ›</text>
+<text x="296" y="420" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">DATA DI ASSUNZIONE</text>
+<text x="296" y="450" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">12/03/2019</text>
+<text x="568" y="420" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">ORE SETTIMANALI</text>
+<text x="568" y="450" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">36 h</text>
+<g id="Scheda-Patenti"><rect x="272" y="504" width="560" height="156" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="296" y="536" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Patenti</text>
+</g>
+<text x="296" y="580" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Gru</text>
+<g id="Patente-Gru-stato"><rect x="392" y="562" width="79.4" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Patente-Gru-stato-icona" transform="translate(400 566) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="420" y="578.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Valida</text>
+</g>
+<text x="568" y="580" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Scade il 18/05/2028</text>
+<text x="296" y="624" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Muletto</text>
+<g id="Patente-Muletto-stato"><rect x="392" y="606" width="86.30000000000001" height="24" rx="12" fill="#F8D7DA"/>
+<g id="Patente-Muletto-stato-icona" transform="translate(400 610) scale(1)" fill="none" stroke="#842029" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5.5 5.5 L10.5 10.5 M10.5 5.5 L5.5 10.5"/></g>
+<text x="420" y="622.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#842029" text-anchor="start">Scaduta</text>
+</g>
+<text x="568" y="624" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Scaduta il 02/11/2026</text>
+<g id="Scheda-Contatti"><rect x="272" y="676" width="560" height="136" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="296" y="708" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Contatti</text>
+</g>
+<text x="296" y="736" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">TELEFONO</text>
+<text x="296" y="766" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">+39 333 123 4567</text>
+<text x="568" y="736" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">EMAIL</text>
+<text x="568" y="766" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">giorgio.neri@example.com</text>
+<g id="Scheda-Team"><rect x="848" y="204" width="560" height="132" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="872" y="236" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Team</text>
+</g>
+<text x="872" y="270" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Team 2</text>
+<text x="872" y="296" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Capogruppo: Anna Conti</text>
+<g id="Link-gestione-team"><rect x="1230" y="254" width="154" height="34" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Link-gestione-team-icona" transform="translate(1249.2 264.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 H3 V13 H13 V10 M9 2 H14 V7 M14 2 L7 9"/></g>
+<text x="1271.2" y="276.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Gestione team</text>
+</g>
+<g id="Scheda-Turni-futuri"><rect x="848" y="352" width="560" height="328" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="872" y="384" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Turni futuri</text>
+</g>
+<text x="984" y="384" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0D6EFD" text-anchor="start">Ore e straordinari</text>
+<g id="Vincoli-avviso-icona" transform="translate(1146 369) scale(1)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="1384" y="384" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0D6EFD" text-anchor="end">1 avviso · Vincoli contrattuali</text>
+<line x1="848" y1="408" x2="1408" y2="408" stroke="#DEE2E6"/>
+<text x="872" y="435" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Mar 17 nov</text>
+<text x="982" y="435" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca A · Sito 1</text>
+<text x="1142" y="435" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 6 – 12</text>
+<g id="Turno-anomalia-0" transform="translate(1244 422) scale(0.9)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="1264" y="435" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">Muletista</text>
+<g id="Apri-turno-0" transform="translate(1370 422) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="848" y1="452" x2="1408" y2="452" stroke="#DEE2E6"/>
+<text x="872" y="479" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Gio 19 nov</text>
+<text x="982" y="479" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca A · Sito 1</text>
+<text x="1142" y="479" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 12 – 18</text>
+<g id="Turno-anomalia-1" transform="translate(1244 466) scale(0.9)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="1264" y="479" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">Muletista</text>
+<g id="Apri-turno-1" transform="translate(1370 466) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="848" y1="496" x2="1408" y2="496" stroke="#DEE2E6"/>
+<text x="872" y="523" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Ven 20 nov</text>
+<text x="982" y="523" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca A · Sito 1</text>
+<text x="1142" y="523" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 6 – 12</text>
+<text x="1264" y="523" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Gruista</text>
+<g id="Apri-turno-2" transform="translate(1370 510) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="848" y1="540" x2="1408" y2="540" stroke="#DEE2E6"/>
+<text x="872" y="567" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Ven 20 nov</text>
+<text x="982" y="567" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca A · Sito 1</text>
+<text x="1142" y="567" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 12 – 18</text>
+<text x="1264" y="567" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Gruista</text>
+<g id="Apri-turno-3" transform="translate(1370 554) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="848" y1="584" x2="1408" y2="584" stroke="#DEE2E6"/>
+<text x="872" y="611" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Mar 24 nov</text>
+<text x="982" y="611" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca D · Sito 3</text>
+<text x="1142" y="611" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 6 – 12</text>
+<g id="Turno-anomalia-4" transform="translate(1244 598) scale(0.9)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="1264" y="611" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">Muletista</text>
+<g id="Apri-turno-4" transform="translate(1370 598) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="848" y1="628" x2="1408" y2="628" stroke="#DEE2E6"/>
+<text x="872" y="657" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0D6EFD" text-anchor="start">Vedi tutti i 12 turni</text>
+<text x="1384" y="657" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0D6EFD" text-anchor="end">Assenze ›</text>
+<g id="Scheda-Preferenze-di-slot"><rect x="848" y="696" width="560" height="120" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="872" y="728" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Preferenze di slot</text>
+</g>
+<rect x="872" y="748" width="96" height="30" rx="15" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="920" y="768" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="middle">0 – 6</text>
+<rect x="980" y="748" width="96" height="30" rx="15" fill="#CFE2FF" stroke="#CFE2FF"/>
+<text x="1028" y="768" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="middle">6 – 12</text>
+<rect x="1088" y="748" width="96" height="30" rx="15" fill="#CFE2FF" stroke="#CFE2FF"/>
+<text x="1136" y="768" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="middle">12 – 18</text>
+<rect x="1196" y="748" width="96" height="30" rx="15" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="1244" y="768" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="middle">18 – 24</text>
+<text x="872" y="802" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Le sceglie il lavoratore una volta e le cambia raramente.</text>
+<rect id="Sfondo-oscurato" width="1440" height="900" fill="#000000" fill-opacity="0.5"/>
+<g id="Finestra-tutti-i-turni">
+<rect x="400" y="94" width="640" height="720" rx="8" fill="#000000" fill-opacity="0.12"/>
+<rect x="400" y="90" width="640" height="720" rx="8" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="432" y="138" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#212529" text-anchor="start">Turni di Giorgio Neri</text>
+<g id="Chiudi-X" transform="translate(992 122) scale(1)" fill="none" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
+<text x="432" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#0D6EFD" text-anchor="start">Futuri (12)</text>
+<rect x="428" y="190" width="109.19999999999999" height="3" fill="#0D6EFD"/>
+<text x="572" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#6C757D" text-anchor="start">Passati (38)</text>
+<line x1="400" y1="193" x2="1040" y2="193" stroke="#DEE2E6"/>
+<text x="432" y="220" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">GIORNO</text>
+<text x="550" y="220" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">BARCA · SITO</text>
+<text x="730" y="220" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">SLOT</text>
+<text x="860" y="220" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">RUOLO</text>
+<line x1="400" y1="232" x2="1040" y2="232" stroke="#DEE2E6"/>
+<text x="432" y="258" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Mar 17 nov</text>
+<text x="550" y="258" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca A · Sito 1</text>
+<text x="730" y="258" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 6 – 12</text>
+<g id="Turno-anomalia-modal-0" transform="translate(860 244) scale(0.9)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="880" y="258" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">Muletista</text>
+<g id="Apri-turno-0" transform="translate(992 244) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="400" y1="272" x2="1040" y2="272" stroke="#DEE2E6"/>
+<text x="432" y="298" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Gio 19 nov</text>
+<text x="550" y="298" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca A · Sito 1</text>
+<text x="730" y="298" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 12 – 18</text>
+<g id="Turno-anomalia-modal-1" transform="translate(860 284) scale(0.9)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="880" y="298" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">Muletista</text>
+<g id="Apri-turno-1" transform="translate(992 284) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="400" y1="312" x2="1040" y2="312" stroke="#DEE2E6"/>
+<text x="432" y="338" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Ven 20 nov</text>
+<text x="550" y="338" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca A · Sito 1</text>
+<text x="730" y="338" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 6 – 12</text>
+<text x="860" y="338" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Gruista</text>
+<g id="Apri-turno-2" transform="translate(992 324) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="400" y1="352" x2="1040" y2="352" stroke="#DEE2E6"/>
+<text x="432" y="378" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Ven 20 nov</text>
+<text x="550" y="378" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca A · Sito 1</text>
+<text x="730" y="378" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 12 – 18</text>
+<text x="860" y="378" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Gruista</text>
+<g id="Apri-turno-3" transform="translate(992 364) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="400" y1="392" x2="1040" y2="392" stroke="#DEE2E6"/>
+<text x="432" y="418" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Mar 24 nov</text>
+<text x="550" y="418" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca D · Sito 3</text>
+<text x="730" y="418" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 6 – 12</text>
+<g id="Turno-anomalia-modal-4" transform="translate(860 404) scale(0.9)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="880" y="418" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">Muletista</text>
+<g id="Apri-turno-4" transform="translate(992 404) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="400" y1="432" x2="1040" y2="432" stroke="#DEE2E6"/>
+<text x="432" y="458" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Mer 25 nov</text>
+<text x="550" y="458" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca D · Sito 3</text>
+<text x="730" y="458" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 12 – 18</text>
+<g id="Turno-anomalia-modal-5" transform="translate(860 444) scale(0.9)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="880" y="458" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">Muletista</text>
+<g id="Apri-turno-5" transform="translate(992 444) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="400" y1="472" x2="1040" y2="472" stroke="#DEE2E6"/>
+<text x="432" y="498" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Gio 26 nov</text>
+<text x="550" y="498" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca D · Sito 3</text>
+<text x="730" y="498" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 12 – 18</text>
+<text x="860" y="498" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Gruista</text>
+<g id="Apri-turno-6" transform="translate(992 484) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="400" y1="512" x2="1040" y2="512" stroke="#DEE2E6"/>
+<text x="432" y="538" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Ven 27 nov</text>
+<text x="550" y="538" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca E · Sito 1</text>
+<text x="730" y="538" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 6 – 12</text>
+<g id="Turno-anomalia-modal-7" transform="translate(860 524) scale(0.9)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="880" y="538" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">Muletista</text>
+<g id="Apri-turno-7" transform="translate(992 524) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="400" y1="552" x2="1040" y2="552" stroke="#DEE2E6"/>
+<text x="432" y="578" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Sab 28 nov</text>
+<text x="550" y="578" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca E · Sito 1</text>
+<text x="730" y="578" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 18 – 24</text>
+<g id="Turno-anomalia-modal-8" transform="translate(860 564) scale(0.9)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="880" y="578" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">Muletista</text>
+<g id="Apri-turno-8" transform="translate(992 564) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="400" y1="592" x2="1040" y2="592" stroke="#DEE2E6"/>
+<text x="432" y="618" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Lun 30 nov</text>
+<text x="550" y="618" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca E · Sito 1</text>
+<text x="730" y="618" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 0 – 6</text>
+<text x="860" y="618" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Gruista</text>
+<g id="Apri-turno-9" transform="translate(992 604) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="400" y1="632" x2="1040" y2="632" stroke="#DEE2E6"/>
+<text x="432" y="658" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Mar 1 dic</text>
+<text x="550" y="658" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca E · Sito 1</text>
+<text x="730" y="658" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 12 – 18</text>
+<g id="Turno-anomalia-modal-10" transform="translate(860 644) scale(0.9)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="880" y="658" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">Muletista</text>
+<g id="Apri-turno-10" transform="translate(992 644) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="400" y1="672" x2="1040" y2="672" stroke="#DEE2E6"/>
+<text x="432" y="698" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Mer 2 dic</text>
+<text x="550" y="698" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca E · Sito 1</text>
+<text x="730" y="698" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Slot 6 – 12</text>
+<g id="Turno-anomalia-modal-11" transform="translate(860 684) scale(0.9)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="880" y="698" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">Muletista</text>
+<g id="Apri-turno-11" transform="translate(992 684) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+<line x1="400" y1="758" x2="1040" y2="758" stroke="#DEE2E6"/>
+<text x="432" y="790" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Clicca un turno per aprire la pagina 2.0 di quel giorno.</text>
+</g>
+</svg>
