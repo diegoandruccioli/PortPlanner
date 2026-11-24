@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<title>PortPlanner - Ore e straordinari, supervisore</title>
+<rect id="Sfondo" width="1440" height="900" fill="#F8F9FA"/>
+<g id="Sidebar">
+<rect x="0" y="0" width="240" height="900" fill="#0D6EFD"/>
+<g transform="translate(20 22) scale(0.55)" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36 H58 L50 52 H14 Z"/><path d="M18 36 V22 H46 V36"/><path d="M26 22 V12 H38 V22"/><path d="M4 58 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0"/></g>
+<text x="64" y="50" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="start">PortPlanner</text>
+<line x1="16" y1="80" x2="224" y2="80" stroke="#FFFFFF" stroke-opacity="0.3"/>
+<g transform="translate(28 112)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 11 L12 3 L22 11"/><path d="M5 9 V20 H19 V9"/></g>
+<text x="64" y="128" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Home</text>
+<g transform="translate(28 164)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10 H21 M8 3 V7 M16 3 V7"/></g>
+<text x="64" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Pianificazione</text>
+<g transform="translate(26 212) scale(1.25)" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="4.5" r="2.8"/><path d="M0.8 14 q0 -5 5.2 -5 t5.2 5"/><circle cx="12.5" cy="5.5" r="2.2"/><path d="M13 9.4 q4 0.4 4.4 4.6"/></g>
+<text x="64" y="232" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Team</text>
+<g transform="translate(28 266)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7 L12 14 L22 7"/></g>
+<text x="64" y="284" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Richieste</text>
+<g id="Badge-richieste"><circle cx="206" cy="278" r="11" fill="#FFFFFF"/></g>
+<text x="206" y="283" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="middle">3</text>
+<g transform="translate(28 316)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21 q0 -8 8 -8 t8 8"/></g>
+<text x="64" y="336" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Utenti</text>
+<rect id="Nav-Ore-attivo" x="12" y="360" width="216" height="44" rx="6" fill="#FFFFFF" fill-opacity="0.2"/>
+<g transform="translate(28 368)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7 V12 L15 14"/></g>
+<text x="64" y="388" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start">Ore</text>
+<line x1="16" y1="812" x2="224" y2="812" stroke="#FFFFFF" stroke-opacity="0.3"/>
+<circle cx="44" cy="852" r="18" fill="#FFFFFF" fill-opacity="0.25"/>
+<text x="44" y="857" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">MR</text>
+<text x="72" y="848" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start">Mario Rossi</text>
+<text x="72" y="866" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#FFFFFF" text-anchor="start">Supervisore</text>
+<path d="M206 846 l5 5 l5 -5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="272" y="66" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#212529" text-anchor="start">Ore e straordinari</text>
+<text x="272" y="90" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Ore pianificate; ogni turno vale 6 h. Straordinario = ore oltre il monte settimanale.</text>
+<rect x="272" y="108" width="200" height="38" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<g id="Icona-cerca" transform="translate(286 119) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5"/><path d="M11 11 L15 15"/></g>
+<text x="312" y="132" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Cerca per nome</text>
+<g id="Selettore-settimana"><rect x="484" y="108" width="240" height="38" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<g id="Settimana-precedente" transform="translate(496 119) scale(1)" fill="none" stroke="#0D6EFD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2 L5 8 L11 14"/></g>
+<g id="Settimana-successiva" transform="translate(692 119) scale(1)" fill="none" stroke="#0D6EFD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 L11 8 L5 14"/></g>
+<text x="604" y="132" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="middle">Settimana 16 – 22 nov</text>
+</g>
+<g id="Filtro-vicini-al-limite"><rect x="736" y="108" width="236" height="38" rx="19" fill="#FFFFFF" stroke="#0D6EFD"/>
+<g id="Filtro-limite-icona" transform="translate(752 119) scale(1)" fill="none" stroke="#0D6EFD" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="776" y="132" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0D6EFD" text-anchor="start">Vicini al limite annuo (80%)</text>
+</g>
+<g id="Filtro-contratto"><rect x="984" y="108" width="160" height="38" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="996" y="132" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Contratto: tutti</text>
+<g id="Chevron-contratto" transform="translate(1118 119) scale(1)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5 l6 6 l6 -6"/></g>
+</g>
+<g id="Tabella-ore">
+<rect x="272" y="162" width="1136" height="608" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="296" y="192" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="start">NOME E COGNOME</text>
+<text x="540" y="192" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">CONTRATTO</text>
+<text x="700" y="192" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">SETTIMANA 16 – 22 NOV</text>
+<text x="990" y="192" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">MESE (NOV)</text>
+<text x="1110" y="192" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">STRAORDINARI NELL'ANNO</text>
+<line x1="272" y1="210" x2="1408" y2="210" stroke="#DEE2E6"/>
+<circle cx="310" cy="238" r="14" fill="#E9ECEF"/>
+<text x="310" y="243" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#495057" text-anchor="middle">MB</text>
+<text x="336" y="243" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Marco Bruno</text>
+<text x="540" y="243" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">A contratto · 36 h</text>
+<text x="700" y="236" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">30 / 36 h</text>
+<rect id="Barra-sett-0-sfondo" x="700" y="246" width="200" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-sett-0" x="700" y="246" width="166.66666666666669" height="8" rx="4" fill="#0D6EFD"/>
+<text x="990" y="243" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">96 h</text>
+<text x="1110" y="236" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">74 / 300 h</text>
+<rect id="Barra-anno-0-sfondo" x="1110" y="246" width="120" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-anno-0" x="1110" y="246" width="29.6" height="8" rx="4" fill="#0D6EFD"/>
+<g id="Pill-limite-0"><rect x="1244" y="225" width="107.0" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Pill-limite-0-icona" transform="translate(1252 229) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1272" y="241.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Nei limiti</text>
+</g>
+<line x1="272" y1="266" x2="1408" y2="266" stroke="#DEE2E6"/>
+<circle cx="310" cy="294" r="14" fill="#E9ECEF"/>
+<text x="310" y="299" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#495057" text-anchor="middle">AC</text>
+<text x="336" y="299" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Anna Conti</text>
+<text x="540" y="299" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">A contratto · 36 h</text>
+<text x="700" y="292" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">12 / 36 h</text>
+<rect id="Barra-sett-1-sfondo" x="700" y="302" width="200" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-sett-1" x="700" y="302" width="66.66666666666666" height="8" rx="4" fill="#0D6EFD"/>
+<text x="990" y="299" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">96 h</text>
+<text x="1110" y="292" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">118 / 300 h</text>
+<rect id="Barra-anno-1-sfondo" x="1110" y="302" width="120" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-anno-1" x="1110" y="302" width="47.199999999999996" height="8" rx="4" fill="#0D6EFD"/>
+<g id="Pill-limite-1"><rect x="1244" y="281" width="107.0" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Pill-limite-1-icona" transform="translate(1252 285) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1272" y="297.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Nei limiti</text>
+</g>
+<line x1="272" y1="322" x2="1408" y2="322" stroke="#DEE2E6"/>
+<circle cx="310" cy="350" r="14" fill="#E9ECEF"/>
+<text x="310" y="355" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#495057" text-anchor="middle">EF</text>
+<text x="336" y="355" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Elisa Ferri</text>
+<text x="540" y="355" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">A contratto · 36 h</text>
+<text x="700" y="348" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">24 / 36 h</text>
+<rect id="Barra-sett-2-sfondo" x="700" y="358" width="200" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-sett-2" x="700" y="358" width="133.33333333333331" height="8" rx="4" fill="#0D6EFD"/>
+<text x="990" y="355" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">84 h</text>
+<text x="1110" y="348" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">40 / 300 h</text>
+<rect id="Barra-anno-2-sfondo" x="1110" y="358" width="120" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-anno-2" x="1110" y="358" width="16.0" height="8" rx="4" fill="#0D6EFD"/>
+<g id="Pill-limite-2"><rect x="1244" y="337" width="107.0" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Pill-limite-2-icona" transform="translate(1252 341) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1272" y="353.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Nei limiti</text>
+</g>
+<line x1="272" y1="378" x2="1408" y2="378" stroke="#DEE2E6"/>
+<circle cx="310" cy="406" r="14" fill="#E9ECEF"/>
+<text x="310" y="411" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#495057" text-anchor="middle">CF</text>
+<text x="336" y="411" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Carlo Fiore</text>
+<text x="540" y="411" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">A contratto · 36 h</text>
+<text x="700" y="404" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">30 / 36 h</text>
+<rect id="Barra-sett-3-sfondo" x="700" y="414" width="200" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-sett-3" x="700" y="414" width="166.66666666666669" height="8" rx="4" fill="#0D6EFD"/>
+<text x="990" y="411" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">108 h</text>
+<text x="1110" y="404" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">96 / 300 h</text>
+<rect id="Barra-anno-3-sfondo" x="1110" y="414" width="120" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-anno-3" x="1110" y="414" width="38.4" height="8" rx="4" fill="#0D6EFD"/>
+<g id="Pill-limite-3"><rect x="1244" y="393" width="107.0" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Pill-limite-3-icona" transform="translate(1252 397) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1272" y="409.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Nei limiti</text>
+</g>
+<line x1="272" y1="434" x2="1408" y2="434" stroke="#DEE2E6"/>
+<circle cx="310" cy="462" r="14" fill="#E9ECEF"/>
+<text x="310" y="467" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#495057" text-anchor="middle">SF</text>
+<text x="336" y="467" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Sara Fontana</text>
+<text x="540" y="467" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">A contratto · 36 h</text>
+<text x="700" y="460" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">24 / 36 h</text>
+<rect id="Barra-sett-4-sfondo" x="700" y="470" width="200" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-sett-4" x="700" y="470" width="133.33333333333331" height="8" rx="4" fill="#0D6EFD"/>
+<text x="990" y="467" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">90 h</text>
+<text x="1110" y="460" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">60 / 300 h</text>
+<rect id="Barra-anno-4-sfondo" x="1110" y="470" width="120" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-anno-4" x="1110" y="470" width="24.0" height="8" rx="4" fill="#0D6EFD"/>
+<g id="Pill-limite-4"><rect x="1244" y="449" width="107.0" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Pill-limite-4-icona" transform="translate(1252 453) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1272" y="465.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Nei limiti</text>
+</g>
+<line x1="272" y1="490" x2="1408" y2="490" stroke="#DEE2E6"/>
+<circle cx="310" cy="518" r="14" fill="#E9ECEF"/>
+<text x="310" y="523" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#495057" text-anchor="middle">PG</text>
+<text x="336" y="523" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Paola Greco</text>
+<text x="540" y="523" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">A contratto · 36 h</text>
+<text x="700" y="516" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">30 / 36 h</text>
+<rect id="Barra-sett-5-sfondo" x="700" y="526" width="200" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-sett-5" x="700" y="526" width="166.66666666666669" height="8" rx="4" fill="#0D6EFD"/>
+<text x="990" y="523" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">100 h</text>
+<text x="1110" y="516" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">140 / 300 h</text>
+<rect id="Barra-anno-5-sfondo" x="1110" y="526" width="120" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-anno-5" x="1110" y="526" width="56.0" height="8" rx="4" fill="#0D6EFD"/>
+<g id="Pill-limite-5"><rect x="1244" y="505" width="107.0" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Pill-limite-5-icona" transform="translate(1252 509) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1272" y="521.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Nei limiti</text>
+</g>
+<line x1="272" y1="546" x2="1408" y2="546" stroke="#DEE2E6"/>
+<circle cx="310" cy="574" r="14" fill="#E9ECEF"/>
+<text x="310" y="579" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#495057" text-anchor="middle">FL</text>
+<text x="336" y="579" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Fabio Lodi</text>
+<text x="540" y="579" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">A contratto · 38 h</text>
+<text x="700" y="572" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">40 / 38 h</text>
+<g id="Sett-straord-6" transform="translate(778 560) scale(0.85)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="796" y="572" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#664D03" text-anchor="start">+2 h straordinario</text>
+<rect id="Barra-sett-6-sfondo" x="700" y="582" width="200" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-sett-6" x="700" y="582" width="200" height="8" rx="4" fill="#FFC107"/>
+<text x="990" y="579" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">128 h</text>
+<text x="1110" y="572" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">215 / 250 h</text>
+<rect id="Barra-anno-6-sfondo" x="1110" y="582" width="120" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-anno-6" x="1110" y="582" width="103.2" height="8" rx="4" fill="#FFC107"/>
+<g id="Pill-limite-6"><rect x="1244" y="561" width="148.4" height="24" rx="12" fill="#FFF3CD"/>
+<g id="Pill-limite-6-icona" transform="translate(1252 565) scale(1)" fill="none" stroke="#664D03" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="1272" y="577.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#664D03" text-anchor="start">Vicino al limite</text>
+</g>
+<line x1="272" y1="602" x2="1408" y2="602" stroke="#DEE2E6"/>
+<circle cx="310" cy="630" r="14" fill="#E9ECEF"/>
+<text x="310" y="635" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#495057" text-anchor="middle">LM</text>
+<text x="336" y="635" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Luigi Marini</text>
+<text x="540" y="635" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">A chiamata</text>
+<text x="700" y="628" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">12 h</text>
+<text x="700" y="648" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">nessun monte ore</text>
+<text x="990" y="635" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">48 h</text>
+<text x="1110" y="635" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Nessuno straordinario (a chiamata)</text>
+<line x1="272" y1="658" x2="1408" y2="658" stroke="#DEE2E6"/>
+<circle cx="310" cy="686" r="14" fill="#E9ECEF"/>
+<text x="310" y="691" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#495057" text-anchor="middle">LM</text>
+<text x="336" y="691" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Luca Moro</text>
+<text x="540" y="691" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">A contratto · 36 h</text>
+<text x="700" y="684" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">36 / 36 h</text>
+<rect id="Barra-sett-8-sfondo" x="700" y="694" width="200" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-sett-8" x="700" y="694" width="200.0" height="8" rx="4" fill="#0D6EFD"/>
+<text x="990" y="691" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">116 h</text>
+<text x="1110" y="684" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">88 / 300 h</text>
+<rect id="Barra-anno-8-sfondo" x="1110" y="694" width="120" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-anno-8" x="1110" y="694" width="35.2" height="8" rx="4" fill="#0D6EFD"/>
+<g id="Pill-limite-8"><rect x="1244" y="673" width="107.0" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Pill-limite-8-icona" transform="translate(1252 677) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1272" y="689.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Nei limiti</text>
+</g>
+<line x1="272" y1="714" x2="1408" y2="714" stroke="#DEE2E6"/>
+<circle cx="310" cy="742" r="14" fill="#E9ECEF"/>
+<text x="310" y="747" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#495057" text-anchor="middle">GN</text>
+<text x="336" y="747" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Giorgio Neri</text>
+<text x="540" y="747" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">A contratto · 36 h</text>
+<text x="700" y="740" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">30 / 36 h</text>
+<rect id="Barra-sett-9-sfondo" x="700" y="750" width="200" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-sett-9" x="700" y="750" width="166.66666666666669" height="8" rx="4" fill="#0D6EFD"/>
+<text x="990" y="747" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">106 h</text>
+<text x="1110" y="740" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">52 / 300 h</text>
+<rect id="Barra-anno-9-sfondo" x="1110" y="750" width="120" height="8" rx="4" fill="#E9ECEF"/>
+<rect id="Barra-anno-9" x="1110" y="750" width="20.8" height="8" rx="4" fill="#0D6EFD"/>
+<g id="Pill-limite-9"><rect x="1244" y="729" width="107.0" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Pill-limite-9-icona" transform="translate(1252 733) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1272" y="745.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Nei limiti</text>
+</g>
+</g>
+<text x="272" y="804" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">1–10 di 42 lavoratori</text>
+</svg>

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<title>PortPlanner - Dettaglio utente (creato)</title>
+<rect id="Sfondo" width="1440" height="900" fill="#F8F9FA"/>
+<g id="Sidebar">
+<rect x="0" y="0" width="240" height="900" fill="#0D6EFD"/>
+<g transform="translate(20 22) scale(0.55)" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36 H58 L50 52 H14 Z"/><path d="M18 36 V22 H46 V36"/><path d="M26 22 V12 H38 V22"/><path d="M4 58 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0"/></g>
+<text x="64" y="50" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="start">PortPlanner</text>
+<line x1="16" y1="80" x2="224" y2="80" stroke="#FFFFFF" stroke-opacity="0.3"/>
+<g transform="translate(28 112)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 11 L12 3 L22 11"/><path d="M5 9 V20 H19 V9"/></g>
+<text x="64" y="128" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Home</text>
+<g transform="translate(28 164)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10 H21 M8 3 V7 M16 3 V7"/></g>
+<text x="64" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Pianificazione</text>
+<g transform="translate(26 212) scale(1.25)" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="4.5" r="2.8"/><path d="M0.8 14 q0 -5 5.2 -5 t5.2 5"/><circle cx="12.5" cy="5.5" r="2.2"/><path d="M13 9.4 q4 0.4 4.4 4.6"/></g>
+<text x="64" y="232" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Team</text>
+<g transform="translate(28 266)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7 L12 14 L22 7"/></g>
+<text x="64" y="284" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Richieste</text>
+<g id="Badge-richieste"><circle cx="206" cy="278" r="11" fill="#FFFFFF"/></g>
+<text x="206" y="283" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="middle">3</text>
+<rect id="Nav-Utenti-attivo" x="12" y="308" width="216" height="44" rx="6" fill="#FFFFFF" fill-opacity="0.2"/>
+<g transform="translate(28 316)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21 q0 -8 8 -8 t8 8"/></g>
+<text x="64" y="336" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start">Utenti</text>
+<g transform="translate(28 368)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7 V12 L15 14"/></g>
+<text x="64" y="388" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Ore</text><g id="Nav-Assenze-icona" transform="translate(28 420)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10 H21 M8 3 V7 M16 3 V7"/><path d="M9.5 14 L14.5 19 M14.5 14 L9.5 19"/></g><text x="64" y="440" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Assenze</text>
+<line x1="16" y1="812" x2="224" y2="812" stroke="#FFFFFF" stroke-opacity="0.3"/>
+<circle cx="44" cy="852" r="18" fill="#FFFFFF" fill-opacity="0.25"/>
+<text x="44" y="857" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">MR</text>
+<text x="72" y="848" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start">Mario Rossi</text>
+<text x="72" y="866" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#FFFFFF" text-anchor="start">Supervisore</text>
+<path d="M206 846 l5 5 l5 -5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Icona-indietro" transform="translate(272 36) scale(1)" fill="none" stroke="#0D6EFD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L2 8 L8 14 M2 8 H15"/></g>
+<text x="296" y="50" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#0D6EFD" text-anchor="start">Gestione utenti</text>
+<text x="272" y="88" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#212529" text-anchor="start">Giulia Bassi</text>
+<text x="272" y="114" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Operaio · A contratto</text>
+<g id="Pulsante-elimina"><rect x="1298" y="52" width="110" height="40" rx="6" fill="#FFFFFF" stroke="#DC3545"/>
+<g id="Pulsante-elimina-icona" transform="translate(1316.8 65.0) scale(0.875)" fill="none" stroke="#DC3545" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4 H13.5 M6 4 V2.5 H10 V4 M4 4 L4.8 14 H11.2 L12 4 M6.5 7 V11.5 M9.5 7 V11.5"/></g>
+<text x="1338.8" y="77.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#DC3545" text-anchor="start">Elimina</text>
+</g>
+<g id="Pulsante-modifica"><rect x="1170" y="52" width="120" height="40" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Pulsante-modifica-icona" transform="translate(1190.2 65.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 14 L2.8 10.8 L11.5 2.1 a1.5 1.5 0 0 1 2.1 2.1 L4.9 12.9 Z M10 3.6 L12.4 6"/></g>
+<text x="1212.2" y="77.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Modifica</text>
+</g>
+<g id="Scheda-Anagrafica"><rect x="272" y="136" width="560" height="284" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="296" y="168" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Anagrafica</text>
+</g>
+<text x="296" y="200" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">NOME</text>
+<text x="296" y="230" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Giulia</text>
+<text x="568" y="200" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">COGNOME</text>
+<text x="568" y="230" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Bassi</text>
+<text x="296" y="276" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">RUOLI ABILITATI</text>
+<rect x="296" y="290" width="70.30000000000001" height="24" rx="12" fill="#CFE2FF"/>
+<text x="331.15" y="306" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="middle">Operaio</text>
+<text x="412" y="276" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">(azzurro = principale)</text>
+<text x="568" y="276" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">TIPO DI CONTRATTO</text>
+<text x="568" y="306" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">A contratto</text>
+<text x="808" y="276" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="end">Cambia contratto ›</text>
+<text x="296" y="352" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">DATA DI ASSUNZIONE</text>
+<text x="296" y="382" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">—</text>
+<text x="568" y="352" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">ORE SETTIMANALI</text>
+<text x="568" y="382" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">36 h</text>
+<g id="Scheda-Patenti"><rect x="272" y="436" width="560" height="156" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="296" y="468" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Patenti</text>
+</g>
+<text x="296" y="512" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Gru</text>
+<g id="Patente-Gru-stato"><rect x="392" y="494" width="127.7" height="24" rx="12" fill="#E9ECEF"/>
+<g id="Patente-Gru-stato-icona" transform="translate(400 498) scale(1)" fill="none" stroke="#495057" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8 H11"/></g>
+<text x="420" y="510.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#495057" text-anchor="start">Non posseduta</text>
+</g>
+<text x="568" y="512" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">—</text>
+<text x="296" y="556" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Muletto</text>
+<g id="Patente-Muletto-stato"><rect x="392" y="538" width="127.7" height="24" rx="12" fill="#E9ECEF"/>
+<g id="Patente-Muletto-stato-icona" transform="translate(400 542) scale(1)" fill="none" stroke="#495057" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8 H11"/></g>
+<text x="420" y="554.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#495057" text-anchor="start">Non posseduta</text>
+</g>
+<text x="568" y="556" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">—</text>
+<g id="Scheda-Contatti"><rect x="272" y="608" width="560" height="136" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="296" y="640" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Contatti</text>
+</g>
+<text x="296" y="668" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">TELEFONO</text>
+<text x="296" y="698" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">—</text>
+<text x="568" y="668" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">EMAIL</text>
+<text x="568" y="698" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">—</text>
+<g id="Scheda-Team"><rect x="848" y="136" width="560" height="132" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="872" y="168" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Team</text>
+</g>
+<g id="Pill-senza-team"><rect x="872" y="188" width="107.0" height="24" rx="12" fill="#E9ECEF"/>
+<g id="Pill-senza-team-icona" transform="translate(880 192) scale(1)" fill="none" stroke="#495057" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8 H11"/></g>
+<text x="900" y="204.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#495057" text-anchor="start">Senza team</text>
+</g>
+<text x="872" y="236" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Assegnalo a un team da Gestione team.</text>
+<g id="Link-gestione-team"><rect x="1230" y="186" width="154" height="34" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Link-gestione-team-icona" transform="translate(1249.2 196.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 H3 V13 H13 V10 M9 2 H14 V7 M14 2 L7 9"/></g>
+<text x="1271.2" y="208.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Gestione team</text>
+</g>
+<g id="Scheda-Turni-futuri"><rect x="848" y="284" width="560" height="150" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="872" y="316" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Turni futuri</text>
+</g>
+<g id="Icona-nessun-turno" transform="translate(1114.0 344) scale(1.8)" fill="none" stroke="#ADB5BD" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="11" rx="2"/><path d="M2 7 H14 M5 1.5 V4.5 M11 1.5 V4.5"/></g>
+<text x="1128.0" y="400" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="middle">Nessun turno assegnato</text>
+<text x="1128.0" y="420" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="middle">I turni compaiono quando viene inserito in uno slot.</text>
+<g id="Scheda-Preferenze-di-slot"><rect x="848" y="450" width="560" height="120" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="872" y="482" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Preferenze di slot</text>
+</g>
+<rect x="872" y="502" width="96" height="30" rx="15" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="920" y="522" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="middle">0 – 6</text>
+<rect x="980" y="502" width="96" height="30" rx="15" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="1028" y="522" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="middle">6 – 12</text>
+<rect x="1088" y="502" width="96" height="30" rx="15" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="1136" y="522" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="middle">12 – 18</text>
+<rect x="1196" y="502" width="96" height="30" rx="15" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="1244" y="522" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="middle">18 – 24</text>
+<text x="872" y="556" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Le sceglie il lavoratore una volta e le cambia raramente.</text>
+<g id="Toast-creato">
+<rect x="928" y="823" width="480" height="56" rx="6" fill="#000000" fill-opacity="0.10"/>
+<rect x="928" y="820" width="480" height="56" rx="6" fill="#D1E7DD" stroke="#A3CFBB"/>
+<g id="Toast-creato-icona" transform="translate(944 836) scale(1.5)" fill="none" stroke="#146C43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="980" y="854" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0A3622" text-anchor="start">Lavoratore creato: Giulia Bassi</text>
+<text x="1352" y="854" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#146C43" text-anchor="end">Annulla</text>
+<line x1="1310" y1="858" x2="1352" y2="858" stroke="#146C43" stroke-width="1.2"/>
+<g id="Toast-creato-chiudi" transform="translate(1372 840) scale(1)" fill="none" stroke="#146C43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
+</g>
+</svg>

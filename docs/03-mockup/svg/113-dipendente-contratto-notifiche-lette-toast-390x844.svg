@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+<title>PortPlanner - Dipendente con contratto: Notifiche lette</title>
+<rect id="Sfondo" width="390" height="844" fill="#F8F9FA"/>
+<rect id="Barra-superiore" x="0" y="0" width="390" height="56" fill="#FFFFFF"/>
+<line x1="0" y1="56" x2="390" y2="56" stroke="#DEE2E6"/>
+<g id="Indietro" transform="translate(16 20) scale(1)" fill="none" stroke="#212529" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2 L5 8 L11 14"/></g>
+<text x="44" y="35" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#212529" text-anchor="start">Notifiche</text>
+<text x="16" y="86" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="15" font-weight="400" fill="#6C757D" text-anchor="start">Non letti (0)</text>
+<text x="140" y="86" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#0D6EFD" text-anchor="start">Tutte (6)</text>
+<rect x="138" y="94" width="77.8" height="3" fill="#0D6EFD"/>
+<line x1="0" y1="97" x2="390" y2="97" stroke="#DEE2E6"/>
+<circle cx="54" cy="134" r="18" fill="#CFE2FF"/>
+<g id="Notifica-icona-0" transform="translate(46 126) scale(1)" fill="none" stroke="#052C65" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="11" rx="1.5"/><path d="M2 7 H14 M5 1.5 V4.5 M11 1.5 V4.5"/></g>
+<text x="84" y="130" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Nuovo turno assegnato</text>
+<text x="84" y="150" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Oggi · 6 – 12 · Barca A · Sito 1</text>
+<text x="84" y="166" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Ruolo: Operaio</text>
+<text x="84" y="196" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#6C757D" text-anchor="start">Oggi 08:40</text>
+<g id="Badge-notifica-0"><rect x="232.5" y="180" width="141.5" height="24" rx="12" fill="#FFF3CD"/>
+<g id="Badge-notifica-0-icona" transform="translate(240.5 184) scale(1)" fill="none" stroke="#664D03" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L14.5 13.5 H1.5 Z"/><path d="M8 6.5 V9.5"/><circle cx="8" cy="11.5" r="0.4"/></g>
+<text x="260.5" y="196.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#664D03" text-anchor="start">Preavviso breve</text>
+</g>
+<line x1="0" y1="204" x2="390" y2="204" stroke="#DEE2E6"/>
+<circle cx="54" cy="234" r="18" fill="#CFE2FF"/>
+<g id="Notifica-icona-1" transform="translate(46 226) scale(1)" fill="none" stroke="#052C65" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5 H13 M10 2 L13 5 L10 8 M14 11 H3 M6 8 L3 11 L6 14"/></g>
+<text x="84" y="230" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Turno modificato</text>
+<text x="84" y="250" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Gio 19 nov: da 6 – 12 a 12 – 18</text>
+<text x="84" y="266" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Barca A · Sito 1</text>
+<text x="84" y="296" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#6C757D" text-anchor="start">Oggi 08:15</text>
+<line x1="0" y1="304" x2="390" y2="304" stroke="#DEE2E6"/>
+<circle cx="54" cy="334" r="18" fill="#CFE2FF"/>
+<g id="Notifica-icona-2" transform="translate(46 326) scale(1)" fill="none" stroke="#052C65" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M3.4 12.6 L12.6 3.4"/></g>
+<text x="84" y="330" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Turno tolto</text>
+<text x="84" y="350" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Mer 18 nov · 6 – 12 · Barca B · Sito 2</text>
+<text x="84" y="366" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">è stato annullato</text>
+<text x="84" y="396" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#6C757D" text-anchor="start">Ieri 17:05</text>
+<line x1="0" y1="404" x2="390" y2="404" stroke="#DEE2E6"/>
+<circle cx="54" cy="434" r="18" fill="#CFE2FF"/>
+<g id="Notifica-icona-3" transform="translate(46 426) scale(1)" fill="none" stroke="#052C65" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="84" y="430" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Correzione delle tue ore</text>
+<text x="84" y="450" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Il turno di Lun 16 · 6 – 12 è stato</text>
+<text x="84" y="466" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">segnato come non svolto</text>
+<text x="84" y="496" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#6C757D" text-anchor="start">Ieri 11:20</text>
+<line x1="0" y1="504" x2="390" y2="504" stroke="#DEE2E6"/>
+<circle cx="54" cy="534" r="18" fill="#CFE2FF"/>
+<g id="Notifica-icona-4" transform="translate(46 526) scale(1)" fill="none" stroke="#052C65" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="4.5" r="2.8"/><path d="M0.8 14 q0 -5 5.2 -5 t5.2 5"/><circle cx="12.5" cy="5.5" r="2.2"/><path d="M13 9.4 q4 0.4 4.4 4.6"/></g>
+<text x="84" y="530" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Aggiunta al Team 5 per uno slot</text>
+<text x="84" y="550" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Mar 10 nov · 12 – 18 · Barca B · Sito 2</text>
+<text x="84" y="580" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#6C757D" text-anchor="start">Lun 9 nov 15:30</text>
+<line x1="0" y1="604" x2="390" y2="604" stroke="#DEE2E6"/>
+<circle cx="54" cy="634" r="18" fill="#CFE2FF"/>
+<g id="Notifica-icona-5" transform="translate(46 626) scale(1)" fill="none" stroke="#052C65" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><path d="M8 1 V3 M8 13 V15 M1 8 H3 M13 8 H15 M3 3 L4.4 4.4 M11.6 11.6 L13 13 M3 13 L4.4 11.6 M11.6 4.4 L13 3"/></g>
+<text x="84" y="630" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Ferie approvate</text>
+<text x="84" y="650" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Lun 14 – Ven 18 dic · il supervisore ha</text>
+<text x="84" y="666" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">approvato la tua richiesta</text>
+<text x="84" y="696" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#6C757D" text-anchor="start">Lun 2 nov 09:00</text>
+<g id="Toast-lette">
+<rect x="16" y="703" width="358" height="56" rx="6" fill="#000000" fill-opacity="0.10"/>
+<rect x="16" y="700" width="358" height="56" rx="6" fill="#D1E7DD" stroke="#A3CFBB"/>
+<g id="Toast-lette-icona" transform="translate(30 717) scale(1.4)" fill="none" stroke="#146C43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="60" y="734" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0A3622" text-anchor="start">Notifiche segnate come lette</text>
+<text x="358" y="734" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#146C43" text-anchor="end">Annulla</text>
+</g>
+<g id="Barra-inferiore">
+<rect x="0" y="772" width="390" height="72" fill="#FFFFFF"/>
+<line x1="0" y1="772" x2="390" y2="772" stroke="#DEE2E6"/>
+<g id="Voce-Turni-icona" transform="translate(85.5 784) scale(1.5)" fill="none" stroke="#0D6EFD" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="11" rx="1.5"/><path d="M2 7 H14 M5 1.5 V4.5 M11 1.5 V4.5"/></g>
+<text x="97.5" y="825" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="middle">Turni</text>
+<g id="Voce-Profilo-icona" transform="translate(280.5 784) scale(1.5)" fill="none" stroke="#6C757D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="292.5" y="825" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="middle">Profilo</text>
+</g>
+</svg>

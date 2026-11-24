@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<title>PortPlanner - Gestione team, supervisore (elimina)</title>
+<rect id="Sfondo" width="1440" height="900" fill="#F8F9FA"/>
+<g id="Sidebar">
+<rect x="0" y="0" width="240" height="900" fill="#0D6EFD"/>
+<g transform="translate(20 22) scale(0.55)" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36 H58 L50 52 H14 Z"/><path d="M18 36 V22 H46 V36"/><path d="M26 22 V12 H38 V22"/><path d="M4 58 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0"/></g>
+<text x="64" y="50" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="start">PortPlanner</text>
+<line x1="16" y1="80" x2="224" y2="80" stroke="#FFFFFF" stroke-opacity="0.3"/>
+<g transform="translate(28 112)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 11 L12 3 L22 11"/><path d="M5 9 V20 H19 V9"/></g>
+<text x="64" y="128" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Home</text>
+<g transform="translate(28 164)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10 H21 M8 3 V7 M16 3 V7"/></g>
+<text x="64" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Pianificazione</text>
+<rect id="Nav-Team-attivo" x="12" y="204" width="216" height="44" rx="6" fill="#FFFFFF" fill-opacity="0.2"/>
+<g transform="translate(26 212) scale(1.25)" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="4.5" r="2.8"/><path d="M0.8 14 q0 -5 5.2 -5 t5.2 5"/><circle cx="12.5" cy="5.5" r="2.2"/><path d="M13 9.4 q4 0.4 4.4 4.6"/></g>
+<text x="64" y="232" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start">Team</text>
+<g transform="translate(28 266)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7 L12 14 L22 7"/></g>
+<text x="64" y="284" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Richieste</text>
+<g id="Badge-richieste"><circle cx="206" cy="278" r="11" fill="#FFFFFF"/></g>
+<text x="206" y="283" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="middle">3</text>
+<g transform="translate(28 316)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21 q0 -8 8 -8 t8 8"/></g>
+<text x="64" y="336" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Utenti</text>
+<g transform="translate(28 368)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7 V12 L15 14"/></g>
+<text x="64" y="388" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Ore</text><g id="Nav-Assenze-icona" transform="translate(28 420)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10 H21 M8 3 V7 M16 3 V7"/><path d="M9.5 14 L14.5 19 M14.5 14 L9.5 19"/></g><text x="64" y="440" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Assenze</text>
+<line x1="16" y1="812" x2="224" y2="812" stroke="#FFFFFF" stroke-opacity="0.3"/>
+<circle cx="44" cy="852" r="18" fill="#FFFFFF" fill-opacity="0.25"/>
+<text x="44" y="857" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">MR</text>
+<text x="72" y="848" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start">Mario Rossi</text>
+<text x="72" y="866" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#FFFFFF" text-anchor="start">Supervisore</text>
+<path d="M206 846 l5 5 l5 -5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="272" y="66" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#212529" text-anchor="start">Gestione team</text>
+<g id="Pulsante-nuovo-team"><rect x="1248" y="40" width="160" height="40" rx="6" fill="#0D6EFD" stroke="#0D6EFD"/>
+<g id="Pulsante-nuovo-team-icona" transform="translate(1281.0 53.0) scale(0.875)" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 V14 M2 8 H14"/></g>
+<text x="1303.0" y="65.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start">Nuovo team</text>
+</g>
+<g id="Elenco-team">
+<rect x="272" y="96" width="420" height="772" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="296" y="134" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#212529" text-anchor="start">Team</text>
+<text x="352" y="134" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#6C757D" text-anchor="start">(5)</text>
+<g id="Voce-Team-1">
+<rect x="288" y="152" width="388" height="104" rx="6" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1"/>
+<text x="304" y="184" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Team 1</text>
+<text x="304" y="208" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Capogruppo L. Bianchi</text>
+<text x="304" y="232" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">6 membri · 3 gruisti · 1 muletista · 2 operai</text>
+<g id="Voce-Team-1-freccia" transform="translate(646 192) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+</g>
+<g id="Voce-Team-2">
+<rect x="288" y="268" width="388" height="104" rx="6" fill="#E7F1FF" stroke="#0D6EFD" stroke-width="1.5"/>
+<text x="304" y="300" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Team 2</text>
+<rect x="372" y="282" width="92" height="22" rx="11" fill="#FFF3CD"/>
+<g id="Voce-Team-2-badge-icona" transform="translate(380 286) scale(0.875)" fill="none" stroke="#664D03" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="398" y="298" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#664D03" text-anchor="start">Anomalia</text>
+<text x="304" y="324" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Capogruppo A. Conti</text>
+<g id="Voce-Team-2-capogruppo-assente"><rect x="470" y="307" width="169.1" height="24" rx="12" fill="#F8D7DA"/>
+<g id="Voce-Team-2-capogruppo-assente-icona" transform="translate(478 311) scale(1)" fill="none" stroke="#842029" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="498" y="323.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#842029" text-anchor="start">Assente 18 – 20 nov</text>
+</g>
+<text x="304" y="348" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">6 membri · 2 gruisti · 1 muletista · 3 operai</text>
+<g id="Voce-Team-2-freccia" transform="translate(646 308) scale(1)" fill="none" stroke="#212529" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+</g>
+<g id="Voce-Team-3">
+<rect x="288" y="384" width="388" height="104" rx="6" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1"/>
+<text x="304" y="416" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Team 3</text>
+<text x="304" y="440" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Capogruppo A. Gallo</text>
+<text x="304" y="464" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">4 membri · 1 gruista · 1 muletista · 2 operai</text>
+<g id="Voce-Team-3-freccia" transform="translate(646 424) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+</g>
+<g id="Voce-Team-4">
+<rect x="288" y="500" width="388" height="104" rx="6" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1"/>
+<text x="304" y="532" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Team 4</text>
+<text x="304" y="556" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Capogruppo S. Fabbri</text>
+<text x="304" y="580" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">6 membri · 2 gruisti · 2 muletisti · 2 operai</text>
+<g id="Voce-Team-4-freccia" transform="translate(646 540) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+</g>
+<g id="Voce-Team-5">
+<rect x="288" y="616" width="388" height="104" rx="6" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1"/>
+<text x="304" y="648" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Team 5</text>
+<text x="304" y="672" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Capogruppo R. Costa</text>
+<text x="304" y="696" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">5 membri · 2 gruisti · 1 muletista · 2 operai</text>
+<g id="Voce-Team-5-freccia" transform="translate(646 656) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 l6 6 l-6 6"/></g>
+</g>
+</g>
+<g id="Dettaglio-team">
+<rect x="712" y="96" width="696" height="772" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="736" y="142" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#212529" text-anchor="start">Team 2</text>
+<rect x="814" y="124" width="92" height="22" rx="11" fill="#FFF3CD"/>
+<g id="Badge-anomalia-icona" transform="translate(822 128) scale(0.875)" fill="none" stroke="#664D03" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="840" y="140" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#664D03" text-anchor="start">Anomalia</text>
+<g id="Pulsante-elimina"><rect x="1274" y="118" width="110" height="36" rx="6" fill="#FFFFFF" stroke="#DC3545"/>
+<g id="Pulsante-elimina-icona" transform="translate(1292.8 129.0) scale(0.875)" fill="none" stroke="#DC3545" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4 H13.5 M6 4 V2.5 H10 V4 M4 4 L4.8 14 H11.2 L12 4 M6.5 7 V11.5 M9.5 7 V11.5"/></g>
+<text x="1314.8" y="141.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#DC3545" text-anchor="start">Elimina</text>
+</g>
+<g id="Pulsante-modifica"><rect x="1156" y="118" width="110" height="36" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Pulsante-modifica-icona" transform="translate(1171.2 129.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 14 L2.8 10.8 L11.5 2.1 a1.5 1.5 0 0 1 2.1 2.1 L4.9 12.9 Z M10 3.6 L12.4 6"/></g>
+<text x="1193.2" y="141.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Modifica</text>
+</g>
+<line x1="712" y1="172" x2="1408" y2="172" stroke="#DEE2E6"/>
+<text x="736" y="200" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">CAPOGRUPPO</text>
+<g id="Icona-capogruppo" transform="translate(736 210) scale(1.1)" fill="none" stroke="#6C757D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="764" y="226" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">A. Conti</text>
+<rect x="736" y="246" width="648" height="52" rx="6" fill="#FFF3CD"/>
+<g id="Avviso-icona" transform="translate(750 262) scale(1.1)" fill="none" stroke="#664D03" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="776" y="268" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#664D03" text-anchor="start">Patente muletto scaduta il 02/11</text>
+<text x="776" y="288" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#664D03" text-anchor="start">G. Neri · 12 h di lavoro consecutive il 20/11 · l'avviso resta finché non viene risolto</text>
+<g id="Sezione-Gruisti">
+<rect x="736" y="318" width="648" height="152" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="752" y="349" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Gruisti</text>
+<text x="829.2" y="349" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">(2)</text>
+<g id="Aggiungi-Gruisti"><rect x="1248" y="326" width="124" height="32" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Aggiungi-Gruisti-icona" transform="translate(1270.2 335.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 V14 M2 8 H14"/></g>
+<text x="1292.2" y="347.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Aggiungi</text>
+</g>
+<line x1="736" y1="366" x2="1384" y2="366" stroke="#DEE2E6"/>
+<g id="Icona-Anna-Conti" transform="translate(752 382) scale(1.15)" fill="none" stroke="#6C757D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="782" y="397" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Anna Conti</text>
+<g id="Tag-capogruppo"><rect x="868.0" y="381" width="93.0" height="22" rx="11" fill="#CFE2FF"/></g>
+<text x="914.5" y="396" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="middle">Capogruppo</text>
+<g id="Patente-Anna-Conti"><rect x="980" y="380" width="162.2" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Patente-Anna-Conti-icona" transform="translate(988 384) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1008" y="396.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Patente gru valida</text>
+</g>
+<g id="Sposta-Anna-Conti"><rect x="1196" y="377" width="112" height="30" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Sposta-Anna-Conti-icona" transform="translate(1219.4 385.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5 H13 M10 2 L13 5 L10 8 M14 11 H3 M6 8 L3 11 L6 14"/></g>
+<text x="1241.4" y="397.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Sposta</text>
+</g>
+<g id="Rimuovi-Anna-Conti" transform="translate(1340 384) scale(1)" fill="none" stroke="#212529" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
+<line x1="736" y1="418" x2="1384" y2="418" stroke="#DEE2E6"/>
+<g id="Icona-Luca-Moro" transform="translate(752 434) scale(1.15)" fill="none" stroke="#6C757D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="782" y="449" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Luca Moro</text>
+<g id="Patente-Luca-Moro"><rect x="980" y="432" width="162.2" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Patente-Luca-Moro-icona" transform="translate(988 436) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1008" y="448.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Patente gru valida</text>
+</g>
+<g id="Sposta-Luca-Moro"><rect x="1196" y="429" width="112" height="30" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Sposta-Luca-Moro-icona" transform="translate(1219.4 437.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5 H13 M10 2 L13 5 L10 8 M14 11 H3 M6 8 L3 11 L6 14"/></g>
+<text x="1241.4" y="449.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Sposta</text>
+</g>
+<g id="Rimuovi-Luca-Moro" transform="translate(1340 436) scale(1)" fill="none" stroke="#212529" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
+</g>
+<g id="Sezione-Mulettisti">
+<rect x="736" y="482" width="648" height="100" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="752" y="513" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Mulettisti</text>
+<text x="858.0" y="513" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">(1)</text>
+<g id="Aggiungi-Mulettisti"><rect x="1248" y="490" width="124" height="32" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Aggiungi-Mulettisti-icona" transform="translate(1270.2 499.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 V14 M2 8 H14"/></g>
+<text x="1292.2" y="511.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Aggiungi</text>
+</g>
+<line x1="736" y1="530" x2="1384" y2="530" stroke="#DEE2E6"/>
+<g id="Icona-Giorgio-Neri" transform="translate(752 546) scale(1.15)" fill="none" stroke="#6C757D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="782" y="561" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Giorgio Neri</text>
+<g id="Patente-Giorgio-Neri"><rect x="980" y="544" width="196.70000000000002" height="24" rx="12" fill="#F8D7DA"/>
+<g id="Patente-Giorgio-Neri-icona" transform="translate(988 548) scale(1)" fill="none" stroke="#842029" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5.5 5.5 L10.5 10.5 M10.5 5.5 L5.5 10.5"/></g>
+<text x="1008" y="560.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#842029" text-anchor="start">Patente muletto scaduta</text>
+</g>
+<g id="Sposta-Giorgio-Neri"><rect x="1196" y="541" width="112" height="30" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Sposta-Giorgio-Neri-icona" transform="translate(1219.4 549.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5 H13 M10 2 L13 5 L10 8 M14 11 H3 M6 8 L3 11 L6 14"/></g>
+<text x="1241.4" y="561.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Sposta</text>
+</g>
+<g id="Rimuovi-Giorgio-Neri" transform="translate(1340 548) scale(1)" fill="none" stroke="#212529" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
+</g>
+<g id="Sezione-Operai">
+<rect x="736" y="594" width="648" height="204" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="752" y="625" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#212529" text-anchor="start">Operai</text>
+<text x="819.6" y="625" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">(3)</text>
+<g id="Aggiungi-Operai"><rect x="1248" y="602" width="124" height="32" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Aggiungi-Operai-icona" transform="translate(1270.2 611.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 V14 M2 8 H14"/></g>
+<text x="1292.2" y="623.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Aggiungi</text>
+</g>
+<line x1="736" y1="642" x2="1384" y2="642" stroke="#DEE2E6"/>
+<g id="Icona-Sara-Fontana" transform="translate(752 658) scale(1.15)" fill="none" stroke="#6C757D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="782" y="673" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Sara Fontana</text>
+<g id="Patente-Sara-Fontana"><rect x="980" y="656" width="141.5" height="24" rx="12" fill="#E9ECEF"/>
+<g id="Patente-Sara-Fontana-icona" transform="translate(988 660) scale(1)" fill="none" stroke="#495057" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8 H11"/></g>
+<text x="1008" y="672.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#495057" text-anchor="start">Nessuna patente</text>
+</g>
+<g id="Sposta-Sara-Fontana"><rect x="1196" y="653" width="112" height="30" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Sposta-Sara-Fontana-icona" transform="translate(1219.4 661.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5 H13 M10 2 L13 5 L10 8 M14 11 H3 M6 8 L3 11 L6 14"/></g>
+<text x="1241.4" y="673.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Sposta</text>
+</g>
+<g id="Rimuovi-Sara-Fontana" transform="translate(1340 660) scale(1)" fill="none" stroke="#212529" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
+<line x1="736" y1="694" x2="1384" y2="694" stroke="#DEE2E6"/>
+<g id="Icona-Paolo-Riva" transform="translate(752 710) scale(1.15)" fill="none" stroke="#6C757D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="782" y="725" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Paolo Riva</text>
+<g id="Patente-Paolo-Riva"><rect x="980" y="708" width="134.60000000000002" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Patente-Paolo-Riva-icona" transform="translate(988 712) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1008" y="724.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Ha una patente</text>
+</g>
+<g id="Sposta-Paolo-Riva"><rect x="1196" y="705" width="112" height="30" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Sposta-Paolo-Riva-icona" transform="translate(1219.4 713.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5 H13 M10 2 L13 5 L10 8 M14 11 H3 M6 8 L3 11 L6 14"/></g>
+<text x="1241.4" y="725.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Sposta</text>
+</g>
+<g id="Rimuovi-Paolo-Riva" transform="translate(1340 712) scale(1)" fill="none" stroke="#212529" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
+<line x1="736" y1="746" x2="1384" y2="746" stroke="#DEE2E6"/>
+<g id="Icona-Davide-Longo" transform="translate(752 762) scale(1.15)" fill="none" stroke="#6C757D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="782" y="777" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Davide Longo</text>
+<g id="Patente-Davide-Longo"><rect x="980" y="760" width="134.60000000000002" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Patente-Davide-Longo-icona" transform="translate(988 764) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1008" y="776.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Ha una patente</text>
+</g>
+<g id="Sposta-Davide-Longo"><rect x="1196" y="757" width="112" height="30" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<g id="Sposta-Davide-Longo-icona" transform="translate(1219.4 765.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5 H13 M10 2 L13 5 L10 8 M14 11 H3 M6 8 L3 11 L6 14"/></g>
+<text x="1241.4" y="777.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Sposta</text>
+</g>
+<g id="Rimuovi-Davide-Longo" transform="translate(1340 764) scale(1)" fill="none" stroke="#212529" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
+</g>
+</g>
+<rect id="Sfondo-oscurato" width="1440" height="900" fill="#000000" fill-opacity="0.5"/>
+<g id="Finestra-elimina">
+<rect x="440" y="204" width="560" height="450" rx="8" fill="#000000" fill-opacity="0.12"/>
+<rect x="440" y="200" width="560" height="450" rx="8" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="472" y="248" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#212529" text-anchor="start">Eliminare Team 2?</text>
+<g id="Chiudi-X" transform="translate(952 232) scale(1)" fill="none" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
+<text x="472" y="274" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">L'operazione non cancella le persone: restano in anagrafica.</text>
+<line x1="440" y1="294" x2="1000" y2="294" stroke="#DEE2E6"/>
+<rect x="472" y="320" width="496" height="64" rx="6" fill="#FFF3CD"/>
+<g id="Conseguenza-icona-320" transform="translate(488 340) scale(1.1)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="518" y="347" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#664D03" text-anchor="start">6 membri resteranno senza team</text>
+<text x="518" y="369" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">Compariranno in cima al dropdown e in Gestione utenti.</text>
+<rect x="472" y="396" width="496" height="64" rx="6" fill="#FFF3CD"/>
+<g id="Conseguenza-icona-396" transform="translate(488 416) scale(1.1)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="518" y="423" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#664D03" text-anchor="start">Il Team 2 gestisce Barca A (17 – 20 nov)</text>
+<text x="518" y="445" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">La barca resterà senza team assegnato.</text>
+<rect x="472" y="472" width="496" height="64" rx="6" fill="#FFF3CD"/>
+<g id="Conseguenza-icona-472" transform="translate(488 492) scale(1.1)" fill="none" stroke="#664D03" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="518" y="499" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#664D03" text-anchor="start">3 slot assegnati nella pagina 2.0</text>
+<text x="518" y="521" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#664D03" text-anchor="start">Verranno liberati.</text>
+<line x1="440" y1="568" x2="1000" y2="568" stroke="#DEE2E6"/>
+<g id="Pulsante-elimina-conferma"><rect x="818" y="584" width="150" height="40" rx="6" fill="#DC3545" stroke="#DC3545"/>
+<g id="Pulsante-elimina-conferma-icona" transform="translate(838.8 597.0) scale(0.875)" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4 H13.5 M6 4 V2.5 H10 V4 M4 4 L4.8 14 H11.2 L12 4 M6.5 7 V11.5 M9.5 7 V11.5"/></g>
+<text x="860.8" y="609.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start">Elimina team</text>
+</g>
+<g id="Pulsante-annulla"><rect x="700" y="584" width="110" height="40" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
+<text x="755.0" y="609.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="middle">Annulla</text>
+</g>
+</g>
+</svg>
