@@ -1,0 +1,16 @@
+# Fine riga: nel repository sempre LF, anche su Windows
+* text=auto eol=lf
+
+# File binari: mai toccati
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+
+# Script Windows che richiedono CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
