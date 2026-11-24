@@ -16,10 +16,12 @@ Partito dal template del docente [onitsmart/Unibo-Template](https://github.com/o
 ## Avvio
 
 ```bash
-cd src
-dotnet build PortPlanner.sln
-dotnet run --project PortPlanner.Web
+cd src/PortPlanner.Web
+npm install
+dotnet run
 ```
+
+`npm install` è obbligatorio: `Startup.cs` serve `node_modules/` come file provider e senza la cartella l'app non parte.
 
 App su `http://localhost:5178`. Login di esempio dal seed del template: `email1@test.it` / `Prova`.
 
