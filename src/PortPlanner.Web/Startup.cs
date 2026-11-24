@@ -112,7 +112,6 @@ namespace PortPlanner.Web
                 // ROUTING PER HUB
                 endpoints.MapHub<PortPlannerHub>("/templateHub");
 
-                endpoints.MapAreaControllerRoute("Example", "Example", "Example/{controller=Users}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute("default", "{controller=Login}/{action=Login}");
             });
         }

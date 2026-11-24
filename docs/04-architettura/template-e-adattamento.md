@@ -6,7 +6,7 @@ Il codice parte dal template fornito dal docente, [onitsmart/Unibo-Template](htt
 
 - `dotnet build src/PortPlanner.sln` compila senza errori (warning `NU1903` su `System.Linq.Dynamic.Core` 1.5.0, vulnerabilità nota di gravità alta).
 - **`npm install` è obbligatorio** in `src/PortPlanner.Web`: senza `node_modules/` l'app va in errore all'avvio (`DirectoryNotFoundException`), perché `Startup.cs` serve quella cartella come file provider.
-- Dopo `npm install` l'app parte su `http://localhost:5178`; il login del seed (`email1@test.it` / `Prova`) porta a `/Example` con la lista dei tre utenti.
+- Dopo `npm install` l'app parte su `http://localhost:5178`; il login del seed (`email1@test.it` / `Prova`) porta a `/Dashboard/Index`.
 
 Non verificato: avvio su un clone pulito di un altro computer, rigenerazione di TypeScript/SCSS/bundle fuori da Visual Studio.
 
@@ -38,7 +38,7 @@ Le view stanno in `Areas/{area}/{controller}/` e `Features/{controller}/`, non n
 3. **SG4MVC beta:** se il build fallisce con errori su `MVC.*`, guardare prima lì.
 4. **Password:** SHA-256 senza sale, adatto solo alla demo.
 5. **.NET 8** è fuori supporto dal 10/11/2026: non si migra a .NET 10 senza un motivo.
-6. Da sostituire nel template: logo Onit, titolo "OnModuli", area `Example/Users`.
+6. Pulizia già fatta: tolti logo Onit e titolo "OnModuli" (ora barra con nome PortPlanner), eliminata l'area `Example/Users` (resta consultabile nel repository del docente), aggiunta una pagina `Dashboard` provvisoria come destinazione del login, aggiornato `System.Linq.Dynamic.Core` alla 1.7.4 (nessun avviso di vulnerabilità). Rimossi dal `.csproj` anche i riferimenti `DtsGenerator` dell'esempio: per un nuovo ViewModel che serve a TypeScript vanno ricreati copiandoli dal template.
 
 ## Piano di adattamento
 
@@ -75,14 +75,14 @@ Il template ha un solo livello (`[Authorize]`). Servono i profili **Supervisore*
 | Live page e griglia della home (supervisore, capogruppo) | nuova Area `Supervisore` / `Capogruppo` | MVC + Vue |
 | Pianificazione, dettaglio barca e giorno (2.0), gestione team slot (2.1) | Area `Supervisore` | MVC + Vue (drag & drop) |
 | Dettaglio totale barca (3.0, modal) | Area `Supervisore` e `Capogruppo` | MVC + Vue |
-| Gestione team, gestione utenti, dettaglio utente | Area `Supervisore`, parte da `Example/Users` (Index + Edit) | MVC |
+| Gestione team, gestione utenti, dettaglio utente | Area `Supervisore`, parte dall'esempio Users del template (Index + Edit) | MVC |
 | Richieste, avvisi | Aree `Supervisore` e `Capogruppo` | MVC |
 | Turni, disponibilità, profilo, notifiche del dipendente | Area `Dipendente`, layout mobile | MVC responsive |
 | Live page che si aggiorna da sola, avvisi in tempo reale | `PortPlannerHub` + `IPublishDomainEvents` | SignalR, se deciso |
 
 ## Ordine di lavoro suggerito
 
-1. Pulizia del template (logo, titolo, area `Example`).
+1. ~~Pulizia del template~~ (fatta).
 2. Entità del Core e seed con dati inventati coerenti con il prototipo.
 3. Login con i tre profili.
 4. Servizio di validazione con test.

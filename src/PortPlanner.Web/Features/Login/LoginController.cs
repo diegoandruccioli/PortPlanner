@@ -46,7 +46,7 @@ namespace PortPlanner.Web.Features.Login
             if (string.IsNullOrWhiteSpace(returnUrl) == false)
                 return Redirect(returnUrl);
 
-            return RedirectToAction(MVC.Example.Users.Index());
+            return RedirectToAction(MVC.Dashboard.Index());
         }
 
         [HttpGet]
@@ -57,7 +57,7 @@ namespace PortPlanner.Web.Features.Login
                 if (string.IsNullOrWhiteSpace(returnUrl) == false)
                     return Redirect(returnUrl);
 
-                return RedirectToAction(MVC.Example.Users.Index());
+                return RedirectToAction(MVC.Dashboard.Index());
             }
 
             var model = new LoginViewModel
