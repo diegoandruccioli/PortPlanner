@@ -408,6 +408,7 @@ Pagine SVG 141–152.
 
 Da chiudere col gruppo o col docente; fino ad allora vale quanto scritto sopra.
 
+- **Stato "In scadenza" della patente:** le specifiche descrivono due stati (Valida / Scaduta), ma i filtri avvisi parlano di "patente scaduta o in scadenza". Il modello ha tre stati, con soglia di 30 giorni ([modello-dati.md](<../04-architettura/modello-dati.md>), D11); pill, ordinamento dei dropdown e prototipo vanno completati con il terzo stato quando si fanno le schermate.
 - **Chi registra la malattia:** il cliente non l'ha detto; nel progetto la registra il supervisore (sezione "Assenze").
 - **Preferenze di slot per entrambi i contratti:** decisione del gruppo, in contrasto con la risposta del cliente "niente preferenze"; da confermare col docente.
 - **Disponibilità di un chiamato modificabile dal supervisore** (modalità Modifica del Dettaglio utente): riconciliazione di due risposte del cliente, da confermare.
