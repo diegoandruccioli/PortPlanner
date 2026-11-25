@@ -111,12 +111,6 @@ namespace PortPlanner.Services
                 .HasForeignKey(s => s.BarcaId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<SlotNonLavorativo>()
-                .HasOne(s => s.Team)
-                .WithMany()
-                .HasForeignKey(s => s.TeamId)
-                .OnDelete(DeleteBehavior.Restrict);
-
             modelBuilder.Entity<AssegnazionePersona>()
                 .HasOne(p => p.AssegnazioneTeam)
                 .WithMany(a => a.Persone)

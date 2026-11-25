@@ -23,6 +23,7 @@ Analisi del modello di dominio del Core (`src/PortPlanner`). Parte dalle [specif
 | D15 | Al login il cookie contiene i claim `Profilo`, `DipendenteId` e `TeamId` (se esiste). Se cambia il capogruppo serve un nuovo accesso. |
 | D16 | Il seed ha cinque barche (D ed E arrivano dopo 7 giorni), nessuno storico, e la griglia del Team 2 su Barca A identica alle specifiche. |
 | D17 | `DataGenerator.Initialize(context, oggi)` riceve la data: l'app passa quella di sistema, i test una fissa. |
+| D18 | `SlotNonLavorativo` appartiene alla barca, non a un team: la chiave è barca, data e slot. Cambiando il team gestore i blocchi restano; un'assegnazione del supervisore in uno slot bloccato vince e il blocco resta. |
 
 ## Il database in memoria non fa rispettare i vincoli
 
@@ -74,7 +75,11 @@ La password è SHA-256 senza sale, come nel template: va bene solo per la demo.
 - L'assegnazione imposta dal supervisore prevale su quella del capogruppo e non si contesta.
 - Lo stesso team può lavorare nello stesso slot su siti diversi, con persone diverse.
 
-**`SlotNonLavorativo`**: `BarcaId`, `Data`, `Slot`, `TeamId`. Slot o giorno in cui il team non deve lavorare, deciso dal supervisore (3.0 per il team gestore, 2.0 dal menu dello slot). Non ha un `Id`: la chiave è l'insieme di barca, data, slot e team; un giorno bloccato sono quattro righe.
+**`SlotNonLavorativo`**: `BarcaId`, `Data`, `Slot`. Slot di una barca in cui il team gestore non deve lavorare, deciso dal supervisore (3.0 per il team gestore, 2.0 dal menu dello slot). Non ha un `Id` né un team: la chiave è l'insieme di barca, data e slot (D18).
+- Un giorno bloccato sono quattro righe, una per slot; "Ripristina giorno" le toglie.
+- Il blocco appartiene alla barca: se cambia il team gestore, i blocchi restano.
+- Il capogruppo gestore non può scegliere uno slot bloccato, ma pianifica liberamente gli altri.
+- Il supervisore può comunque inserire un team (anche diverso dal gestore) in uno slot bloccato con una `AssegnazioneTeam` di origine `Supervisore`: l'assegnazione puntuale vince e la riga di blocco resta. Se l'inserimento viene tolto, lo slot torna bloccato.
 
 **`AssegnazionePersona`** (livello 2.1): `Id`, `AssegnazioneTeamId`, `DipendenteId`, `Ruolo`, `NonSvolto` (il supervisore segna un turno passato come non lavorato).
 - La stessa persona non può stare in due siti nello stesso slot: è un blocco vero, da controllare nel servizio.
