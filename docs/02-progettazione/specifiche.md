@@ -4,7 +4,7 @@
 
 ## 1. Contesto, ruoli e regole di dominio
 
-PortPlanner è l'app con cui tre ruoli pianificano e consultano i turni di lavoro di un porto: il supervisore assegna i team alle barche, il capogruppo organizza il proprio team, il dipendente vede quando lavora. Il documento descrive ogni pagina, ogni stato e ogni collegamento del prototipo (bozze SVG 01–152), così da poterlo ridisegnare in Figma e sviluppare in ASP.NET Core MVC con Bootstrap 5.
+PortPlanner è l'app con cui tre ruoli pianificano e consultano i turni di lavoro di un porto: il supervisore assegna i team alle barche, il capogruppo organizza il proprio team, il dipendente vede quando lavora. Il documento descrive ogni pagina, ogni stato e ogni collegamento del prototipo (bozze SVG 01–152), così da poterlo sviluppare in ASP.NET Core MVC con Bootstrap 5.
 
 **Progetto:** caso 3 "Pianificazione turni porto", Laboratorio di Interfaccia Uomo-Macchina (UniBo Cesena, prof. Andrea Bianchi). Gruppo: Diego Andruccioli, Rei Mici, Giovanni Morelli.
 
@@ -46,7 +46,7 @@ Tutte le pagine usano lo stesso linguaggio visivo (Bootstrap 5 UI Kit personaliz
 | Voce | Scelta |
 | --- | --- |
 | Frame | Desktop 1440×900 (supervisore, capogruppo), Mobile 390×844 (dipendente) |
-| Font | Inter in Figma (font di sistema Bootstrap in codice); scala Bootstrap, testo 16 px, tabelle 14 px, pesi 400 e 700 |
+| Font | Inter nelle bozze e nel prototipo (font di sistema Bootstrap in codice); scala Bootstrap, testo 16 px, tabelle 14 px, pesi 400 e 700 |
 | Colore primario | #0D6EFD; neutri = grigi Bootstrap; team senza colore proprio |
 | Colori di stato | ok #198754, avviso #FFC107, errore #DC3545, info #0DCAF0 |
 | Forme e griglia | Raggio 6 px, griglia 12 colonne con gutter 24 px, spaziature multiple di 4 e 8 px |
@@ -459,11 +459,11 @@ La richiesta resta "Inviata" finché il capogruppo del team della persona accett
 
 ## 7. Collegamenti del prototipo, punti aperti e glossario
 
-Il prototipo cliccabile ([prototipo.html](<../03-mockup/prototipo.html>)) ha 151 pagine e 1166 zone cliccabili, tutte verificate con un test automatico. La tabella riassume i collegamenti per ruolo; "Tipo in Figma" indica come ricrearli.
+Il prototipo cliccabile ([prototipo.html](<../03-mockup/prototipo.html>)) ha 151 pagine e 1166 zone cliccabili, tutte verificate con un test automatico. La tabella riassume i collegamenti per ruolo; "Tipo" indica il comportamento del collegamento (apre una finestra, naviga, cambia variante).
 
 ### 7.1 Tabella dei collegamenti
 
-| Ruolo | Da | Elemento | A | Tipo in Figma |
+| Ruolo | Da | Elemento | A | Tipo di collegamento |
 | --- | --- | --- | --- | --- |
 | Supervisore | Home | Card barca in Vista Live | Maschera Live sito | Open overlay |
 | Supervisore | Home, Pianificazione | Cella della griglia | Pagina 2.0 | Navigate to |
@@ -527,7 +527,7 @@ Il prototipo cliccabile ([prototipo.html](<../03-mockup/prototipo.html>)) ha 151
 - **Notifiche, filtri e scadenza delle richieste** risolti (3.7, 4.4, 4.5), insieme alle notifiche al dipendente (5.7) e al riepilogo ore (3.11). Assenze (ferie, permessi, malattia) fatte: vedi 3.12, 5.8 e 6.8. Cambio contratto fatto: vedi 3.13. Vincoli dei chiamati fatti: vedi 3.14.
 - **Capogruppo assente:** deciso, nessun sostituto; richieste e avvisi passano al supervisore (vedi 3.15).
 - **Non necessari (deciso):** login e scelta del ruolo, versioni tablet e mobile degli altri ruoli.
-- **Da fare:** passaggio in Figma (importare gli SVG, componenti con variants e Auto Layout, icone Font Awesome, collegamenti di prototipo a mano con la tabella 7.1).
+- **Fuori ambito:** mockup in Figma. Il docente ha stabilito che il prototipo cliccabile lo sostituisce.
 
 ### 7.3 Glossario
 

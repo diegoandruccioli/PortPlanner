@@ -27,4 +27,4 @@ App su `http://localhost:5178`. Login di esempio dal seed del template: `email1@
 
 ## Stato
 
-Template rinominato e compilato; dominio, ruoli (Supervisore / Capogruppo / Dipendente) e schermate ancora da implementare dopo i mockup Figma.
+Template rinominato e compilato; dominio, ruoli (Supervisore / Capogruppo / Dipendente) e schermate ancora da implementare seguendo il prototipo in `docs/03-mockup/`.
