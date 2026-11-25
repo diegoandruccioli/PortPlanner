@@ -40,6 +40,18 @@ Le view stanno in `Areas/{area}/{controller}/` e `Features/{controller}/`, non n
 5. **.NET 8** è fuori supporto dal 10/11/2026: non si migra a .NET 10 senza un motivo.
 6. Pulizia già fatta: tolti logo Onit e titolo "OnModuli" (ora barra con nome PortPlanner), eliminata l'area `Example/Users` (resta consultabile nel repository del docente), aggiunta una pagina `Dashboard` provvisoria come destinazione del login, aggiornato `System.Linq.Dynamic.Core` alla 1.7.4 (nessun avviso di vulnerabilità). Rimossi dal `.csproj` anche i riferimenti `DtsGenerator` dell'esempio: per un nuovo ViewModel che serve a TypeScript vanno ricreati copiandoli dal template.
 
+## Librerie front-end
+
+Le librerie sono quelle di `src/PortPlanner.Web/package.json` e si installano con `npm install`: **Bootstrap 5.3.3**, Font Awesome 6.7.1, Vue 2.6.14, SignalR 8.0.7, Toastify 1.12.0, vue-multiselect 2.1.9.
+
+Regole per Bootstrap:
+
+- Si usa **solo il pacchetto npm `bootstrap` 5.3.3**: niente CDN, niente altre versioni, niente altri framework CSS, niente jQuery. Bootstrap-Vue non è compatibile (è per Bootstrap 4).
+- Il CSS si compila da `wwwroot/css/site.scss`, che importa `node_modules/bootstrap/scss/bootstrap.scss`. I colori e le spaziature del progetto si personalizzano nelle variabili di `site.variables.scss`, non modificando i file in `node_modules/` e non con stili sparsi nelle view.
+- Il JavaScript è `bootstrap.bundle.js` (con Popper), già incluso nei bundle da `bundleconfig.json`.
+- L'aspetto è quello del prototipo: primario `#0D6EFD`, raggio 6 px, griglia a 12 colonne, font di sistema Bootstrap. Il prototipo è disegnato in SVG: i componenti vanno realizzati con le classi Bootstrap, senza copiare le misure in pixel.
+- Un cambio di versione di Bootstrap o di una libreria si discute in gruppo e si fa in una PR a parte.
+
 ## Piano di adattamento
 
 ### Entità del Core
