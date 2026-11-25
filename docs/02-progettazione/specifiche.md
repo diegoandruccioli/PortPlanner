@@ -310,7 +310,7 @@ Avviso di esito (bozza 76–77): il capogruppo che ha richiesto una persona trov
 
 ## 5. Ruolo Dipendente (mobile 390×844)
 
-Il dipendente usa il telefono. Ci sono due varianti: **con contratto**, che vede solo quando deve lavorare (giorno e slot), e **a chiamata**, che in più indica la disponibilità ogni settimana; le preferenze di slot, scelte una volta sola, valgono per entrambi. Esempi: Sara Fontana (Operaio, con contratto, Team 2) e Luigi Marini (Muletista, a chiamata, Team 3, capogruppo A. Gallo). I turni sono **solo informativi**: il dipendente non conferma né rifiuta; se ha un problema contatta il capogruppo.
+Il dipendente usa il telefono. Ci sono due varianti: **con contratto**, che vede solo quando deve lavorare (giorno e slot), e **a chiamata**, che in più indica la disponibilità ogni settimana; le preferenze di slot, scelte una volta sola, valgono per entrambi. Esempi: Sara Fontana (Operaio, con contratto, Team 2) e Luigi Marini (Muletista e Operaio, a chiamata, Team 3, capogruppo A. Gallo). I turni sono **solo informativi**: il dipendente non conferma né rifiuta; se ha un problema contatta il capogruppo.
 
 **Navigazione:** barra inferiore. Con contratto: *Turni* e *Profilo*; a chiamata: *Turni*, *Disponibilità* e *Profilo*. Barra superiore con il titolo della pagina, la campanella delle notifiche e l'avatar a iniziali.
 
