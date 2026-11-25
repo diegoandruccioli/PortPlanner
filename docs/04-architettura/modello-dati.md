@@ -22,7 +22,7 @@ Analisi del modello di dominio del Core (`src/PortPlanner`). Parte dalle [specif
 | D14 | `TipoMerce` è un `enum`. |
 | D15 | Al login il cookie contiene i claim `Profilo`, `DipendenteId` e `TeamId` (se esiste). Se cambia il capogruppo serve un nuovo accesso. |
 | D16 | Il seed ha cinque barche (D ed E arrivano dopo 7 giorni), nessuno storico, e la griglia del Team 2 su Barca A identica alle specifiche. |
-| D17 | `DataGenerator.Initialize(context, oggi)` riceve la data: l'app passa quella di sistema, i test una fissa. |
+| D17 | `DataGenerator.Initialize(context, oggi)` riceve la data: l'app passa quella di sistema, i test una fissa. Il seed parte da `Startup` all'avvio, non dal costruttore del `DbContext`, così i test dei modelli partono da un database vuoto. |
 | D18 | `SlotNonLavorativo` appartiene alla barca, non a un team: la chiave è barca, data e slot. Cambiando il team gestore i blocchi restano; un'assegnazione del supervisore in uno slot bloccato vince e il blocco resta. |
 
 ## Il database in memoria non fa rispettare i vincoli
@@ -112,13 +112,13 @@ erDiagram
 
 Date relative a oggi. Contenuto coerente con il prototipo:
 
-- **Utenti:** il supervisore Mario Rossi e un utente per ogni lavoratore. Password di prova uguale per tutti (scritta nel README, solo demo).
-- **Lavoratori:** circa 25, nomi inventati, con i personaggi del prototipo (Anna Conti, Luca Moro, Giorgio Neri, Sara Fontana, Paolo Riva, Luigi Marini a chiamata, Marco Bruno, Marta Pini senza team, Davide Longo). Mix di contratti, ruoli multipli e patenti (valide, scadute, mancanti).
+- **Utenti:** il supervisore Mario Rossi e un utente per ogni lavoratore, con email `nome.cognome@portplanner.it`. Password di prova uguale per tutti, `Prova123` (solo demo; la scriviamo nel README quando il login passa a `Utente`). Fino ad allora il login resta quello del template (`email1@test.it` / `Prova`).
+- **Lavoratori:** 25 (24 in cinque team, più Marta Pini senza team), nomi inventati e telefoni finti (`+39 000 000 01NN`), con i personaggi del prototipo (Anna Conti, Luca Moro, Giorgio Neri, Sara Fontana, Paolo Riva, Luigi Marini a chiamata, Marco Bruno, Marta Pini senza team, Davide Longo). Mix di contratti, ruoli multipli e patenti (valide, scadute, mancanti).
 - **Team:** cinque, ognuno con capogruppo (Anna Conti nel Team 2).
 - **Siti e barche:** Sito 1–4. Barca A (Sito 1, oggi + 3 giorni), Barca B (Sito 2, oggi + 4), Barca C (Sito 4, da oggi + 3 a oggi + 6), Barca D ed E dopo 7 giorni, Sito 3 libero oggi. Il Team 2 gestisce la Barca A. Nessuno storico: il seed parte da oggi (D16).
-- **Griglia di Barca A:** i 16 slot del Team 2 riproducono la tabella "Dati canonici" delle specifiche dettagliate.
-- **Anomalie di anagrafica:** una patente scaduta (Giorgio Neri), una in scadenza, un contratto scaduto, uno non ancora iniziato, Luigi Marini a chiamata, Marta Pini senza team.
-- **Assegnazioni:** alcune imposte dal supervisore, alcune scelte dal capogruppo, qualche slot non lavorativo, e almeno un caso utile alle anomalie (patente scaduta, riposo breve).
+- **Griglia di Barca A:** la griglia 4 giorni per 4 slot riproduce la tabella "Dati canonici" delle specifiche dettagliate: 7 assegnazioni (4 del supervisore, 3 scelte dal capogruppo del Team 2), 5 slot non lavorativi, gli altri da scegliere. Giorgio Neri lavora 12 ore di fila venerdì; Luigi Marini lavora mercoledì su A, venerdì su B e lunedì su C.
+- **Anomalie di anagrafica:** una patente scaduta (Giorgio Neri, muletto), una in scadenza (Valentina Testa, gru), un contratto scaduto (Andrea Pellegrini), uno non ancora iniziato (Laura Basile), Luigi Marini a chiamata, Marta Pini senza team. La patente di Luigi Marini scade tra 45 giorni, così resta "valida" come nel prototipo.
+- **Assegnazioni:** in tutto 24 slot assegnati con 77 persone, alcune imposte dal supervisore, alcune scelte dal capogruppo, 10 slot non lavorativi e quattro casi per le anomalie: ruolo senza patente (Carlo Fiore gruista senza patente, Giorgio Neri muletista con patente scaduta), riposo breve (Marco Bruno, 18–24 e poi 0–6), contratto scaduto assegnato (Andrea Pellegrini), persona senza team (Marta Pini) e persona di un altro team (Luca Moro nel Team 5).
 
 Il test sul seed verifica: un solo team per slot, nessuna persona in due siti nello stesso slot, ogni capogruppo è membro del suo team, barche senza sovrapposizioni sullo stesso sito.
 
