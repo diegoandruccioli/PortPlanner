@@ -5,7 +5,7 @@ using PortPlanner.Services;
 
 namespace PortPlanner.Infrastructure
 {
-    public class DataGenerator
+    public partial class DataGenerator
     {
         public static void InitializeUsers(PortPlannerDbContext context)
         {

@@ -1,5 +1,4 @@
-﻿using PortPlanner.Infrastructure;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using PortPlanner.Domain;
 using PortPlanner.Services.Shared;
 
@@ -11,9 +10,10 @@ namespace PortPlanner.Services
         {
         }
 
+        // Il costruttore non semina più il database: lo fa Startup all'avvio (DataGenerator.Initialize),
+        // così i test partono da un database vuoto e quelli sul seed scelgono la data di "oggi".
         public PortPlannerDbContext(DbContextOptions<PortPlannerDbContext> options) : base(options)
         {
-            DataGenerator.InitializeUsers(this);
         }
 
         // User è quello del template: resta finché il login non passa a Utente (PR sul login).
