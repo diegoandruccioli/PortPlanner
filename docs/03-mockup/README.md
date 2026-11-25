@@ -2,12 +2,11 @@
 
 Qui c'è tutto ciò che descrive l'interfaccia prima dell'implementazione.
 
-- **Mockup in Figma:** _link da inserire_ (file condiviso del gruppo)
-- **Prototipo cliccabile:** [prototipo.html](prototipo.html)
+- **Prototipo cliccabile:** [prototipo.html](prototipo.html) (è il mockup di riferimento)
 - **Bozze delle schermate:** cartella [svg/](svg/), una immagine per schermata o stato
 - **Cosa fa ogni schermata e quali regole segue:** [specifiche-dettagliate.md](../02-progettazione/specifiche-dettagliate.md)
 
-Le bozze SVG e il prototipo sono il lavoro preparatorio fatto per decidere schermate, componenti e navigazione. Il mockup finale è il file Figma: se i due non coincidono, vale Figma.
+Il prototipo e le bozze SVG sono il mockup del progetto: il docente ha stabilito che possono essere usati al posto di un file Figma. Se prototipo e bozze non coincidono, vale il prototipo; se il prototipo e le specifiche non coincidono, vale [specifiche-dettagliate.md](../02-progettazione/specifiche-dettagliate.md).
 
 ## Come aprire il prototipo
 

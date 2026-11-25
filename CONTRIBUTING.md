@@ -54,10 +54,10 @@ Prima di aprire la PR controlla:
 
 ## Mockup e specifiche vengono prima del codice
 
-Il corso richiede che le parti principali siano progettate in Figma e poi implementate in modo coerente. Quindi:
+Il corso richiede che le parti principali siano progettate con un mockup e poi implementate in modo coerente. Per noi il mockup è il prototipo cliccabile in `docs/03-mockup/`: il docente ha accettato di usarlo al posto di Figma. Quindi:
 
 - Per ogni schermata si parte da [docs/02-progettazione/specifiche-dettagliate.md](docs/02-progettazione/specifiche-dettagliate.md) e dal mockup in [docs/03-mockup](docs/03-mockup/README.md).
-- Se il codice deve discostarsi dal mockup, si cambia **prima** il mockup (o si annota il motivo nella PR) e poi il codice.
+- Se il codice deve discostarsi dal mockup, si annota il motivo nella PR e si aggiornano le specifiche in `docs/02-progettazione/` nella stessa PR.
 - Se le specifiche si contraddicono o mancano, non si inventa: si aggiunge una riga in "Punti aperti" e si chiede al gruppo.
 
 ## Regole del progetto in breve

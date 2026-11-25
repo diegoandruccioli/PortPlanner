@@ -11,7 +11,7 @@
 | Voce | Scelta |
 |---|---|
 | Base componenti | Bootstrap 5 UI Kit (community), personalizzato |
-| Font | Font di sistema Bootstrap (`system-ui`) in codice; **Inter** in Figma come sostituto |
+| Font | Font di sistema Bootstrap (`system-ui`) in codice; **Inter** nelle bozze e nel prototipo come sostituto |
 | Scala tipografica | Bootstrap standard: H1 40, H2 32, H3 28, H4 24, H5 20, H6 16, testo 16 px; testo di tabelle e griglia 14 px (small) |
 | Pesi | Regular 400 + Bold 700 |
 | Frame | Desktop 1440×900, Tablet 1024×768, Mobile 390×844 |
@@ -182,7 +182,7 @@ Pagine SVG 138–140 (più badge in 01, 11, 23 e nel calendario assenze 115/122)
 
 Raggiunta dal click su una card barca in Vista Live. Bozze: [04 con team](<../03-mockup/svg/04-maschera-1-live-sito-con-team-1440x900.svg>) · [05 slot vuoto](<../03-mockup/svg/05-maschera-1-live-sito-slot-vuoto-1440x900.svg>).
 
-- **Forma:** modal Bootstrap centrato (640 px) sopra la home oscurata (Open overlay in Figma). Si chiude con la X (Close overlay).
+- **Forma:** modal Bootstrap centrato (640 px) sopra la home oscurata (overlay). Si chiude con la X (Close overlay).
 - **Intestazione:** "Sito X · Barca Y", riga con orologio e slot orario attuale ("Slot 6 – 12 · adesso 09:30"), X in alto a destra. Nessun badge "Sola visualizzazione" (non scelto).
 - **Contenuto con team:** nome team, badge "Anomalia" se presente, capogruppo e n. membri, avviso giallo con il testo specifico, operai divisi per ruolo (Gruisti, Mulettisti, Operai) con numero; persona con anomalia segnata con icona + testo.
 - **Slot senza team:** icona, "Nessun team assegnato in questo slot" e riga "Prossimo: slot 18 – 24 · Team 3".
@@ -207,7 +207,7 @@ Corrisponde al punto "2" del doc. Bozza: [02-pagina-2-0-dettaglio-barca-giorno-1
 - **Intestazione:** link "← Home", titolo "Barca X · Sito Y", data con frecce ← → per cambiare giorno.
 - **Regola: un solo team per slot orario.** Più team nella stessa giornata significa team in slot diversi. Se si trascina un team su uno slot già occupato, **l'app chiede conferma** con una finestra (modal 520 px): titolo "Sostituire il team nello slot 6 – 12?", sottotitolo con barca, sito e data, riquadro "Team attuale" (con eventuale badge Anomalia), freccia, riquadro "Nuovo team", avviso "Le persone di Team 2 in questo slot verranno tolte.", pulsanti "Annulla" (outline) e "Sostituisci" (primario); X in alto. Dopo la conferma compare il toast "Team 3 assegnato allo slot 6 – 12" con Annulla. Bozze: [16 conferma](<../03-mockup/svg/16-conferma-sostituzione-team-slot-occupato-1440x900.svg>) · [17 dopo la sostituzione](<../03-mockup/svg/17-pagina-2-0-team-sostituito-toast-1440x900.svg>).
 - **Slot:** riga con ora a sinistra e la card del team a destra; vuoto = area tratteggiata "Trascina qui un team"; ogni slot ha un menu ⋯ (tra le voci: "Segna non lavorativo per un team").
-- File affiancato per Figma: [03-home-e-pagina-2-0-affiancate.svg](<../03-mockup/svg/03-home-e-pagina-2-0-affiancate.svg>). Prototipo cliccabile: [prototipo.html](<../03-mockup/prototipo.html>).
+- File affiancato: [03-home-e-pagina-2-0-affiancate.svg](<../03-mockup/svg/03-home-e-pagina-2-0-affiancate.svg>). Prototipo cliccabile: [prototipo.html](<../03-mockup/prototipo.html>).
 - **Card team nello slot:** maniglia, nome, capogruppo · n. membri, badge "Anomalia" (se c'è), etichetta "Anche su Sito 2" (se lo stesso team è nello stesso slot su un altro sito), chevron, pulsante X per rimuovere.
 - **Regola di dominio:** un team **può lavorare nello stesso slot su più siti, con persone diverse**. I team della lista non vengono mai bloccati dopo l'assegnazione; la divisione delle persone si fa nella 2.1.
 - **Slot non lavorativo (funzione vera):** il supervisore segna per un team gli slot in cui NON lavora (dal menu ⋯ dello slot). Aspetto: riga grigia a righe + icona `fa-ban` + testo "Team 1 non lavora in questo slot". Se si trascina comunque un team in uno slot così: si inserisce con **avviso giallo non bloccante** ("Slot non lavorativo per questo team").
