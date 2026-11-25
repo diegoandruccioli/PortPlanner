@@ -13,6 +13,8 @@ Analisi del modello di dominio del Core (`src/PortPlanner`). Parte dalle [specif
 | D5 | Il contratto ha data di inizio e data di fine (vuota = indeterminato). |
 | D6 | La barca ha anche tipo e quantità di merce. |
 | D7 | Il Core ha un progetto di test xUnit, con un test sul seed. |
+| D8 | `QuantitaMerce` è espressa in tonnellate. |
+| D9 | Tutti gli utenti del seed hanno la stessa password di prova (demo). |
 
 ## Il database in memoria non fa rispettare i vincoli
 
@@ -24,6 +26,7 @@ Analisi del modello di dominio del Core (`src/PortPlanner`). Parte dalle [specif
 - Profilo **Capogruppo**: non è un campo. Un `Dipendente` è capogruppo se compare in `Team.CapogruppoId`.
 - Profilo **Dipendente**: tutti gli altri lavoratori.
 - Il profilo si calcola al login e finisce in un claim; il menu cambia di conseguenza.
+- Il Supervisore accede dalla stessa pagina di login degli altri, con email e password. Non esiste registrazione: gli account nascono dal seed. Dopo il login il claim di profilo lo manda alla sua home e ne abilita solo le pagine (`[Authorize(Roles = ...)]` o policy); un capogruppo o un dipendente che apre un indirizzo del supervisore viene respinto. Il Supervisore non è un lavoratore: non ha turni, non è in nessun team e non può essere capogruppo.
 
 ## Entità
 
@@ -48,7 +51,7 @@ La password è SHA-256 senza sale, come nel template: va bene solo per la demo.
 
 **`Sito`**: `Id`, `Nome`, `Ordine`. Quattro siti fissi, una gru ciascuno.
 
-**`Barca`**: `Id`, `Nome`, `SitoId`, `Arrivo` (data), `Partenza` (data), `TipoMerce`, `QuantitaMerce` (tonnellate, da confermare).
+**`Barca`**: `Id`, `Nome`, `SitoId`, `Arrivo` (data), `Partenza` (data), `TipoMerce`, `QuantitaMerce` (in tonnellate).
 - Una barca sta su un solo sito.
 - Blocchi veri, da controllare nel servizio: la partenza non precede l'arrivo; su un sito la partenza di una barca precede l'arrivo della successiva.
 
@@ -96,7 +99,7 @@ erDiagram
 
 Date relative a oggi. Contenuto coerente con il prototipo:
 
-- **Utenti:** il supervisore Mario Rossi e un utente per ogni lavoratore. Password di prova uguale per tutti (da scrivere nel README, solo demo).
+- **Utenti:** il supervisore Mario Rossi e un utente per ogni lavoratore. Password di prova uguale per tutti (scritta nel README, solo demo).
 - **Lavoratori:** circa 25, nomi inventati, con i personaggi del prototipo (Anna Conti, Luca Moro, Giorgio Neri, Sara Fontana, Paolo Riva, Luigi Marini a chiamata, Marco Bruno, Marta Pini senza team, Davide Longo). Mix di contratti, ruoli multipli e patenti (valide, scadute, mancanti).
 - **Team:** cinque, ognuno con capogruppo (Anna Conti nel Team 2).
 - **Siti e barche:** Sito 1–4. Barca A (Sito 1, oggi + 3 giorni), Barca B (Sito 2), Barca C (Sito 4, nei giorni successivi), Sito 3 libero. Il Team 2 gestisce la Barca A.
@@ -113,8 +116,3 @@ Il test sul seed verifica: un solo team per slot, nessuna persona in due siti ne
 5. Il progetto di test `PortPlanner.Tests` con il test sul seed.
 
 Fuori dalla prima PR: Richiesta, Assenza, Avviso, Notifica, disponibilità e preferenze, servizio di validazione degli avvisi, schermate.
-
-## Da confermare
-
-- Unità e significato di `QuantitaMerce` (tonnellate?).
-- Password del seed uguale per tutti.
