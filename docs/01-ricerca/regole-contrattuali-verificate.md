@@ -1,6 +1,6 @@
 # Regole contrattuali verificate su fonti (19/11/2026)
 
-Verifica delle regole ricevute dal cliente (vedi [domande-risposte-cliente.md](<./domande-risposte-cliente.md#regole-contrattuali-ricevute>)) su legge e CCNL. Tutte le regole restano **avvisi, mai blocchi**; i soli blocchi veri sono quelli già decisi (stessa persona su due siti nella stessa fascia, nave su più siti, partenza dopo l'arrivo della successiva).
+Verifica delle regole ricevute dal cliente (il docente) su legge e CCNL. Tutte le regole restano **avvisi, mai blocchi**; i soli blocchi veri sono quelli già decisi (stessa persona su due siti nella stessa fascia, nave su più siti, partenza dopo l'arrivo della successiva).
 
 ## Fonti consultate
 
