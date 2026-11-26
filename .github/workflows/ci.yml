@@ -1,0 +1,55 @@
+name: CI
+
+# Si esegue a ogni pull request verso main e a ogni push su main.
+# Controlla che il progetto compili senza avvisi, che i test passino e che l'app parta davvero.
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+# Una nuova esecuzione sullo stesso branch annulla quella ancora in corso.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-e-test:
+    name: Build, test e avvio
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Scarica il codice
+        uses: actions/checkout@v7
+
+      - name: Installa .NET 8
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Installa Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: src/PortPlanner.Web/package-lock.json
+
+      # Senza node_modules l'app non parte: Startup lo serve come file provider.
+      - name: Installa i pacchetti npm
+        working-directory: src/PortPlanner.Web
+        run: npm ci
+
+      - name: Compila senza avvisi
+        run: dotnet build src/PortPlanner.sln --configuration Release -warnaserror
+
+      - name: Esegue i test
+        run: dotnet test src/PortPlanner.sln --configuration Release --no-build
+
+      - name: Avvia l'app e prova il login
+        env:
+          CONFIGURAZIONE: Release
+        run: bash .github/scripts/prova-avvio.sh

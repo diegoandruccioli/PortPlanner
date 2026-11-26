@@ -54,13 +54,15 @@ Il lavoro è diviso in issue su GitHub, una per PR piccola.
 1. Apri la PR verso `main` quando il lavoro è pronto (o come bozza, se vuoi un parere prima). Il modulo si compila da solo: segui la lista.
 2. Descrivi in due righe cosa cambia e quale schermata o regola delle specifiche implementa, e scrivi `Chiude #numero`.
 3. **Ogni PR la guarda un altro del gruppo** prima del merge, anche se GitHub non lo impone: così tutti conosciamo il codice degli altri, e all'orale ognuno sa spiegare tutto il progetto. Chi rivede prova l'app, non si limita a leggere.
-4. Merge con **squash**. Il titolo del commit di squash si scrive a mano: `<tipo>: <riassunto> (#numero)`, corpo vuoto. Poi si cancella il branch.
-5. PR piccole: se supera qualche centinaio di righe di codice, valuta di spezzarla.
+4. **La CI deve essere verde.** A ogni PR GitHub esegue da solo build senza avvisi, test e un avvio dell'app con il login dei tre profili (`.github/workflows/ci.yml`). Se è rossa, si guarda il log nella scheda Checks della PR e si corregge prima di chiedere la revisione.
+5. Merge con **squash**. Il titolo del commit di squash si scrive a mano: `<tipo>: <riassunto> (#numero)`, corpo vuoto. Il branch si cancella da solo al merge; in locale si pulisce con `git fetch --prune` e `git branch -d <nome>`.
+6. PR piccole: se supera qualche centinaio di righe di codice, valuta di spezzarla.
 
 Prima di aprire la PR controlla:
 
 - [ ] `dotnet build src/PortPlanner.sln` senza errori né avvisi
 - [ ] `dotnet test` verde, con test dove c'è logica
+- [ ] `bash .github/scripts/prova-avvio.sh` (dopo `npm install` e la build): è lo stesso controllo di avvio che fa la CI
 - [ ] l'app parte e la schermata funziona nel browser, col profilo giusto
 - [ ] la schermata corrisponde al mockup (vedi sotto)
 - [ ] se hai cambiato una regola di dominio, hai aggiornato `docs/` nella stessa PR
