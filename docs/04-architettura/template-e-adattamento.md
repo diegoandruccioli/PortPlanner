@@ -6,7 +6,7 @@ Il codice parte dal template fornito dal docente, [onitsmart/Unibo-Template](htt
 
 - `dotnet build src/PortPlanner.sln` compila senza errori (warning `NU1903` su `System.Linq.Dynamic.Core` 1.5.0, vulnerabilità nota di gravità alta).
 - **`npm install` è obbligatorio** in `src/PortPlanner.Web`: senza `node_modules/` l'app va in errore all'avvio (`DirectoryNotFoundException`), perché `Startup.cs` serve quella cartella come file provider.
-- Dopo `npm install` l'app parte su `http://localhost:5178`; il login del seed (`email1@test.it` / `Prova`) porta a `/Dashboard/Index`.
+- Dopo `npm install` l'app parte su `http://localhost:5178`; il login del seed del progetto (`mario.rossi@portplanner.it` / `Prova123`) porta a `/Dashboard/Index`. Gli utenti `email1@test.it` del template non esistono più.
 
 Non verificato: avvio su un clone pulito di un altro computer, rigenerazione di TypeScript/SCSS/bundle fuori da Visual Studio.
 

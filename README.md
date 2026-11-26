@@ -23,8 +23,18 @@ dotnet run
 
 `npm install` è obbligatorio: `Startup.cs` serve `node_modules/` come file provider e senza la cartella l'app non parte.
 
-App su `http://localhost:5178`. Login di esempio dal seed del template: `email1@test.it` / `Prova`.
+App su `http://localhost:5178`. La password di prova è la stessa per tutti gli utenti: `Prova123` (solo demo, dati inventati).
+
+| Profilo | Email | Cosa si vede |
+|---|---|---|
+| Supervisore | `mario.rossi@portplanner.it` | non è un lavoratore, nessun team |
+| Capogruppo | `anna.conti@portplanner.it` | capogruppo del Team 2 |
+| Dipendente | `sara.fontana@portplanner.it` | lavoratrice del Team 2 |
+| Dipendente senza team | `marta.pini@portplanner.it` | nessun team |
+| Dipendente a chiamata | `luigi.marini@portplanner.it` | Team 3, contratto a chiamata |
+
+Gli altri utenti seguono lo stesso schema, `nome.cognome@portplanner.it`.
 
 ## Stato
 
-Template rinominato e compilato; dominio, ruoli (Supervisore / Capogruppo / Dipendente) e schermate ancora da implementare seguendo il prototipo in `docs/03-mockup/`.
+Template rinominato e compilato; modello dei dati, dati di esempio e login con i tre profili (Supervisore / Capogruppo / Dipendente) fatti; le schermate sono ancora da implementare seguendo il prototipo in `docs/03-mockup/`.

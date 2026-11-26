@@ -14,7 +14,7 @@ npm install
 dotnet run
 ```
 
-`npm install` è obbligatorio: senza `node_modules/` l'app non parte. Login di prova del template: `email1@test.it` / `Prova`.
+`npm install` è obbligatorio: senza `node_modules/` l'app non parte. Login di prova: `mario.rossi@portplanner.it` / `Prova123` (gli altri utenti sono nel README).
 
 ## Branch
 

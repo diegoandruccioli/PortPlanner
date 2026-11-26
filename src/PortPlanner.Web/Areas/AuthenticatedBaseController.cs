@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using System;
 using System.Linq;
 using System.Security.Claims;
+using PortPlanner.Domain;
 using PortPlanner.Web.Infrastructure;
 
 namespace PortPlanner.Web.Areas
@@ -30,15 +31,15 @@ namespace PortPlanner.Web.Areas
         {
             try
             {
-                if (context.HttpContext != null && context.HttpContext.User != null && context.HttpContext.User.Identity.IsAuthenticated)
+                var identita = LeggiIdentita(context);
+
+                if (identita != null)
                 {
-                    ViewData[IdentitaViewModel.VIEWDATA_IDENTITACORRENTE_KEY] = new IdentitaViewModel
-                    {
-                        EmailUtenteCorrente = context.HttpContext.User.Claims.Where(x => x.Type == ClaimTypes.Email).First().Value
-                    };
+                    ViewData[IdentitaViewModel.VIEWDATA_IDENTITACORRENTE_KEY] = identita;
                 }
                 else
                 {
+                    // Nessun accesso valido, oppure un cookie vecchio senza il profilo: si torna al login.
                     HttpContext.SignOutAsync();
                     this.SignOut();
 
@@ -52,6 +53,32 @@ namespace PortPlanner.Web.Areas
             {
                 throw;
             }
+        }
+
+        // Ricostruisce l'identità dai claim del cookie. Se manca qualcosa d'essenziale restituisce null.
+        private static IdentitaViewModel LeggiIdentita(ActionExecutingContext context)
+        {
+            var utente = context.HttpContext?.User;
+
+            if (utente == null || utente.Identity.IsAuthenticated == false)
+                return null;
+
+            string Claim(string tipo) => utente.Claims.FirstOrDefault(x => x.Type == tipo)?.Value;
+
+            var email = Claim(ClaimTypes.Email);
+            var nome = Claim(ClaimTypes.Name);
+
+            if (email == null || nome == null || Enum.TryParse<Profilo>(Claim(ClaimTypes.Role), out var profilo) == false)
+                return null;
+
+            return new IdentitaViewModel
+            {
+                EmailUtenteCorrente = email,
+                NomeCompleto = nome,
+                Profilo = profilo,
+                DipendenteId = Guid.TryParse(Claim(PortPlannerClaims.DipendenteId), out var dipendenteId) ? dipendenteId : null,
+                TeamId = Guid.TryParse(Claim(PortPlannerClaims.TeamId), out var teamId) ? teamId : null,
+            };
         }
     }
 }
