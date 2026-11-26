@@ -38,19 +38,41 @@ docs: aggiorna specifiche del capogruppo
 
 Il corpo del messaggio serve solo se il "perché" non si capisce dalla modifica. Commit piccoli, uno per cambiamento logico.
 
+## Cosa fare e in che ordine: le issue
+
+Il lavoro è diviso in issue su GitHub, una per PR piccola.
+
+- Ogni issue ha un **assegnatario**, una **milestone** (la fase, in ordine: 1, 2, 3, 4), una stima in punti e l'elenco delle **dipendenze**. Si lavora sulle proprie, dalla milestone più bassa.
+- Per vedere le proprie: `is:open assignee:<tuo-utente>` nella pagina Issues. L'avanzamento di ogni fase è in Milestones; la bacheca del progetto mostra lo stato di tutte.
+- Un'issue **bloccata da** un'altra non si inizia dalla parte che dipende dall'altra: si fa il resto (spesso basta un finto del servizio) e si scrive un commento sull'issue. Se un'attesa dura più del previsto, lo si dice al gruppo.
+- Se un'issue è troppo grande o la stima non regge, si spezza o si riassegna: si cambia l'issue, non si lavora fuori dall'elenco.
+- Nella PR si scrive `Chiude #numero`: l'issue si chiude da sola al merge.
+- Quando ci si accorge di un lavoro mancante, si apre una nuova issue invece di aggiungerlo di nascosto a un'altra PR.
+
 ## Pull Request
 
-1. Apri la PR verso `main` quando il lavoro è pronto (o come bozza, se vuoi un parere prima).
-2. Descrivi in due righe cosa cambia e quale schermata o regola delle specifiche implementa.
-3. L'approvazione non è obbligatoria, ma se la modifica è grande o tocca regole di dominio conviene far guardare la PR a un collega.
-4. Merge con **squash**, poi si cancella il branch.
+1. Apri la PR verso `main` quando il lavoro è pronto (o come bozza, se vuoi un parere prima). Il modulo si compila da solo: segui la lista.
+2. Descrivi in due righe cosa cambia e quale schermata o regola delle specifiche implementa, e scrivi `Chiude #numero`.
+3. **Ogni PR la guarda un altro del gruppo** prima del merge, anche se GitHub non lo impone: così tutti conosciamo il codice degli altri, e all'orale ognuno sa spiegare tutto il progetto. Chi rivede prova l'app, non si limita a leggere.
+4. Merge con **squash**. Il titolo del commit di squash si scrive a mano: `<tipo>: <riassunto> (#numero)`, corpo vuoto. Poi si cancella il branch.
+5. PR piccole: se supera qualche centinaio di righe di codice, valuta di spezzarla.
 
 Prima di aprire la PR controlla:
 
-- [ ] `dotnet build src/PortPlanner.sln` senza errori
-- [ ] l'app parte e la schermata funziona nel browser
+- [ ] `dotnet build src/PortPlanner.sln` senza errori né avvisi
+- [ ] `dotnet test` verde, con test dove c'è logica
+- [ ] l'app parte e la schermata funziona nel browser, col profilo giusto
 - [ ] la schermata corrisponde al mockup (vedi sotto)
 - [ ] se hai cambiato una regola di dominio, hai aggiornato `docs/` nella stessa PR
+
+## Convenzioni di codice
+
+- **Commenti:** in italiano, con `//`, a frase compiuta e con il punto finale. Niente tag XML (`///`, `<summary>`, `<param>`): spiegano il perché, non ripetono il nome. I file del template che hanno commenti in inglese si sistemano quando li si tocca per altro, senza una PR apposta.
+- **Nomi:** entità, proprietà ed enum in italiano come nei documenti (`Dipendente`, `Barca`, `Slot.Dalle6Alle12`); terminologia tecnica in inglese come nelle slide (`Controller`, `ViewModel`, `Dependency Injection`).
+- **Un'entità per file**, in `src/PortPlanner/Domain/`; i servizi in `Services/`, con le operazioni come coppie Query o Command e DTO (`Query(qry)`, `Handle(cmd)`).
+- **Il seed** parte da `Startup` (`DataGenerator.Initialize`) con date relative a oggi; i test creano un `DbContext` vuoto e chiamano il seed con una data fissa.
+- **Test:** ogni regola di dominio ha il suo test nel progetto `PortPlanner.Tests`. Il database in memoria non fa rispettare indici né vincoli, quindi le regole (un solo team per slot, una persona su un solo sito per slot, barche che non si sovrappongono) vanno controllate nei servizi e provate. Un test nuovo conviene farlo fallire una volta apposta per essere sicuri che sappia accorgersi del problema.
+- **File toccati da tutti** (`_PortPlannerDbContext.cs`, `Container.cs`, `_Layout.cshtml`, `site.scss`): modifiche brevi e PR rapide, `git pull --rebase origin main` spesso. Se due PR conflittano, chi arriva dopo risolve.
 
 ## Mockup e specifiche vengono prima del codice
 
