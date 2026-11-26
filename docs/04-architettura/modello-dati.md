@@ -34,7 +34,10 @@ Analisi del modello di dominio del Core (`src/PortPlanner`). Parte dalle [specif
 - Profilo **Supervisore**: `Utente.IsSupervisore = true`, nessun `Dipendente`.
 - Profilo **Capogruppo**: non è un campo. Un `Dipendente` è capogruppo se compare in `Team.CapogruppoId`.
 - Profilo **Dipendente**: tutti gli altri lavoratori.
-- Il profilo si calcola al login e finisce in un claim; il menu cambia di conseguenza.
+- Il profilo si calcola al login (`CheckLoginCredentialsQuery`, enum `Profilo`) e finisce nel cookie: `ClaimTypes.Role` contiene il profilo, più `ClaimTypes.Name` (nome e cognome), `PortPlanner.DipendenteId` e `PortPlanner.TeamId` (assenti per chi non li ha). Il menu cambia di conseguenza.
+- Se cambia il capogruppo o il team di una persona, il suo cookie resta com'era finché non rientra (D15). Un cookie senza profilo, come quelli emessi prima di questa regola, porta a un nuovo login.
+- Email e password errate, o un account che non è né supervisore né lavoratore, danno lo stesso messaggio ("Email o password errate"): non si capisce quali email esistono. L'email si confronta senza maiuscole né spazi.
+- Per ora nessuna pagina è riservata a un profilo, quindi `[Authorize(Roles = ...)]` e la pagina "accesso negato" arrivano con la prima schermata protetta.
 - Il Supervisore accede dalla stessa pagina di login degli altri, con email e password. Non esiste registrazione: gli account nascono dal seed. Dopo il login il claim di profilo lo manda alla sua home e ne abilita solo le pagine (`[Authorize(Roles = ...)]` o policy); un capogruppo o un dipendente che apre un indirizzo del supervisore viene respinto. Il Supervisore non è un lavoratore: non ha turni, non è in nessun team e non può essere capogruppo.
 
 ## Entità
@@ -112,7 +115,7 @@ erDiagram
 
 Date relative a oggi. Contenuto coerente con il prototipo:
 
-- **Utenti:** il supervisore Mario Rossi e un utente per ogni lavoratore, con email `nome.cognome@portplanner.it`. Password di prova uguale per tutti, `Prova123` (solo demo; la scriviamo nel README quando il login passa a `Utente`). Fino ad allora il login resta quello del template (`email1@test.it` / `Prova`).
+- **Utenti:** il supervisore Mario Rossi e un utente per ogni lavoratore, con email `nome.cognome@portplanner.it`. Password di prova uguale per tutti, `Prova123` (solo demo, scritta nel README con un account per profilo).
 - **Lavoratori:** 25 (24 in cinque team, più Marta Pini senza team), nomi inventati e telefoni finti (`+39 000 000 01NN`), con i personaggi del prototipo (Anna Conti, Luca Moro, Giorgio Neri, Sara Fontana, Paolo Riva, Luigi Marini a chiamata, Marco Bruno, Marta Pini senza team, Davide Longo). Mix di contratti, ruoli multipli e patenti (valide, scadute, mancanti).
 - **Team:** cinque, ognuno con capogruppo (Anna Conti nel Team 2).
 - **Siti e barche:** Sito 1–4. Barca A (Sito 1, oggi + 3 giorni), Barca B (Sito 2, oggi + 4), Barca C (Sito 4, da oggi + 3 a oggi + 6), Barca D ed E dopo 7 giorni, Sito 3 libero oggi. Il Team 2 gestisce la Barca A. Nessuno storico: il seed parte da oggi (D16).
@@ -126,7 +129,7 @@ Il test sul seed verifica: un solo team per slot, nessuna persona in due siti ne
 
 Cinque PR in sequenza: la successiva parte da `main` dopo il merge della precedente.
 
-1. `feat/dominio-anagrafica`: `Utente`, `Dipendente`, `DipendenteRuolo`, `Patente`, `Team` e i loro `enum`, `PortPlannerDbContext`, progetto `PortPlanner.Tests`. Il vecchio `User` del template resta finché il login non passa a `Utente` (PR 5).
+1. `feat/dominio-anagrafica`: `Utente`, `Dipendente`, `DipendenteRuolo`, `Patente`, `Team` e i loro `enum`, `PortPlannerDbContext`, progetto `PortPlanner.Tests`. Il vecchio `User` del template resta finché il login non passa a `Utente` (PR 5, ora fatta: `User`, le sue query e gli utenti `email1@test.it` sono stati tolti).
 2. `feat/dominio-pianificazione`: `Sito`, `Barca`, `GestioneBarca`, `AssegnazioneTeam`, `SlotNonLavorativo`, `AssegnazionePersona`, `Slot`, `TipoMerce`, `OrigineAssegnazione`.
 3. `feat/seed`: `DataGenerator` con circa 25 lavoratori, 5 team, 4 siti e 5 barche; password di prova nel README.
 4. `test/seed`: i test sul seed (un solo team per slot, nessuna persona in due siti nello stesso slot, ogni capogruppo è membro del suo team, barche senza sovrapposizioni sullo stesso sito).
