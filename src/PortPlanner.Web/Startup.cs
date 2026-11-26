@@ -117,11 +117,10 @@ namespace PortPlanner.Web
                 endpoints.MapControllerRoute("default", "{controller=Login}/{action=Login}");
             });
 
-            // Dati di partenza della demo. Gli utenti del template restano finché il login non passa a Utente.
+            // Dati di partenza della demo.
             using (var scope = app.ApplicationServices.CreateScope())
             {
                 var contesto = scope.ServiceProvider.GetRequiredService<PortPlannerDbContext>();
-                DataGenerator.InitializeUsers(contesto);
                 DataGenerator.Initialize(contesto, DateOnly.FromDateTime(DateTime.Today));
             }
         }

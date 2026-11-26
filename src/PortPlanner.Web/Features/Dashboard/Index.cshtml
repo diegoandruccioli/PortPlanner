@@ -1,7 +1,26 @@
+@using PortPlanner.Web.Areas
 @{
     ViewData["Title"] = "Home";
+    var identita = (IdentitaViewModel)ViewData[IdentitaViewModel.VIEWDATA_IDENTITACORRENTE_KEY];
 }
 <div class="container py-5">
     <h1 class="h3">PortPlanner</h1>
     <p class="text-muted">Pianificazione dei turni di lavoro del porto. Le schermate dei tre profili (supervisore, capogruppo, dipendente) sono in sviluppo.</p>
+
+    @* Riquadro provvisorio: serve a controllare che il login metta nel cookie i dati giusti. Sparisce con le home dei profili. *@
+    <div class="card" style="max-width: 32rem;">
+        <div class="card-header">Accesso</div>
+        <dl class="row mb-0 card-body">
+            <dt class="col-sm-4">Nome</dt>
+            <dd class="col-sm-8">@identita.NomeCompleto</dd>
+            <dt class="col-sm-4">Email</dt>
+            <dd class="col-sm-8">@identita.EmailUtenteCorrente</dd>
+            <dt class="col-sm-4">Profilo</dt>
+            <dd class="col-sm-8">@identita.Profilo</dd>
+            <dt class="col-sm-4">Lavoratore</dt>
+            <dd class="col-sm-8">@(identita.DipendenteId.HasValue ? "sì" : "no")</dd>
+            <dt class="col-sm-4">Team</dt>
+            <dd class="col-sm-8">@(identita.TeamId.HasValue ? "sì" : "nessuno")</dd>
+        </dl>
+    </div>
 </div>

@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PortPlanner.Domain;
-using PortPlanner.Services.Shared;
 
 namespace PortPlanner.Services
 {
@@ -15,9 +14,6 @@ namespace PortPlanner.Services
         public PortPlannerDbContext(DbContextOptions<PortPlannerDbContext> options) : base(options)
         {
         }
-
-        // User è quello del template: resta finché il login non passa a Utente (PR sul login).
-        public DbSet<User> Users { get; set; }
 
         public DbSet<Utente> Utenti { get; set; }
         public DbSet<Dipendente> Dipendenti { get; set; }

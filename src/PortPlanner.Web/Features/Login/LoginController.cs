@@ -27,13 +27,21 @@ namespace PortPlanner.Web.Features.Login
             _sharedLocalizer = sharedLocalizer;
         }
 
-        private ActionResult LoginAndRedirect(UserDetailDTO utente, string returnUrl, bool rememberMe)
+        private ActionResult LoginAndRedirect(UtenteAutenticatoDTO utente, string returnUrl, bool rememberMe)
         {
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.NameIdentifier, utente.Id.ToString()),
-                new Claim(ClaimTypes.Email, utente.Email)
+                new Claim(ClaimTypes.Email, utente.Email),
+                new Claim(ClaimTypes.Name, $"{utente.Nome} {utente.Cognome}"),
+                new Claim(ClaimTypes.Role, utente.Profilo.ToString())
             };
+
+            if (utente.DipendenteId.HasValue)
+                claims.Add(new Claim(PortPlannerClaims.DipendenteId, utente.DipendenteId.Value.ToString()));
+
+            if (utente.TeamId.HasValue)
+                claims.Add(new Claim(PortPlannerClaims.TeamId, utente.TeamId.Value.ToString()));
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
