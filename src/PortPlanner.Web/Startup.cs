@@ -7,9 +7,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using PortPlanner.Infrastructure;
 using PortPlanner.Services;
 using PortPlanner.Web.Infrastructure;
 using PortPlanner.Web.SignalR.Hubs;
@@ -114,6 +116,14 @@ namespace PortPlanner.Web
 
                 endpoints.MapControllerRoute("default", "{controller=Login}/{action=Login}");
             });
+
+            // Dati di partenza della demo. Gli utenti del template restano finché il login non passa a Utente.
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                var contesto = scope.ServiceProvider.GetRequiredService<PortPlannerDbContext>();
+                DataGenerator.InitializeUsers(contesto);
+                DataGenerator.Initialize(contesto, DateOnly.FromDateTime(DateTime.Today));
+            }
         }
     }
 
