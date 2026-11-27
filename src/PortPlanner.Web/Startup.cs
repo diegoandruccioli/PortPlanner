@@ -1,4 +1,4 @@
-﻿//using PortPlanner.Web.Hubs;
+//using PortPlanner.Web.Hubs;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -9,7 +9,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Globalization;
-using System.IO;
 using System.Linq;
 using PortPlanner.Infrastructure;
 using PortPlanner.Services;
@@ -45,6 +44,7 @@ namespace PortPlanner.Web
             {
                 options.LoginPath = "/Login/Login";
                 options.LogoutPath = "/Login/Logout";
+                options.AccessDeniedPath = "/AccessoNegato/Index";
             });
 
             var builder = services.AddMvc()
@@ -103,8 +103,8 @@ namespace PortPlanner.Web
             app.UseAuthentication();
             app.UseAuthorization();
 
-            var node_modules = new CompositePhysicalFileProvider(Directory.GetCurrentDirectory(), "node_modules");
-            var areas = new CompositePhysicalFileProvider(Directory.GetCurrentDirectory(), "Areas");
+            var node_modules = new CompositePhysicalFileProvider(env.ContentRootPath, "node_modules");
+            var areas = new CompositePhysicalFileProvider(env.ContentRootPath, "Areas");
             var compositeFp = new CustomCompositeFileProvider(env.WebRootFileProvider, node_modules, areas);
             env.WebRootFileProvider = compositeFp;
             app.UseStaticFiles();
@@ -113,6 +113,9 @@ namespace PortPlanner.Web
             {
                 // ROUTING PER HUB
                 endpoints.MapHub<PortPlannerHub>("/templateHub");
+
+                // Pagine dei profili: /Supervisore/Team, /Capogruppo/Avvisi...
+                endpoints.MapControllerRoute("aree", "{area:exists}/{controller=Home}/{action=Index}");
 
                 endpoints.MapControllerRoute("default", "{controller=Login}/{action=Login}");
             });
