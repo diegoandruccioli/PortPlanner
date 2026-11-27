@@ -1,4 +1,5 @@
 ﻿using PortPlanner.Services.Shared;
+using PortPlanner.Services.Validazione;
 using Microsoft.Extensions.DependencyInjection;
 using PortPlanner.Web.SignalR;
 
@@ -10,6 +11,7 @@ namespace PortPlanner.Web
         {
             // Registration of all the database services you have
             container.AddScoped<SharedService>();
+            container.AddScoped<ValidazioneService>();
 
             // Registration of SignalR events
             container.AddScoped<IPublishDomainEvents, SignalrPublishDomainEvents>();
