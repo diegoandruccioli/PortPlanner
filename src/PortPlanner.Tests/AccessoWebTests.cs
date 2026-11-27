@@ -25,7 +25,10 @@ namespace PortPlanner.Tests
 
         private static readonly string[] PagineCapogruppo =
         {
-            "/Capogruppo/Home", "/Capogruppo/Richieste", "/Capogruppo/Avvisi",
+            "/Capogruppo/Home", "/Capogruppo/Pianificazione", "/Capogruppo/Team", "/Capogruppo/Richieste",
+            "/Capogruppo/Utenti", "/Capogruppo/Avvisi",
+            // Gruppo «Per me».
+            "/Capogruppo/Turni", "/Capogruppo/Ore", "/Capogruppo/Assenze", "/Capogruppo/Profilo",
         };
 
         private readonly WebApplicationFactory<Program> _app;
@@ -168,6 +171,19 @@ namespace PortPlanner.Tests
 
             Assert.Equal(IndirizziAttesi(PagineCapogruppo), VociDelMenu(html));
             Assert.Contains("Anna Conti", html);
+            // L'intestazione del secondo gruppo sta tra Avvisi e I miei turni.
+            Assert.Matches("(?s)href=\"/Capogruppo/Avvisi\".*>Per me<.*href=\"/Capogruppo/Turni\"", html);
+            Assert.Single(Regex.Matches(html, ">Per me<"));
+        }
+
+        [Fact]
+        public async Task Il_menu_del_supervisore_non_ha_gruppi()
+        {
+            var client = await Collegato(Supervisore);
+
+            var html = await client.GetStringAsync("/Supervisore/Home");
+
+            Assert.DoesNotContain(">Per me<", html);
         }
 
         [Fact]
