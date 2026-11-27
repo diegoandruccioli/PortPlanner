@@ -24,6 +24,10 @@ Analisi del modello di dominio del Core (`src/PortPlanner`). Parte dalle [specif
 | D16 | Il seed ha cinque barche (D ed E arrivano dopo 7 giorni), nessuno storico, e la griglia del Team 2 su Barca A identica alle specifiche. |
 | D17 | `DataGenerator.Initialize(context, oggi)` riceve la data: l'app passa quella di sistema, i test una fissa. Il seed parte da `Startup` all'avvio, non dal costruttore del `DbContext`, così i test dei modelli partono da un database vuoto. |
 | D18 | `SlotNonLavorativo` appartiene alla barca, non a un team: la chiave è barca, data e slot. Cambiando il team gestore i blocchi restano; un'assegnazione del supervisore in uno slot bloccato vince e il blocco resta. |
+| D19 | Il tempo di lavoro è continuo: gli slot contigui di una persona, anche a cavallo di mezzanotte, formano un **blocco**. Un blocco da 2 o più slot è l'avviso "turni consecutivi", con le ore reali (12, 18, 24 h). |
+| D20 | Il riposo di 11 ore si misura **tra blocchi**: avviso se tra la fine di un blocco e l'inizio del successivo passano meno di 11 h. Dentro un blocco non c'è riposo da misurare. |
+| D21 | Gli avvisi di riposo e di turni consecutivi hanno sempre gravità Normale; Forte è riservata a ferie, malattia e contratto scaduto. 18 e 24 h di fila restano un punto aperto. |
+| D22 | La validazione guarda i turni della persona su ogni sito e ogni team (il vincolo è sulla persona) e ignora le `AssegnazionePersona` con `NonSvolto`. Il turno da valutare si aggiunge a quelli esistenti senza contarlo due volte. |
 
 ## Il database in memoria non fa rispettare i vincoli
 

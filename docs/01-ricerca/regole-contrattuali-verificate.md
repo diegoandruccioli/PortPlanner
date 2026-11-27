@@ -26,7 +26,8 @@ Verifica delle regole ricevute dal cliente (il docente) su legge e CCNL. Tutte l
 
 ## Come le applica il prototipo
 
-- **Riposo di 11 h:** avviso per ogni coppia di turni con meno di 11 h tra la fine e l'inizio, per entrambi i contratti.
+- **Riposo di 11 h:** avviso per ogni coppia di **blocchi di lavoro** con meno di 11 h tra la fine del primo e l'inizio del secondo, per entrambi i contratti. Un blocco è una catena di slot contigui, anche a cavallo di mezzanotte: la legge chiede 11 h di riposo ogni 24, non una pausa tra uno slot e l'altro.
+- **Turni consecutivi:** un blocco di 2 o più slot (12 h o più di fila) è un avviso, ammesso solo in emergenza.
 - **Riposo settimanale:** avviso se in una **finestra mobile di 14 giorni** non ci sono 2 riposi da 24 h consecutive (35 h col riposo giornaliero) o se ci sono più di 10 giorni consecutivi lavorati. Finestra mobile = qualunque periodo di 14 giorni consecutivi, non la settimana di calendario.
 - **Ore settimanali:** 36 h o 38 h a seconda del lavoratore (campo "Ore settimanali"); straordinari 300 h/anno con 36 h, 250 h con 38 h.
 - **Notturno:** vale solo per chi fa turni 0–6 (o almeno 3 ore tra 22 e 06): avviso se la media supera 8 h nelle 24 sulla finestra di 14 giorni, escludendo i giorni di riposo.
