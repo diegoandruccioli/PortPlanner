@@ -51,7 +51,8 @@ namespace PortPlanner.Web.Features.Login
                 IsPersistent = rememberMe,
             });
 
-            if (string.IsNullOrWhiteSpace(returnUrl) == false)
+            // Solo indirizzi dell'app: un link preparato non deve portare su un altro sito dopo il login.
+            if (Url.IsLocalUrl(returnUrl))
                 return Redirect(returnUrl);
 
             return RedirectToAction(MVC.Dashboard.Index());
@@ -62,7 +63,7 @@ namespace PortPlanner.Web.Features.Login
         {
             if (HttpContext.User != null && HttpContext.User.Identity != null && HttpContext.User.Identity.IsAuthenticated)
             {
-                if (string.IsNullOrWhiteSpace(returnUrl) == false)
+                if (Url.IsLocalUrl(returnUrl))
                     return Redirect(returnUrl);
 
                 return RedirectToAction(MVC.Dashboard.Index());
