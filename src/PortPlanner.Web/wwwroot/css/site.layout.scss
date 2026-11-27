@@ -1,1 +1,36 @@
-﻿@import "site.variables.scss";
+@import "site.variables.scss";
+
+// Barra laterale di Supervisore e Capogruppo. Da schermo grande è fissa, sotto è un offcanvas di Bootstrap.
+$sidebar-larghezza: 240px;
+
+.pp-sidebar {
+    --bs-offcanvas-width: #{$sidebar-larghezza};
+
+    .nav-pills {
+        --bs-nav-pills-link-active-bg: #{rgba($white, .2)};
+    }
+
+    .nav-link:hover:not(.active) {
+        background-color: rgba($white, .1);
+    }
+}
+
+@media (min-width: 992px) {
+    .pp-sidebar {
+        flex: 0 0 $sidebar-larghezza;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+    }
+}
+
+// Permette al contenuto di restringersi accanto alla barra (le griglie larghe scorrono al suo interno).
+.pp-contenuto {
+    min-width: 0;
+}
+
+.pp-iniziali {
+    width: 36px;
+    height: 36px;
+    background-color: rgba($white, .25);
+}

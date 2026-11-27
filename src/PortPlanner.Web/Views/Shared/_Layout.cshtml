@@ -1,10 +1,11 @@
-﻿@inject IHtmlLocalizer<PortPlanner.Web.SharedResource> SharedLocalizer
+@inject IHtmlLocalizer<PortPlanner.Web.SharedResource> SharedLocalizer
 @inject Microsoft.Extensions.Options.IOptions<AppSettings> appSettings
 @{
     Layout = "_LayoutHtml";
     var version = System.Reflection.Assembly.GetAssembly(typeof(Startup)).GetName().Version;
 
     var identitaCorrente = (PortPlanner.Web.Areas.IdentitaViewModel)ViewData[PortPlanner.Web.Areas.IdentitaViewModel.VIEWDATA_IDENTITACORRENTE_KEY];
+    var haBarraLaterale = identitaCorrente != null && PortPlanner.Web.Infrastructure.VociMenu.Per(identitaCorrente.Profilo).Count > 0;
 }
 @section metas{
     @RenderSection("metas", false)
@@ -12,41 +13,66 @@
 @section styles{
     @RenderSection("styles", false)
 }
-<div id="pageId" class="onit-page">
-    <div class="onit-page-sticky-top" id="onit-page-sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary onit-page-menu">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/">
-                    <i class="fa-solid fa-ship"></i>&nbsp;PortPlanner
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
+@if (haBarraLaterale)
+{
+    <div id="pageId" class="d-lg-flex min-vh-100 bg-light">
+        @await Html.PartialAsync("_Sidebar", identitaCorrente)
+        <div class="flex-grow-1 pp-contenuto">
+            <div class="d-lg-none text-bg-primary d-flex align-items-center gap-3 px-3 py-2">
+                <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="offcanvas" data-bs-target="#barraLaterale" aria-controls="barraLaterale" aria-label="Apri il menu">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
                 </button>
-                <div class="collapse navbar-collapse flex-wrap" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav ms-auto onit-page-menu-user">
-                        @if (identitaCorrente != null)
-                        {
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img class="user-profile-picture" src="@identitaCorrente.GravatarUrl" />&nbsp;@identitaCorrente.NomeCompleto &middot; @identitaCorrente.Profilo
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-dark dropdown-menu-end" role="menu">
-                                    <a class="dropdown-item" href="javascript:void(0)" onclick="javascript: document.getElementById('POST_LogOut').submit()" title="@SharedLocalizer["Chiudi sessione di lavoro"]">
-                                        <i class="fa-solid fa-right-from-bracket"></i>&nbsp;@SharedLocalizer["Esci"]
-                                    </a>
-                                    <form autocomplete="off" method="post" action="@Url.Action(MVC.Login.Logout())" id="POST_LogOut" display="none"></form>
-                                </div>
-                            </li>
-                        }
-                    </ul>
-                </div>
+                <span class="fw-bold"><i class="fa-solid fa-ship" aria-hidden="true"></i>&nbsp;PortPlanner</span>
             </div>
-        </nav>
-        @RenderSection("pageTitle", false)
+            @RenderSection("pageTitle", false)
+            @RenderSection("pageSubtitle", false)
+            <main class="container-fluid p-4">
+                @RenderBody()
+            </main>
+        </div>
     </div>
-    @RenderSection("pageSubtitle", false)
-    @RenderBody()
-</div>
+}
+else
+{
+    <div id="pageId" class="onit-page">
+        <div class="onit-page-sticky-top" id="onit-page-sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary onit-page-menu">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/">
+                        <i class="fa-solid fa-ship"></i>&nbsp;PortPlanner
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse flex-wrap" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ms-auto onit-page-menu-user">
+                            @if (identitaCorrente != null)
+                            {
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-user" aria-hidden="true"></i>&nbsp;@identitaCorrente.NomeCompleto &middot; @identitaCorrente.Profilo
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-dark dropdown-menu-end" role="menu">
+                                        <button type="submit" class="dropdown-item" form="POST_LogOut" title="@SharedLocalizer["Chiudi sessione di lavoro"]">
+                                            <i class="fa-solid fa-right-from-bracket"></i>&nbsp;@SharedLocalizer["Esci"]
+                                        </button>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            @RenderSection("pageTitle", false)
+        </div>
+        @RenderSection("pageSubtitle", false)
+        @RenderBody()
+    </div>
+}
+@if (identitaCorrente != null)
+{
+    <form method="post" action="@Url.Action(MVC.Login.Logout())" id="POST_LogOut"></form>
+}
 @section googlehead{
     @*<script async src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
     <script>

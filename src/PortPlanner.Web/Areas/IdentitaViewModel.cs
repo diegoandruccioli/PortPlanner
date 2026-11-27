@@ -1,6 +1,6 @@
-﻿using System;
+using System;
+using System.Linq;
 using PortPlanner.Domain;
-using PortPlanner.Web.Infrastructure;
 
 namespace PortPlanner.Web.Areas
 {
@@ -21,11 +21,14 @@ namespace PortPlanner.Web.Areas
         // Vuoto per il Supervisore e per i lavoratori senza team.
         public Guid? TeamId { get; set; }
 
-        public string GravatarUrl
+        // Iniziali della prima e dell'ultima parola del nome, per il cerchio nel menu utente.
+        public string Iniziali
         {
             get
             {
-                return EmailUtenteCorrente.ToGravatarUrl(ToGravatarUrlExtension.DefaultGravatar.Identicon, null);
+                var parole = NomeCompleto.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                var iniziali = parole.Length > 1 ? $"{parole[0][0]}{parole[^1][0]}" : $"{parole.FirstOrDefault()?[0]}";
+                return iniziali.ToUpperInvariant();
             }
         }
     }
