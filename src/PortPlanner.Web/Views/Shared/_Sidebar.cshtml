@@ -15,8 +15,15 @@
         </div>
 
         <nav class="nav nav-pills flex-column gap-1 flex-nowrap overflow-auto">
+            @{ string gruppo = null; }
             @foreach (var voce in VociMenu.Per(Model.Profilo))
             {
+                if (voce.Gruppo != gruppo)
+                {
+                    gruppo = voce.Gruppo;
+                    <hr class="my-2 opacity-25" />
+                    <div class="small text-uppercase fw-bold opacity-75 px-3 pb-1">@gruppo</div>
+                }
                 var attiva = area == Model.Profilo.ToString() && controller == voce.Controller;
                 <a class="nav-link text-white d-flex align-items-center gap-3 @(attiva ? "active fw-bold" : "")"
                    aria-current="@(attiva ? "page" : null)"
