@@ -8,6 +8,8 @@ Qui c'è tutto ciò che descrive l'interfaccia prima dell'implementazione.
 
 Il prototipo e le bozze SVG sono il mockup del progetto: il docente ha stabilito che possono essere usati al posto di un file Figma. Se prototipo e bozze non coincidono, vale il prototipo; se il prototipo e le specifiche non coincidono, vale [specifiche-dettagliate.md](../02-progettazione/specifiche-dettagliate.md).
 
+Eccezione: le pagine Pianificazione, Team, Utenti e «Per me» del Capogruppo, aggiunte dopo il prototipo, non hanno bozze proprie e riusano quelle del supervisore e del dipendente ([specifiche.md](../02-progettazione/specifiche.md), 4.6–4.9).
+
 ## Come aprire il prototipo
 
 Apri `prototipo.html` con un browser (doppio clic). È un file unico, non serve installare nulla né avviare l'app. Il font Inter viene caricato da Google Fonts: offline il testo usa il font di sistema.

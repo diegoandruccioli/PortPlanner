@@ -46,13 +46,13 @@ Il lavoro è diviso in issue su GitHub, una per PR piccola.
 - Per vedere le proprie: `is:open assignee:<tuo-utente>` nella pagina Issues. L'avanzamento di ogni fase è in Milestones; la bacheca del progetto mostra lo stato di tutte.
 - Un'issue **bloccata da** un'altra non si inizia dalla parte che dipende dall'altra: si fa il resto (spesso basta un finto del servizio) e si scrive un commento sull'issue. Se un'attesa dura più del previsto, lo si dice al gruppo.
 - Se un'issue è troppo grande o la stima non regge, si spezza o si riassegna: si cambia l'issue, non si lavora fuori dall'elenco.
-- Nella PR si scrive `Chiude #numero`: l'issue si chiude da sola al merge.
+- Nella PR si scrive `Closes #numero` (in inglese: GitHub non riconosce l'italiano): l'issue si chiude da sola al merge.
 - Quando ci si accorge di un lavoro mancante, si apre una nuova issue invece di aggiungerlo di nascosto a un'altra PR.
 
 ## Pull Request
 
 1. Apri la PR verso `main` quando il lavoro è pronto (o come bozza, se vuoi un parere prima). Il modulo si compila da solo: segui la lista.
-2. Descrivi in due righe cosa cambia e quale schermata o regola delle specifiche implementa, e scrivi `Chiude #numero`.
+2. Descrivi in due righe cosa cambia e quale schermata o regola delle specifiche implementa, e scrivi `Closes #numero`.
 3. **Ogni PR la guarda un altro del gruppo** prima del merge, anche se GitHub non lo impone: così tutti conosciamo il codice degli altri, e all'orale ognuno sa spiegare tutto il progetto. Chi rivede prova l'app, non si limita a leggere.
 4. **La CI deve essere verde.** A ogni PR GitHub esegue da solo build senza avvisi, test e un avvio dell'app con il login dei tre profili (`.github/workflows/ci.yml`). Se è rossa, si guarda il log nella scheda Checks della PR e si corregge prima di chiedere la revisione.
 5. Merge con **squash**. Il titolo del commit di squash si scrive a mano: `<tipo>: <riassunto> (#numero)`, corpo vuoto. Il branch si cancella da solo al merge; in locale si pulisce con `git fetch --prune` e `git branch -d <nome>`.
