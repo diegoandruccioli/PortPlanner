@@ -308,7 +308,7 @@ Bozze: [11 in attesa](<../03-mockup/svg/11-richieste-supervisore-in-attesa-1440x
 ## Capogruppo — Live page (home)
 Utente di esempio: **Anna Conti**, capogruppo del Team 2 (sidebar: avatar "AC", "Anna Conti · Capogruppo"). Bozza: [65](<../03-mockup/svg/65-capogruppo-live-page-1440x900.svg>).
 
-- **Sidebar:** solo **Home, Richieste (badge), Avvisi (badge)**. Niente Pianificazione/Team/Utenti (la programmazione del team è già nella home).
+- **Sidebar:** Home, Pianificazione, Team, Richieste, Utenti, Avvisi; sezione «Per me»: I miei turni, Le mie ore, Le mie assenze, Profilo. Badge su Richieste e Avvisi. Pagine e regole nuove in [specifiche.md](<./specifiche.md>), sezioni 4.6–4.9; le bozze 65–79 mostrano ancora il menu a tre voci.
 - **Vista Live:** uguale a quella del supervisore (4 siti, click = maschera Live sito) con il **sito dove lavora ora il suo team evidenziato** (bordo primario più spesso + pill "Il tuo team").
 - **Riepilogo (due riquadri tra Vista Live e griglia):** "Prossimo turno" (giorno, slot, barca · sito) e "Da pianificare" (avviso giallo: "Barca A · 2 slot da scegliere" con pulsante "Pianifica" che apre la 3.0 capogruppo).
 - **Griglia:** stessa struttura della home (4 siti × giorni, 7/31 giorni, oggi in primario), ma **solo la programmazione del suo team**. Cella giornaliera = **4 mini-segmenti** (0–6, 6–12, 12–18, 18–24) + testo "N slot": azzurro = il team lavora (scelto dal capogruppo) · **scudo** = imposto dal supervisore (2.0, non modificabile) · **a righe + icona** = non lavori (bloccato dal supervisore) · tratteggio primario = da scegliere (solo barca gestita) · grigio pieno = occupato da un altro team. Mai solo colore.
@@ -322,7 +322,7 @@ Bozze: [66 slot imposto](<../03-mockup/svg/66-capogruppo-pagina-2-1-slot-imposto
 - **Accesso:** click su uno slot già programmato dal supervisore nella home capogruppo (scudo). **Non esiste una 2.0 per il capogruppo**: il link in alto è "← Home" e riporta alla live page.
 - **Permessi su slot imposto dal supervisore:** il capogruppo **gestisce solo le persone del suo team** (Aggiungi, Sostituisci, X attivi); team e slot non si contestano. Banner azzurro con scudo: "Slot assegnato dal supervisore: puoi scegliere chi del tuo team lavora, non il team."
 - **Richiedi dipendenti da altri team:** disponibile anche al capogruppo, con il suo nome come richiedente ("da A. Conti" nella pagina Richieste); stesso modal, la richiesta va al capogruppo dell'altro team (stato "Inviata").
-- Sidebar capogruppo (Home, Richieste, Avvisi), stesse sezioni Gruisti/Mulettisti/Operai, stessi toast con Annulla.
+- Sidebar capogruppo, stesse sezioni Gruisti/Mulettisti/Operai, stessi toast con Annulla.
 
 ## Capogruppo — 3.0 Pianifica la barca
 Bozze: [68 base](<../03-mockup/svg/68-capogruppo-maschera-3-0-pianifica-barca-1440x900.svg>) · [69 slot scelto con toast](<../03-mockup/svg/69-capogruppo-maschera-3-0-slot-scelto-toast-1440x900.svg>) · [70 2.1 dello slot scelto, senza banner](<../03-mockup/svg/70-capogruppo-pagina-2-1-slot-scelto-1440x900.svg>).
@@ -347,7 +347,7 @@ Bozze 71–75: [71 in attesa](<../03-mockup/svg/71-capogruppo-richieste-in-attes
 Bozze: [76 non letti](<../03-mockup/svg/76-capogruppo-avvisi-non-letti-1440x900.svg>) · [77 tutti](<../03-mockup/svg/77-capogruppo-avvisi-tutti-1440x900.svg>) · [78 segnati come letti con toast](<../03-mockup/svg/78-capogruppo-avvisi-segnati-letti-toast-1440x900.svg>) · [79 nessun avviso](<../03-mockup/svg/79-capogruppo-avvisi-nessun-avviso-1440x900.svg>).
 
 - **Elenco cronologico** (più recenti in alto) con schede **Non letti (n) / Tutti (n)**; il badge della sidebar = non letti. Card per avviso: pallino primario se non letto (titolo in grassetto), icona, titolo, dettaglio, mittente e ora. Pulsante "Segna tutti come letti" (outline) → toast "3 avvisi segnati come letti" con Annulla.
-- **Tipi (solo informativi, nessuna risposta/commento):** il supervisore inserisce un altro team in una barca gestita · membro spostato nel/dal team o rimosso · slot o giorno segnato non lavorativo dal supervisore. *(Esito delle richieste fatte dal capogruppo: non incluso per scelta.)*
+- **Tipi (solo informativi, nessuna risposta/commento):** il supervisore inserisce un altro team in una barca gestita · membro spostato nel/dal team o rimosso · slot o giorno segnato non lavorativo dal supervisore. Anche l'esito delle richieste fatte dal capogruppo (accettata, rifiutata, scaduta) genera un avviso. Nello stesso elenco stanno le notifiche personali, con il filtro Del team / Personali.
 - **Azione:** link "Vedi la barca" (apre la 3.0 capogruppo) o "Vai alla home"; nessun Accetta/Rifiuta.
 - **Stati vuoti:** "Nessun avviso da leggere" (scheda Non letti) e "Nessun avviso" (mai ricevuti).
 

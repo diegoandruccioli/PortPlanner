@@ -28,6 +28,7 @@ Analisi del modello di dominio del Core (`src/PortPlanner`). Parte dalle [specif
 | D20 | Il riposo di 11 ore si misura **tra blocchi**: avviso se tra la fine di un blocco e l'inizio del successivo passano meno di 11 h. Dentro un blocco non c'è riposo da misurare. |
 | D21 | Gli avvisi di riposo e di turni consecutivi hanno sempre gravità Normale; Forte è riservata a ferie, malattia e contratto scaduto. 18 e 24 h di fila restano un punto aperto. |
 | D22 | La validazione guarda i turni della persona su ogni sito e ogni team (il vincolo è sulla persona) e ignora le `AssegnazionePersona` con `NonSvolto`. Il turno da valutare si aggiunge a quelli esistenti senza contarlo due volte. |
+| D23 | Il capogruppo è sempre un lavoratore a contratto. È un blocco, da controllare nei servizi dei team e del cambio contratto. |
 
 ## Il database in memoria non fa rispettare i vincoli
 

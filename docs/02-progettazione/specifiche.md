@@ -13,7 +13,7 @@ PortPlanner è l'app con cui tre ruoli pianificano e consultano i turni di lavor
 | Ruolo | Dispositivo | Cosa fa | Menu |
 | --- | --- | --- | --- |
 | Supervisore (es. Mario Rossi) | Desktop 1440×900 | Assegna team a barche, giorni e slot; gestisce team, utenti e richieste | Home, Pianificazione, Team, Richieste, Utenti, Ore, Assenze |
-| Capogruppo (es. Anna Conti, Team 2) | Desktop 1440×900 | Decide quando lavora il proprio team sulle barche che gestisce; risponde alle richieste; legge gli avvisi | Home, Richieste, Avvisi |
+| Capogruppo (es. Anna Conti, Team 2) | Desktop 1440×900 | Decide quando lavora il proprio team sulle barche che gestisce; risponde alle richieste; legge gli avvisi | Home, Pianificazione, Team, Richieste, Utenti, Avvisi; sezione «Per me»: I miei turni, Le mie ore, Le mie assenze, Profilo |
 | Dipendente con contratto (es. Sara Fontana) | Mobile 390×844 | Vede quando deve lavorare (giorno e slot) | Turni, Profilo |
 | Dipendente a chiamata (es. Luigi Marini) | Mobile 390×844 | Vede i turni, indica la disponibilità settimanale e le preferenze | Turni, Disponibilità, Profilo |
 
@@ -24,13 +24,13 @@ Il capogruppo non è un ruolo ma un incarico: può essere qualsiasi lavoratore e
 - **Slot:** ogni giorno ha 4 slot, 0–6, 6–12, 12–18 e 18–24. **Un solo team per slot** su una barca; lo stesso team può lavorare nello stesso slot su siti diversi con persone diverse.
 - **Due livelli di assegnazione, il più preciso vince.** La 2.0 è l'assegnazione puntuale (giorno + slot) del supervisore e il capogruppo non la contesta. La 3.0 assegna un team alla gestione della barca per tutto il periodo (da arrivo a partenza): il capogruppo sceglie quando lavorare e con chi negli slot non bloccati dal supervisore.
 - **Poco bloccante, ma con avvisi.** Il supervisore può sempre inserire un altro team anche in una barca gestita: compare un avviso e il capogruppo gestore viene avvisato, senza campo motivo e senza possibilità di contestare.
-- **Capogruppo fisso:** resta tale anche se non lavora nel turno o è assente; nessun sostituto. Per rimuoverlo, spostarlo o eliminarlo si sceglie prima un nuovo capogruppo tra i membri.
+- **Capogruppo fisso:** resta tale anche se non lavora nel turno o è assente; nessun sostituto. Per rimuoverlo, spostarlo o eliminarlo si sceglie prima un nuovo capogruppo tra i membri. **Il capogruppo è sempre un lavoratore a contratto**, mai a chiamata (blocco, vedi 4.6).
 - **Un lavoratore sta in un solo team.** Lo spostamento da Gestione team è definitivo; con "Richiedi dipendenti" vale solo per lo slot e deve accettarlo il capogruppo del team della persona (o il supervisore al suo posto).
 - **Slot futuri:** se un lavoratore viene spostato o rimosso dal team i suoi slot restano assegnati; se viene eliminato vengono tolti. Non si conserva storico dopo l'eliminazione e non esiste "Disattiva".
 - **Patente:** un lavoratore ha un ruolo principale e può avere altri ruoli abilitati (Gruista, Muletista, Operaio); l'Operaio non richiede patente e lo può fare chiunque. Le patenti sono una per tipo (Gru, Muletto), ognuna con scadenza e stato calcolato (valida, scaduta, non posseduta). Si può assegnare una persona a un ruolo senza patente valida: compare l'anomalia "assegnato senza patente valida" e un toast, senza finestra di conferma. Un lavoratore fa un solo ruolo per slot.
 - **Disponibilità** (solo dipendenti a chiamata): la imposta il lavoratore a giorni ogni settimana; il supervisore può modificarla al suo posto.
 
-* **Contratti e vincoli:** esistono due contratti. **A contratto** (full-time): 36 o 38 ore a settimana (valore del singolo lavoratore), riposo di 11 ore consecutive tra i turni (per tutti i turni), riposo settimanale di 24 ore su una finestra mobile di 14 giorni (due riposi ogni 14 giorni, mai più di 10 giorni di fila), lavoro notturno con media massima di 8 ore nelle 24 solo per chi lavora di notte, straordinari fino a 300 ore all'anno con orario a 36 ore e 250 con orario a 38 ore (fonti: D.Lgs. 66/2003 e CCNL lavoratori dei porti, vedi [regole-contrattuali-verificate.md](<../01-ricerca/regole-contrattuali-verificate.md>)). **A chiamata:** nessun monte ore minimo, un turno al giorno, preavviso di 24 ore, disponibilità dichiarata. **Tutti i vincoli sono avvisi e non bloccano**; i soli blocchi veri sono la stessa persona su due siti nello stesso slot, una nave su più siti e la partenza di una nave dopo l'arrivo della successiva.
+* **Contratti e vincoli:** esistono due contratti. **A contratto** (full-time): 36 o 38 ore a settimana (valore del singolo lavoratore), riposo di 11 ore consecutive tra i turni (per tutti i turni), riposo settimanale di 24 ore su una finestra mobile di 14 giorni (due riposi ogni 14 giorni, mai più di 10 giorni di fila), lavoro notturno con media massima di 8 ore nelle 24 solo per chi lavora di notte, straordinari fino a 300 ore all'anno con orario a 36 ore e 250 con orario a 38 ore (fonti: D.Lgs. 66/2003 e CCNL lavoratori dei porti, vedi [regole-contrattuali-verificate.md](<../01-ricerca/regole-contrattuali-verificate.md>)). **A chiamata:** nessun monte ore minimo, un turno al giorno, preavviso di 24 ore, disponibilità dichiarata. **Tutti i vincoli sono avvisi e non bloccano**; i soli blocchi veri sono la stessa persona su due siti nello stesso slot, una nave su più siti e la partenza di una nave dopo l'arrivo della successiva. A questi si aggiunge un blocco che non è un vincolo contrattuale: un lavoratore a chiamata non può essere capogruppo.
 * **Preferenze di slot:** entrambi i contratti scelgono gli slot preferiti (0–6, 6–12, 12–18, 18–24) una volta sola e li cambiano raramente; non esistono preferenze di sito. La disponibilità a giorni riguarda solo chi è a chiamata e si imposta ogni settimana.
 
 ### Dati di esempio del prototipo
@@ -251,7 +251,7 @@ Bozze 138–140 (badge anche in 01, 11, 23, 115). Il capogruppo resta un incaric
 
 ## 4. Ruolo Capogruppo (desktop 1440×900)
 
-Il capogruppo (esempio: Anna Conti, Team 2) vede la stessa Live del supervisore, ma sotto vede solo la programmazione del proprio team e può organizzarla entro i limiti decisi dal supervisore. Sidebar con tre voci: **Home, Richieste** (badge delle richieste in attesa) e **Avvisi** (badge dei non letti). Non ha Pianificazione, Team né Utenti: la programmazione del team è già nella home.
+Il capogruppo (esempio: Anna Conti, Team 2) vede la stessa Live del supervisore, ma sotto vede solo la programmazione del proprio team e può organizzarla entro i limiti decisi dal supervisore. La sidebar ha due gruppi: **Home, Pianificazione, Team, Richieste** (badge delle richieste in attesa), **Utenti, Avvisi** (badge dei non letti) e, sotto l'intestazione **«Per me»**, **I miei turni, Le mie ore, Le mie assenze, Profilo**. Vede solo il proprio team: non compone team e non modifica lavoratori. Le pagine delle sezioni 4.6–4.9 non hanno bozze proprie: riusano la grafica di quelle del supervisore e del dipendente.
 
 ### 4.1 Home (Live page)
 
@@ -300,6 +300,7 @@ Bozze 71–75. Le richieste di altri team per le persone del proprio team: il ca
 
 Bozze 76–79. Raccoglie tutti i messaggi "il capogruppo sarà avvisato" generati dalle azioni del supervisore. Sono **solo informativi**: nessuna risposta, nessun commento, nessun Accetta/Rifiuta.
 
+- **Del team e personali:** nello stesso elenco arrivano gli avvisi sul team e le notifiche personali del capogruppo (turno nuovo o tolto, esito di ferie e permessi, correzione delle ore, cambio contratto), con il filtro **Del team / Personali**; il badge conta tutti i non letti.
 - **Struttura:** titolo "Avvisi", elenco cronologico (più recenti in alto), schede **Non letti (4) / Tutti (9)**; pulsante "Segna tutti come letti" (toast "4 avvisi segnati come letti" con Annulla). Il badge in sidebar è il numero dei non letti.
 - **Card per avviso:** pallino primario e titolo in grassetto se non letto, icona del tipo, titolo, dettaglio, mittente e ora, e un link ("Vedi la barca" apre la 3.0 del capogruppo; "Vai alla home").
 - **Tipi di avviso:** il supervisore inserisce un altro team in una barca gestita; uno slot o un giorno viene segnato non lavorativo; un membro viene spostato nel team o rimosso; il team inizia o smette di gestire una barca (cambio del team gestore); un membro del team viene assegnato con un vincolo contrattuale violato (ad esempio riposo inferiore a 11 h); il supervisore aggiunge un membro del team a un altro team per uno slot.
@@ -307,6 +308,37 @@ Bozze 76–79. Raccoglie tutti i messaggi "il capogruppo sarà avvisato" generat
 
 Avviso da assenza (bozza 76–77): quando un membro del team ha turni colpiti da una malattia registrata o da ferie e permessi approvati, il capogruppo trova un avviso informativo (es. "Luca Moro è in malattia 17 – 19 nov: 2 turni del tuo team da coprire").
 Avviso di esito (bozza 76–77): il capogruppo che ha richiesto una persona trova un avviso informativo quando la richiesta è accettata, rifiutata o scaduta (es. "Richiesta accettata: Elena Ricci (Team 1)").
+
+### 4.6 Regole del capogruppo
+
+- **Mai a chiamata (blocco):** i lavoratori a chiamata non compaiono tra i candidati capogruppo (nuovo team, modifica, scelta del sostituto); per passare un capogruppo a chiamata si sceglie prima un nuovo capogruppo tra i membri a contratto.
+- **Solo il proprio team:** le pagine del capogruppo non mostrano dati di altri team, salvo la sigla del team che occupa uno slot di una barca affidata.
+- **Sola lettura:** Team e Utenti non hanno pulsanti di creazione, modifica, spostamento o eliminazione; non si registrano assenze e non si segnano turni non svolti.
+
+### 4.7 Pianificazione
+
+Stessa grafica della Pianificazione del supervisore (3.3, bozze 61–62 e 64): siti sulle righe, giorni sulle colonne, 4 slot per giorno, barra barca, **7 / 31 giorni**, chip **Solo con anomalie** e legenda. Il menu "Team" non c'è.
+
+- **Cosa mostra:** tutti i 4 siti. Slot del suo team: scelti dal capogruppo e imposti dal supervisore (scudo), anche su barche che non gestisce. Sulle barche affidate: slot **da scegliere** (tratteggio primario), **non lavorativi** (a righe) e slot di altri team in **grigio con la sigla**. Il resto è vuoto e non cliccabile.
+- **Click:** slot da scegliere o barra di una barca affidata → 3.0 capogruppo (4.3); slot già del suo team → 2.1 capogruppo (4.2).
+- **Storico:** si possono rivedere i turni passati del team, in sola lettura.
+- La Home (4.1) resta com'è.
+
+### 4.8 Team e Utenti
+
+- **Team:** la pagina Gestione team del supervisore (3.8) limitata al proprio team e senza azioni: membri, composizione per ruolo, anomalie, ore e assenze dei membri.
+- **Utenti:** la tabella di Gestione utenti (3.9) con i soli membri del team, con ricerca e filtri (senza il filtro Team), senza "Nuovo lavoratore", matita e cestino.
+- **Dettaglio utente:** gli stessi dati che vede il supervisore (3.10): anagrafica e contatti, ruoli e patenti, contratto e ore, turni e assenze con il tipo. Tutto in sola lettura.
+
+### 4.9 Per me (formato desktop)
+
+Il capogruppo è anche un lavoratore. Non usa l'app mobile: le stesse funzioni del dipendente con contratto (5) sono nella sua sidebar, adattate al desktop.
+
+- **I miei turni:** elenco dei prossimi turni raggruppati per giorno, con slot, barca, sito e ruolo (5.1).
+- **Le mie ore:** come 5.6.
+- **Le mie assenze:** elenco e "Richiedi assenza" (ferie o permesso), che approva il supervisore, come 5.8.
+- **Profilo:** dati in sola lettura (5.2) e preferenze di slot (5.5). Niente disponibilità: il capogruppo non è mai a chiamata.
+- Le notifiche personali stanno in Avvisi (4.5).
 
 ## 5. Ruolo Dipendente (mobile 390×844)
 
@@ -528,6 +560,8 @@ Il prototipo cliccabile ([prototipo.html](<../03-mockup/prototipo.html>)) ha 151
 - **Capogruppo assente:** deciso, nessun sostituto; richieste e avvisi passano al supervisore (vedi 3.15).
 - **Non necessari (deciso):** login e scelta del ruolo, versioni tablet e mobile disegnate per gli altri ruoli (la sidebar diventa comunque un menu a scomparsa sotto i 992 px).
 - **Fuori ambito:** mockup in Figma. Il docente ha stabilito che il prototipo cliccabile lo sostituisce.
+
+- **Pagine nuove del capogruppo (4.7–4.9):** da precisare quando si realizzano: come si torna ai giorni passati nella Pianificazione (il seed non ha storico), come la pagina Team mostra ore e assenze (la bozza del supervisore non le ha), cosa apre un turno futuro nel Dettaglio utente (il capogruppo non ha la 2.0).
 
 ### 7.3 Glossario
 
