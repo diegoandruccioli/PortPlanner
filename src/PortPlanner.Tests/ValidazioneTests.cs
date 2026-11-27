@@ -140,14 +140,14 @@ namespace PortPlanner.Tests
             using var contesto = ContestoConSeed();
             var servizio = new ValidazioneService(contesto);
 
-            var avvisi = await servizio.Query(new ValutaTurnoQuery
+            var risposta = await servizio.Query(new ValutaTurnoQuery
             {
                 DipendenteId = IdDi(contesto, "Bruno"),
                 Data = Oggi.AddDays(1),
                 Slot = Slot.Dalle18Alle24
             });
 
-            var avviso = Assert.Single(avvisi);
+            var avviso = Assert.Single(risposta.Avvisi);
             Assert.Equal(TipoAvviso.TurniConsecutivi, avviso.Tipo);
             Assert.Contains("12 h", avviso.Testo);
         }
@@ -158,14 +158,14 @@ namespace PortPlanner.Tests
             using var contesto = ContestoConSeed();
             var servizio = new ValidazioneService(contesto);
 
-            var avvisi = await servizio.Query(new ValutaTurnoQuery
+            var risposta = await servizio.Query(new ValutaTurnoQuery
             {
                 DipendenteId = IdDi(contesto, "Neri"),
                 Data = Oggi.AddDays(3),
                 Slot = Slot.Dalle12Alle18
             });
 
-            var avviso = Assert.Single(avvisi);
+            var avviso = Assert.Single(risposta.Avvisi);
             Assert.Equal(TipoAvviso.TurniConsecutivi, avviso.Tipo);
             Assert.Contains("12 h", avviso.Testo);
         }
@@ -177,14 +177,14 @@ namespace PortPlanner.Tests
             var servizio = new ValidazioneService(contesto);
 
             // Anna Conti lavora oggi dalle 6 alle 12: aggiungere le 12-18 le darebbe 12 ore di fila.
-            var avvisi = await servizio.Query(new ValutaTurnoQuery
+            var risposta = await servizio.Query(new ValutaTurnoQuery
             {
                 DipendenteId = IdDi(contesto, "Conti"),
                 Data = Oggi,
                 Slot = Slot.Dalle12Alle18
             });
 
-            Assert.Equal(TipoAvviso.TurniConsecutivi, Assert.Single(avvisi).Tipo);
+            Assert.Equal(TipoAvviso.TurniConsecutivi, Assert.Single(risposta.Avvisi).Tipo);
         }
 
         [Fact]
@@ -201,14 +201,14 @@ namespace PortPlanner.Tests
             nonSvolto.NonSvolto = true;
             await contesto.SaveChangesAsync();
 
-            var avvisi = await servizio.Query(new ValutaTurnoQuery
+            var risposta = await servizio.Query(new ValutaTurnoQuery
             {
                 DipendenteId = marco,
                 Data = Oggi.AddDays(1),
                 Slot = Slot.Dalle18Alle24
             });
 
-            Assert.Empty(avvisi);
+            Assert.Empty(risposta.Avvisi);
         }
 
         [Fact]
@@ -219,14 +219,14 @@ namespace PortPlanner.Tests
 
             // Luigi Marini (a chiamata) lavora venerdì 12-18 sulla Barca B: aggiungere venerdì 6-12 su un altro sito
             // gli darebbe lo stesso 12 ore consecutive.
-            var avvisi = await servizio.Query(new ValutaTurnoQuery
+            var risposta = await servizio.Query(new ValutaTurnoQuery
             {
                 DipendenteId = IdDi(contesto, "Marini"),
                 Data = Oggi.AddDays(3),
                 Slot = Slot.Dalle6Alle12
             });
 
-            Assert.Equal(TipoAvviso.TurniConsecutivi, Assert.Single(avvisi).Tipo);
+            Assert.Equal(TipoAvviso.TurniConsecutivi, Assert.Single(risposta.Avvisi).Tipo);
         }
     }
 }
