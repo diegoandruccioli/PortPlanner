@@ -1,0 +1,46 @@
+@using PortPlanner.Web.Areas
+@using PortPlanner.Web.Infrastructure
+@model IdentitaViewModel
+@{
+    var area = ViewContext.RouteData.Values["area"] as string;
+    var controller = ViewContext.RouteData.Values["controller"] as string;
+}
+<aside class="offcanvas-lg offcanvas-start text-bg-primary pp-sidebar" tabindex="-1" id="barraLaterale" aria-label="Menu principale">
+    <div class="d-flex flex-column w-100 h-100 p-3">
+        <div class="d-flex align-items-center justify-content-between border-bottom border-light border-opacity-25 pb-3 mb-3">
+            <a class="fs-5 fw-bold text-white text-decoration-none" href="@Url.Action(MVC.Dashboard.Index())">
+                <i class="fa-solid fa-ship" aria-hidden="true"></i>&nbsp;PortPlanner
+            </a>
+            <button type="button" class="btn-close btn-close-white d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#barraLaterale" aria-label="Chiudi il menu"></button>
+        </div>
+
+        <nav class="nav nav-pills flex-column gap-1 flex-nowrap overflow-auto">
+            @foreach (var voce in VociMenu.Per(Model.Profilo))
+            {
+                var attiva = area == Model.Profilo.ToString() && controller == voce.Controller;
+                <a class="nav-link text-white d-flex align-items-center gap-3 @(attiva ? "active fw-bold" : "")"
+                   aria-current="@(attiva ? "page" : null)"
+                   href="@Url.Action("Index", voce.Controller, new { area = Model.Profilo.ToString() })">
+                    <i class="fa-solid @voce.Icona fa-fw" aria-hidden="true"></i>@voce.Testo
+                </a>
+            }
+        </nav>
+
+        <div class="dropup mt-auto pt-3">
+            <button type="button" class="btn btn-link text-white text-decoration-none d-flex align-items-center gap-2 p-0 text-start dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="pp-iniziali rounded-circle d-inline-flex align-items-center justify-content-center fw-bold small" aria-hidden="true">@Model.Iniziali</span>
+                <span class="small lh-sm">
+                    <span class="d-block fw-bold">@Model.NomeCompleto</span>
+                    <span class="d-block">@Model.Profilo</span>
+                </span>
+            </button>
+            <ul class="dropdown-menu">
+                <li>
+                    <button type="submit" class="dropdown-item" form="POST_LogOut">
+                        <i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i>&nbsp;Esci
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>

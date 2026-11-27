@@ -1,18 +1,20 @@
 using Microsoft.AspNetCore.Mvc;
+using PortPlanner.Domain;
 using PortPlanner.Web.Areas;
 
 namespace PortPlanner.Web.Features.Dashboard
 {
-    /// <summary>
-    /// Pagina iniziale provvisoria dopo il login.
-    /// Verrà sostituita dalle home dei tre profili (supervisore, capogruppo, dipendente).
-    /// </summary>
+    // Destinazione del login: manda ogni profilo alla sua home. Il Dipendente resta sulla pagina
+    // provvisoria finché non c'è l'app mobile.
     public partial class DashboardController : AuthenticatedBaseController
     {
         [HttpGet]
         public virtual IActionResult Index()
         {
-            return View();
+            if (Identita.Profilo == Profilo.Dipendente)
+                return View();
+
+            return RedirectToAction("Index", "Home", new { area = Identita.Profilo.ToString() });
         }
     }
 }

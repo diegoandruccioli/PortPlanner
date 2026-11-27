@@ -1,0 +1,11 @@
+@using PortPlanner.Web.Areas
+@{
+    ViewData["Title"] = "Accesso negato";
+    var identita = (IdentitaViewModel)ViewData[IdentitaViewModel.VIEWDATA_IDENTITACORRENTE_KEY];
+}
+<div class="text-center py-5 px-3">
+    <p class="display-4 text-danger" aria-hidden="true"><i class="fa-solid fa-lock"></i></p>
+    <h1 class="h3">Accesso negato</h1>
+    <p class="text-secondary">Questa pagina non è disponibile per il profilo @identita.Profilo.</p>
+    <a class="btn btn-primary" href="@Url.Action(MVC.Dashboard.Index())">Torna alla home</a>
+</div>

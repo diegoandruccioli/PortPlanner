@@ -41,8 +41,11 @@ Analisi del modello di dominio del Core (`src/PortPlanner`). Parte dalle [specif
 - Il profilo si calcola al login (`CheckLoginCredentialsQuery`, enum `Profilo`) e finisce nel cookie: `ClaimTypes.Role` contiene il profilo, più `ClaimTypes.Name` (nome e cognome), `PortPlanner.DipendenteId` e `PortPlanner.TeamId` (assenti per chi non li ha). Il menu cambia di conseguenza.
 - Se cambia il capogruppo o il team di una persona, il suo cookie resta com'era finché non rientra (D15). Un cookie senza profilo, come quelli emessi prima di questa regola, porta a un nuovo login.
 - Email e password errate, o un account che non è né supervisore né lavoratore, danno lo stesso messaggio ("Email o password errate"): non si capisce quali email esistono. L'email si confronta senza maiuscole né spazi.
-- Per ora nessuna pagina è riservata a un profilo, quindi `[Authorize(Roles = ...)]` e la pagina "accesso negato" arrivano con la prima schermata protetta.
-- Il Supervisore accede dalla stessa pagina di login degli altri, con email e password. Non esiste registrazione: gli account nascono dal seed. Dopo il login il claim di profilo lo manda alla sua home e ne abilita solo le pagine (`[Authorize(Roles = ...)]` o policy); un capogruppo o un dipendente che apre un indirizzo del supervisore viene respinto. Il Supervisore non è un lavoratore: non ha turni, non è in nessun team e non può essere capogruppo.
+- Le pagine del Supervisore e del Capogruppo stanno in due aree (`Areas/Supervisore`, `Areas/Capogruppo`). Il controller base di ogni area ha `[Authorize(Roles = ...)]` con le costanti `Profili.Supervisore`, `Profili.Capogruppo` e `Profili.Dipendente`. Ogni profilo apre solo la propria area: il supervisore non apre le pagine del capogruppo.
+- Chi apre una pagina di un altro profilo arriva ad "Accesso negato" (risposta 403): "Questa pagina non è disponibile per il profilo ...", con il menu del proprio profilo e il pulsante "Torna alla home". Chi non è collegato va al login.
+- Dopo il login si passa da `Dashboard/Index`, che manda Supervisore e Capogruppo alla loro home. Il Dipendente resta sulla pagina provvisoria finché non c'è l'app mobile.
+- L'indirizzo di ritorno dopo il login (`returnUrl`) si segue solo se è interno all'app.
+- Il Supervisore accede dalla stessa pagina di login degli altri, con email e password. Non esiste registrazione: gli account nascono dal seed. Il Supervisore non è un lavoratore: non ha turni, non è in nessun team e non può essere capogruppo.
 
 ## Entità
 

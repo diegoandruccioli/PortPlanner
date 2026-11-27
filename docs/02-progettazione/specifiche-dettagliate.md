@@ -172,7 +172,7 @@ Pagine SVG 138–140 (più badge in 01, 11, 23 e nel calendario assenze 115/122)
 
 ## Pagina 0 — Live page (home), supervisore
 
-- Layout: **sidebar** a sinistra in primario `#0D6EFD` con logo "PortPlanner", link (Home, Team, Utenti, altri in futuro) e menu utente con ruolo. Tablet: sidebar a sole icone. Mobile: menu hamburger (offcanvas).
+- Layout: **sidebar** a sinistra in primario `#0D6EFD` con logo "PortPlanner", link (Home, Pianificazione, Team, Richieste, Utenti, Ore, Assenze), voce attiva evidenziata e menu utente in basso con iniziali, nome e profilo. Sotto i 992 px (tablet e mobile): menu a scomparsa (offcanvas) aperto da un pulsante.
 - Due sezioni impilate: **Vista Live** (4 siti in riga, card barca presente / sito libero) e **Griglia** (una riga per sito, giorni sull'asse X, barre barca).
 - Click: cella griglia → pagina 2.0 · barra barca → maschera 3.0.
 - Griglia: filtro **segmented control** "7 giorni / 31 giorni" a destra del titolo; colonne con sigla + numero (es. "Lun 17"), testo 14 px; colonna di oggi con intestazione in primario + etichetta "Oggi"; sito senza barche = solo celle vuote.

@@ -62,24 +62,37 @@ accedi() {
     "$URL/Login/Login"
 }
 
-# Un utente per profilo: il profilo deve comparire nella Dashboard.
+# Un utente per profilo: dopo il login si passa dalla Dashboard e si arriva alla propria home,
+# dove compare il nome del profilo.
 controlla_profilo() {
-  local email="$1" profilo="$2" destinazione
+  local email="$1" profilo="$2" home="$3" destinazione
   destinazione="$(accedi "$email" "$PASSWORD")"
   case "$destinazione" in
     */Dashboard/Index) ;;
     *) fallisci "$email: dopo il login la destinazione è '$destinazione' invece della Dashboard" ;;
   esac
-  local dashboard
-  dashboard="$(curl -s -b "$BARATTOLO" "$URL/Dashboard/Index")"
-  echo "$dashboard" | grep -q "<dd class=\"col-sm-8\">$profilo</dd>" \
-    || fallisci "$email: la Dashboard non mostra il profilo $profilo"
+  local pagina
+  pagina="$(curl -s -L -b "$BARATTOLO" -w '
+%{url_effective}' "$URL/Dashboard/Index")"
+  case "$(echo "$pagina" | tail -1)" in
+    "$URL$home") ;;
+    *) fallisci "$email: la home è '$(echo "$pagina" | tail -1)' invece di '$home'" ;;
+  esac
+  echo "$pagina" | grep -q ">$profilo<"     || fallisci "$email: la home non mostra il profilo $profilo"
   echo "Login ok: $email ($profilo)"
 }
 
-controlla_profilo "mario.rossi@portplanner.it" "Supervisore"
-controlla_profilo "anna.conti@portplanner.it" "Capogruppo"
-controlla_profilo "sara.fontana@portplanner.it" "Dipendente"
+controlla_profilo "mario.rossi@portplanner.it" "Supervisore" "/Supervisore"
+controlla_profilo "anna.conti@portplanner.it" "Capogruppo" "/Capogruppo"
+controlla_profilo "sara.fontana@portplanner.it" "Dipendente" "/Dashboard/Index"
+
+# L'ultimo accesso è del dipendente: una pagina del supervisore deve respingerlo.
+destinazione="$(curl -s -b "$BARATTOLO" -o /dev/null -w '%{redirect_url}' "$URL/Supervisore/Utenti")"
+case "$destinazione" in
+  */AccessoNegato/Index*) ;;
+  *) fallisci "il dipendente apre una pagina del supervisore ('$destinazione')" ;;
+esac
+echo "Pagine del supervisore protette."
 
 # Una password sbagliata non deve far entrare.
 destinazione="$(accedi "mario.rossi@portplanner.it" "Sbagliata")"

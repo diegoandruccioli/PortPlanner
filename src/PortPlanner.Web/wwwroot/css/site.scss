@@ -1,6 +1,14 @@
-﻿@import "site.variables.scss";
+@import "site.variables.scss";
 
 // Import bootstrap to be able to customize it with scss variables
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "site.layout.scss";
+
+// Un file per funzione, così chi lavora in parallelo non tocca gli stessi file.
+@import "site.anagrafica.scss";
+@import "site.pianificazione.scss";
+@import "site.richieste.scss";
+@import "site.assenze.scss";
+@import "site.avvisi.scss";
+@import "site.ore.scss";
