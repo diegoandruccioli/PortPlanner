@@ -52,7 +52,7 @@ namespace PortPlanner.Infrastructure
             // Marta Pini non ha un team: il supervisore la aggiunge direttamente.
             Assegna(barcaB, oggi, 1, Slot.Dalle0Alle6, T("Team 5"), OrigineAssegnazione.Supervisore,
                 (P("Roberto Vitale"), Ruolo.Gruista), (P("Silvia Monti"), Ruolo.Muletista), (P("Marta Pini"), Ruolo.Operaio));
-            // Marco Bruno finisce alle 24 e riparte alle 0: riposo di 0 ore, meno delle 11 richieste.
+            // Marco Bruno finisce alle 24 e riparte alle 0: sono 12 ore di lavoro di fila a cavallo di mezzanotte.
             Assegna(barcaB, oggi, 1, Slot.Dalle18Alle24, T("Team 4"), OrigineAssegnazione.Capogruppo,
                 (P("Stefano Fabbri"), Ruolo.Gruista), (P("Marco Bruno"), Ruolo.Muletista), (P("Federica Gori"), Ruolo.Operaio));
             Assegna(barcaB, oggi, 2, Slot.Dalle0Alle6, T("Team 4"), OrigineAssegnazione.Capogruppo,

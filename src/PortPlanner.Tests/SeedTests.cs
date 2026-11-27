@@ -343,7 +343,7 @@ namespace PortPlanner.Tests
                 .OrderBy(t => t.Data).ThenBy(t => t.Slot)
                 .ToList();
 
-            // Riposo di zero ore: un turno 18-24 seguito da uno 0-6 il giorno successivo.
+            // Lavoro continuo a cavallo di mezzanotte: un turno 18-24 seguito da uno 0-6 il giorno successivo.
             var senzaRiposo = turni.Any(prima => prima.Slot == Slot.Dalle18Alle24
                 && turni.Any(dopo => dopo.Data == prima.Data.AddDays(1) && dopo.Slot == Slot.Dalle0Alle6));
 
