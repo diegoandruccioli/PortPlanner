@@ -24,11 +24,18 @@ namespace PortPlanner.Services.Validazione
         public string Testo { get; set; }
     }
 
+    // La risposta è un oggetto e non una lista nuda, come negli altri servizi: così si può aggiungere
+    // qualche campo (per esempio un conteggio) senza cambiare chi la usa.
+    public class ValutaTurnoDTO
+    {
+        public List<AvvisoContrattualeDTO> Avvisi { get; set; }
+    }
+
     public partial class ValidazioneService
     {
         // Gli avvisi causati dal turno indicato, nessuno se il turno va bene. Serve sia per i candidati
         // (la persona non è ancora nello slot) sia per i turni già assegnati (la persona c'è già).
-        public async Task<List<AvvisoContrattualeDTO>> Query(ValutaTurnoQuery qry)
+        public async Task<ValutaTurnoDTO> Query(ValutaTurnoQuery qry)
         {
             // Si guardano i turni su ogni sito e ogni team, perché il vincolo è sulla persona (D22).
             // Si caricano tutti: un blocco può estendersi su più giorni e una finestra fissa lo taglierebbe.
@@ -38,7 +45,10 @@ namespace PortPlanner.Services.Validazione
                     .ToListAsync())
                 .Select(t => (t.Data, t.Slot));
 
-            return RegoleContrattuali.Valuta(turniEsistenti, qry.Data, qry.Slot);
+            return new ValutaTurnoDTO
+            {
+                Avvisi = RegoleContrattuali.Valuta(turniEsistenti, qry.Data, qry.Slot)
+            };
         }
     }
 }
