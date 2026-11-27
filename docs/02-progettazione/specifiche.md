@@ -12,7 +12,7 @@ PortPlanner è l'app con cui tre ruoli pianificano e consultano i turni di lavor
 
 | Ruolo | Dispositivo | Cosa fa | Menu |
 | --- | --- | --- | --- |
-| Supervisore (es. Mario Rossi) | Desktop 1440×900 | Assegna team a barche, giorni e slot; gestisce team, utenti e richieste | Home, Pianificazione, Team, Richieste, Utenti |
+| Supervisore (es. Mario Rossi) | Desktop 1440×900 | Assegna team a barche, giorni e slot; gestisce team, utenti e richieste | Home, Pianificazione, Team, Richieste, Utenti, Ore, Assenze |
 | Capogruppo (es. Anna Conti, Team 2) | Desktop 1440×900 | Decide quando lavora il proprio team sulle barche che gestisce; risponde alle richieste; legge gli avvisi | Home, Richieste, Avvisi |
 | Dipendente con contratto (es. Sara Fontana) | Mobile 390×844 | Vede quando deve lavorare (giorno e slot) | Turni, Profilo |
 | Dipendente a chiamata (es. Luigi Marini) | Mobile 390×844 | Vede i turni, indica la disponibilità settimanale e le preferenze | Turni, Disponibilità, Profilo |
@@ -81,7 +81,7 @@ Nota: nel documento originale la voce "1.0 dettaglio giorno e barca" indicava l'
 
 ## 3. Ruolo Supervisore (desktop 1440×900)
 
-Il supervisore ha la visione completa: vede tutti i siti, assegna i team alle barche, compone i team, gestisce le persone e può decidere al posto dei capigruppo. Sidebar blu a sinistra su ogni pagina: Home, Pianificazione, Team, Richieste (con badge delle richieste in attesa), Utenti, più il menu utente in basso ("Mario Rossi · Supervisore"). Ogni pagina qui sotto indica le bozze SVG di riferimento.
+Il supervisore ha la visione completa: vede tutti i siti, assegna i team alle barche, compone i team, gestisce le persone e può decidere al posto dei capigruppo. Sidebar blu a sinistra su ogni pagina: Home, Pianificazione, Team, Richieste (con badge delle richieste in attesa), Utenti, Ore, Assenze, più il menu utente in basso ("Mario Rossi · Supervisore"). Sotto i 992 px di larghezza la sidebar, anche del capogruppo, diventa un menu a scomparsa aperto da un pulsante. Ogni pagina qui sotto indica le bozze SVG di riferimento.
 
 ### 3.1 Home (Live page)
 
@@ -526,7 +526,7 @@ Il prototipo cliccabile ([prototipo.html](<../03-mockup/prototipo.html>)) ha 151
 - **Vista a 31 giorni:** disegnata per la Pianificazione e per le due Home (143, 144).
 - **Notifiche, filtri e scadenza delle richieste** risolti (3.7, 4.4, 4.5), insieme alle notifiche al dipendente (5.7) e al riepilogo ore (3.11). Assenze (ferie, permessi, malattia) fatte: vedi 3.12, 5.8 e 6.8. Cambio contratto fatto: vedi 3.13. Vincoli dei chiamati fatti: vedi 3.14.
 - **Capogruppo assente:** deciso, nessun sostituto; richieste e avvisi passano al supervisore (vedi 3.15).
-- **Non necessari (deciso):** login e scelta del ruolo, versioni tablet e mobile degli altri ruoli.
+- **Non necessari (deciso):** login e scelta del ruolo, versioni tablet e mobile disegnate per gli altri ruoli (la sidebar diventa comunque un menu a scomparsa sotto i 992 px).
 - **Fuori ambito:** mockup in Figma. Il docente ha stabilito che il prototipo cliccabile lo sostituisce.
 
 ### 7.3 Glossario

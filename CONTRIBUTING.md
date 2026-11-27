@@ -74,7 +74,25 @@ Prima di aprire la PR controlla:
 - **Un'entità per file**, in `src/PortPlanner/Domain/`; i servizi in `Services/`, con le operazioni come coppie Query o Command e DTO (`Query(qry)`, `Handle(cmd)`).
 - **Il seed** parte da `Startup` (`DataGenerator.Initialize`) con date relative a oggi; i test creano un `DbContext` vuoto e chiamano il seed con una data fissa.
 - **Test:** ogni regola di dominio ha il suo test nel progetto `PortPlanner.Tests`. Il database in memoria non fa rispettare indici né vincoli, quindi le regole (un solo team per slot, una persona su un solo sito per slot, barche che non si sovrappongono) vanno controllate nei servizi e provate. Un test nuovo conviene farlo fallire una volta apposta per essere sicuri che sappia accorgersi del problema.
-- **File toccati da tutti** (`_PortPlannerDbContext.cs`, `Container.cs`, `_Layout.cshtml`, `site.scss`): modifiche brevi e PR rapide, `git pull --rebase origin main` spesso. Se due PR conflittano, chi arriva dopo risolve.
+- **File toccati da tutti** (`VociMenu.cs`, `_Layout.cshtml`, `Startup.cs`): modifiche brevi e PR rapide, `git pull --rebase origin main` spesso. Se due PR conflittano, chi arriva dopo risolve.
+
+## Dove aggiungere cose
+
+Per non toccare in tre gli stessi file, il codice è diviso in due modi: le **pagine** per profilo, **dati, servizi e stili** per funzione. Le funzioni sono: Anagrafica, Pianificazione, Richieste, Assenze, Avvisi, Ore.
+
+| Cosa | Dove |
+|---|---|
+| Pagina del supervisore o del capogruppo | `PortPlanner.Web/Areas/<Profilo>/<Voce>/`: controller `partial` con azioni `public virtual`, che deriva da `SupervisoreBaseController` o `CapogruppoBaseController`, e le sue view |
+| Voce di menu | `PortPlanner.Web/Infrastructure/VociMenu.cs` (quelle previste ci sono già, con una pagina segnaposto da riempire) |
+| Entità | `PortPlanner/Domain/`, un file per entità |
+| `DbSet` | `PortPlanner/Services/<Funzione>/<Funzione>.DbContext.cs` |
+| Relazioni EF | `PortPlanner/Services/<Funzione>/<Funzione>.Relazioni.cs`, una classe `IEntityTypeConfiguration<T>` per entità: vengono trovate da sole |
+| Registrazione di un servizio | `PortPlanner.Web/Container.<Funzione>.cs` |
+| Stile | `PortPlanner.Web/wwwroot/css/site.<funzione>.scss`, già importato in `site.scss`; la barra laterale sta in `site.layout.scss` |
+
+- **Protezione per profilo:** nelle aree basta derivare dal controller base, che ha già `[Area]` e `[Authorize(Roles = ...)]`. Fuori dalle aree si usano le costanti di `Profili` (`[Authorize(Roles = Profili.Supervisore)]`), mai stringhe scritte a mano. Un test controlla che ogni controller di un'area derivi dalla sua base.
+- **Namespace nelle aree:** uno solo per area (`PortPlanner.Web.Areas.Supervisore`), senza il nome della cartella: un namespace `...Team` coprirebbe l'entità `Team`.
+- **Pagina nuova:** si aggiunge il suo indirizzo agli elenchi di `AccessoWebTests`.
 
 ## Mockup e specifiche vengono prima del codice
 
