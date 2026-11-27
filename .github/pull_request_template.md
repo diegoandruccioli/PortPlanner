@@ -2,7 +2,7 @@
 
 <!-- Due righe: cosa fa questa PR e quale schermata o regola delle specifiche implementa. -->
 
-Chiude #
+Closes #
 
 ## Come l'ho provata
 
