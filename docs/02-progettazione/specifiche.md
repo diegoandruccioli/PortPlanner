@@ -59,7 +59,7 @@ Tutte le pagine usano lo stesso linguaggio visivo (Bootstrap 5 UI Kit personaliz
 - **Poco bloccante, sempre con avvisi:** le anomalie e i conflitti si segnalano con riquadri gialli o azzurri e un pulsante "... comunque"; non si impedisce quasi mai un'azione del supervisore.
 - **Conferma** per spostamento, rimozione, eliminazione, cambio di capogruppo, sostituzione di un team, slot occupato; **non** per aggiungere una persona senza team o per scelte reversibili.
 - **Toast di conferma** in basso a destra (480 px, verde, spunta) dopo ogni azione, con link **Annulla** che ripristina lo stato precedente e chiusura automatica dopo circa 6 secondi. Su mobile occupa la larghezza della schermata.
-- **Finestre (modal)** centrate sopra la pagina oscurata, con X in alto a destra; le "maschere" del documento originale sono modal, le "pagine" sono schermate intere.
+- **Finestre (modal)** centrate sopra la pagina oscurata, con X in alto a destra; le "maschere" del documento originale sono modal, le "pagine" sono schermate intere. La 2.1 usa invece un offcanvas laterale a destra (Bootstrap offcanvas-end) per Aggiungi, Richiedi dipendenti e Sostituisci. Le icone senza testo accanto (cerchio rosso del capogruppo assente, maniglie di trascinamento, "…" dello slot, frecce del giorno, chevron, frecce di ordinamento) mostrano una nota solo al click sull'icona, che non attiva la cella sotto; Esc o un clic altrove la chiude. Non esistono legende: le tabelle si descrivono da sole.
 - **Salvataggio automatico** dove la scelta è singola e reversibile (assegnazione di un team, scelta di uno slot); pulsante Salva dove si compila un modulo (Dettaglio utente, disponibilità, preferenze).
 - **Stati vuoti** sempre disegnati: icona, frase che dice cosa manca e cosa succede quando arriverà.
 
@@ -90,7 +90,7 @@ Bozze: 01 (e 03, home e 2.0 affiancate). Prima pagina dopo l'accesso: dice cosa 
 - **Vista Live** (in alto): 4 card, una per sito. Card con barca presente (icona nave, "Sito 1 · Barca A") oppure sito libero (bordo tratteggiato, icona onda, "Libero").
 - **Griglia** (sotto): una riga per sito, giorni sull'asse X con sigla e numero ("Mar 17"); la colonna di oggi ha intestazione primaria e etichetta "Oggi". Le barche sono barre azzurre dal giorno di arrivo a quello di partenza. Le celle mostrano il numero di team assegnati ("2 team"), vuote se nessuno. Segmented control **7 giorni / 31 giorni** a destra del titolo.
 - **Collegamenti:** card barca → maschera Live sito (3.2); cella assegnata → pagina 2.0 (3.4); barra barca → maschera 3.0 (3.6); sidebar → le altre sezioni.
-- **Vista a 31 giorni (143):** celle compatte con il numero di team per giorno, 25 giorni visibili con scorrimento orizzontale, barre barca e legenda; il controllo 7/31 giorni cambia vista.
+- **Vista a 31 giorni (143):** celle compatte con il numero di team per giorno, 25 giorni visibili con scorrimento orizzontale, barre barca; il controllo 7/31 giorni cambia vista.
 
 ### 3.2 Maschera Live sito
 
@@ -108,7 +108,7 @@ Bozze: 61 (7 giorni), 62 (31 giorni), 63 (evidenzia un team), 64 (solo anomalie)
 - **Struttura:** colonne = giorni, righe = i 4 siti; ogni sito ha una riga sottile con la barra barca e 4 righe di slot. Un solo team per slot.
 - **Periodo:** 7 giorni o 31 giorni da oggi; a 31 giorni le celle diventano compatte ("T2") con scorrimento orizzontale e etichette di sito e slot fisse a sinistra.
 - **Cella:** nome del team su sfondo azzurro; scudo se assegnato dal supervisore; triangolo giallo se il team ha un'anomalia; grigio a righe se non lavorativo; bianca se vuota.
-- **Strumenti:** menu "Team: tutti" (scegliendo un team si evidenziano i suoi slot e si attenuano gli altri), chip "Solo con anomalie" e legenda sotto la griglia.
+- **Strumenti:** menu "Team: tutti" (scegliendo un team si evidenziano i suoi slot e si attenuano gli altri), chip "Solo con anomalie"; la griglia non ha legenda.
 - **Collegamenti:** cella (anche vuota) → 2.0 di quel giorno e barca; barra barca → 3.0. Non c'è assegnazione diretta dalla griglia: per assegnare si passa dalla 2.0.
 
 ### 3.4 Pagina 2.0 — Dettaglio barca, giorno e sito
@@ -126,18 +126,18 @@ Bozze: 02, 16 (conferma sostituzione), 17 (dopo la sostituzione), 21 (conferma i
 
 ### 3.5 Pagina 2.1 — Gestione team slot orario
 
-Bozze: 06 (base), 07 (dropdown Aggiungi), 08 (richiedi dipendenti), 09 (sezione vuota e toast), 10 (componente toast). Mostra e modifica chi lavora in quello slot.
+Bozze: 06 (base), 07 (offcanvas Aggiungi), 08 (offcanvas Richiedi dipendenti), 153 (offcanvas Sostituisci), 154 (persona di un altro team aggiunta, con toast), 157 (persona sostituita, con toast), 09 (sezione vuota e toast), 10 (componente toast). Mostra e modifica chi lavora in quello slot.
 
 - **Layout:** link "← Barca A · Sito 1" (torna alla 2.0), titolo "Team 2", sottotitolo con barca, sito, giorno e slot. Tre sezioni impilate (Gruisti, Mulettisti, Operai), ognuna con conteggio e pulsante "+ Aggiungi". Il capogruppo compare tra i membri con l'etichetta "Capogruppo".
 - **Riga persona:** nome, stato patente (pill con icona e testo), pulsante "Sostituisci" e X per rimuoverla dallo slot.
 - **Ordine delle liste:** gruisti e mulettisti con la patente di quel ruolo valida, poi scaduta, poi senza patente; operai senza patente prima, con patente dopo; alfabetico dentro ogni gruppo. Chi non ha la patente valida si può assegnare lo stesso: la riga mostra "Anomalia: assegnato senza patente valida" e il toast dice "Carlo Fiore aggiunto come gruista, senza patente valida".
-- **"+ Aggiungi" e "Sostituisci":** aprono lo stesso dropdown, che elenca solo i membri del team dello slot abilitati a quel ruolo, con ricerca e intestazioni per patente. Chi è già nello slot (anche con un altro ruolo) o è occupato in un altro sito è grigio e disabilitato con il motivo ("Già nello slot come muletista", "Occupata Sito 2"). Se non resta nessun membro compare "Nessun membro disponibile" con il pulsante "Richiedi dipendenti da altri team".
-- **"Richiedi dipendenti da altri team":** pulsante outline in alto a destra; modal con un selettore di ruolo (Gruista, Muletista, Operaio) e una tabella (nome, ruoli, team, stato Libero/Non libero, patente del ruolo scelto, pulsante Richiedi). Ordine: prima i liberi e poi i non liberi; dentro ogni gruppo prima chi ha la patente di quel ruolo valida, poi scaduta, poi chi non ce l'ha (per gli operai: senza patente prima, con patente dopo), alfabetico. La richiesta indica il ruolo richiesto. Il modal elenca solo persone di altri team o senza team, mai i membri del proprio team. Per il supervisore il pulsante è "Aggiungi": la persona entra subito nello slot e il capogruppo del suo team riceve un avviso; per il capogruppo resta "Richiedi". Dopo "Richiedi" la riga diventa "Inviata"; la persona entra nel team solo quando il capogruppo del suo team accetta (flusso in 6.1).
+- **"+ Aggiungi" e "Sostituisci":** aprono lo stesso offcanvas a destra (480 px, sfondo oscurato, X in alto a destra), con titolo diverso ("Aggiungi un gruista", "Richiedi dipendenti da altri team", "Sostituisci Luca Moro"), ricerca, filtro ruolo (Gruista, Muletista, Operaio) e due sezioni: "Membri del Team 2" e "Altri team" (con Richiedi l'ordine è inverso). Sostituisci: esce la persona della riga cliccata e il pulsante dei candidati è "Scegli". Chi è già nello slot (anche con un altro ruolo) o è occupato in un altro sito è grigio e disabilitato con il motivo ("Già nello slot come muletista", "Occupata Sito 2"). Se non resta nessun membro la sezione "Membri del Team 2" lo dice e restano i candidati di "Altri team".
+- **"Richiedi dipendenti da altri team":** pulsante outline in alto a destra; apre l'offcanvas con il selettore di ruolo e un elenco (nome, ruolo e team, stato Libero/Non libero, pill ore mancanti e preferenza, riga di avviso, pulsante Richiedi). Ordine: prima i liberi e poi i non liberi; dentro ogni gruppo prima chi ha la patente di quel ruolo valida, poi scaduta, poi chi non ce l'ha (per gli operai: senza patente prima, con patente dopo), alfabetico. La richiesta indica il ruolo richiesto. La sezione "Altri team" elenca solo persone di altri team o senza team; "Membri del Team 2" i membri del proprio. Per il supervisore il pulsante è "Aggiungi" e la richiesta è automatica: la persona entra subito nello slot (resta nel suo team), non nasce nessuna richiesta in attesa e un avviso arriva a entrambi i capigruppo (quello che perde la persona e quello che la riceve), con toast "Paola Greco aggiunta · R. Costa (Team 5) e A. Conti (Team 2) avvisati" e Annulla; per il capogruppo resta "Richiedi". Dopo "Richiedi" la riga diventa "Inviata"; la persona entra nel team solo quando il capogruppo del suo team accetta (flusso in 6.1).
 - **Sezione di ruolo vuota:** resta visibile, con conteggio (0), "Nessun mulettista assegnato" e il pulsante Aggiungi.
 - **Toast con Annulla** dopo ogni azione: "Anna Conti aggiunta al team", "Luca Moro sostituito con Marco Bruno", "Giorgio Neri rimosso dal team", "Richiesta inviata al capogruppo del Team 4".
 
-* **Ordine dei candidati e vincoli contrattuali:** i dropdown "+ Aggiungi / Sostituisci" e il modal "Richiedi dipendenti" ordinano in cascata: 1) liberi prima dei non liberi; 2) patente del ruolo valida, scaduta, senza; 3) vincoli contrattuali, prima chi non ha avvisi e poi chi ne ha; 4) ore mancanti al monte ore settimanale (solo A contratto); 5) preferenza di slot; 6) alfabetico. La patente viene prima dei vincoli. **Tutti i criteri sono visibili allo stesso modo: ogni candidato ha la pill della patente, la riga di avviso dei vincoli, la pill "Mancano 14 h" (ore al monte settimanale) e la pill "Preferisce slot"; una nota sotto la lista riporta l'ordin**e. Le ore mancanti sono quelle confermate; se la persona ha una richiesta in attesa compare anche il valore con la richiesta accettata ("Mancano 6 h · 0 h con richiesta in attesa"), ma l'ordine usa solo le confermate. Un candidato che violerebbe un vincolo resta selezionabile e ha una riga di avviso con icona e testo ("Riposo inferiore a 11 h dopo Lun 16 · 18 – 24", "Supera le 36 h settimanali", "Disponibilità non dichiarata"); nessuna conferma e toast "assegnato, con 1 avviso".
-- **Voce del dropdown:** nome, pill ore mancanti e preferenza, riga di avviso (vincolo, assenza, secondo turno); la patente è data dal gruppo e non si ripete.
+* **Ordine dei candidati e vincoli contrattuali:** l'offcanvas (Aggiungi, Richiedi dipendenti, Sostituisci) ordinano in cascata: 1) liberi prima dei non liberi; 2) patente del ruolo valida, scaduta, senza; 3) vincoli contrattuali, prima chi non ha avvisi e poi chi ne ha; 4) ore mancanti al monte ore settimanale (solo A contratto); 5) preferenza di slot; 6) alfabetico. La patente viene prima dei vincoli. **Tutti i criteri sono visibili allo stesso modo: ogni candidato ha la pill della patente, la riga di avviso dei vincoli, la pill "Mancano 14 h" (ore al monte settimanale) e la pill "Preferisce slot"; una nota sotto la lista riporta l'ordin**e. Le ore mancanti sono quelle confermate; se la persona ha una richiesta in attesa compare anche il valore con la richiesta accettata ("Mancano 6 h · 0 h con richiesta in attesa"), ma l'ordine usa solo le confermate. Un candidato che violerebbe un vincolo resta selezionabile e ha una riga di avviso con icona e testo ("Riposo inferiore a 11 h dopo Lun 16 · 18 – 24", "Supera le 36 h settimanali", "Disponibilità non dichiarata"); nessuna conferma e toast "assegnato, con 1 avviso".
+- **Voce dell'offcanvas:** nome, pill ore mancanti e preferenza, riga di avviso (vincolo, assenza, secondo turno); la patente è data dal gruppo e non si ripete.
 
 ### 3.6 Maschera 3.0 — Dettaglio totale barca
 
@@ -157,7 +157,7 @@ Bozze: 11 (in attesa), 12 (accettata con toast), 13 (Accettate), 14 (nessuna in 
 
 - **Struttura:** titolo "Richieste", banner azzurro "Come supervisore puoi accettare o rifiutare le richieste al posto di qualsiasi capogruppo", schede **In attesa / Accettate / Rifiutate** con contatore, filtri (ricerca persona, team e capogruppo, giorno nei prossimi 7), tabella.
 - **Colonne:** persona richiesta (nome, ruolo · team), richiesta da (team richiedente, "da A. Conti" oppure "da Mario Rossi (supervisore)"), capogruppo a cui è rivolta, dove e quando, azioni.
-- **Azioni:** **Accetta** (primario) e **Rifiuta** (outline), immediate, senza motivo. La riga esce da "In attesa", il contatore e il badge in sidebar scendono e compare il toast "Richiesta accettata al posto di S. Fabbri" con Annulla (riporta la richiesta in attesa).
+- **Azioni:** **Accetta** (primario) e **Rifiuta** (outline), immediate, senza motivo. La riga esce da "In attesa", il contatore e il badge in sidebar scendono e compare il toast "Richiesta accettata al posto di S. Fabbri" con Annulla (riporta la richiesta in attesa). Le richieste create dal supervisore non compaiono qui: sono automatiche (vedi 3.5) e il badge di esempio in sidebar è 2.
 - **Schede Accettate/Rifiutate:** nessun pulsante; colonna "Stato e decisione" con pill (icona + testo) e chi ha deciso ("Deciso da L. Bianchi" oppure "Mario Rossi, al posto di A. Gallo").
 - **Stato vuoto:** "Nessuna richiesta in attesa. Le nuove richieste dei capigruppo compariranno qui."
 - **Stati di una richiesta:** In attesa, Accettata, Rifiutata (e ritirata con Annulla dal richiedente).
@@ -246,7 +246,7 @@ Bozze 138–140 (badge anche in 01, 11, 23, 115). Il capogruppo resta un incaric
 - **Richieste:** quelle destinate al capogruppo assente compaiono subito nella pagina Richieste del supervisore con il badge rosso "Assente 18 – 20 nov"; gli Avvisi restano al capogruppo fino al rientro.
 - **Evidenza:** badge accanto al capogruppo in Gestione team e nella 2.1, con la riga "Anna Conti (capogruppo) è assente: richieste e avvisi del team passano a te".
 - **Barca gestita:** gli slot già scelti restano; il supervisore può modificarli dalla 2.0.
-- **Live page (01):** marcatore rosso sulle celle del team con capogruppo assente (Mer 18 – Ven 20) e voce in legenda.
+- **Live page (01):** marcatore rosso sulle celle del team con capogruppo assente (Mer 18 – Ven 20); la nota "Capogruppo assente (team nello slot)" compare al click sul marcatore.
 - **Conferma di approvazione (139–140):** approvando le ferie di un capogruppo la finestra avvisa che richieste e avvisi del team passano al supervisore, senza sostituto.
 
 ## 4. Ruolo Capogruppo (desktop 1440×900)
@@ -271,7 +271,7 @@ Bozze: 66 (slot imposto), 67 (richiedi dipendenti), 70 (slot scelto dal capogrup
 
 - **Slot imposto dal supervisore:** banner azzurro con scudo "Slot assegnato dal supervisore: puoi scegliere chi del tuo team lavora, non il team". Il capogruppo gestisce **solo le persone del suo team**: Aggiungi, Sostituisci e X restano attivi, ma team e slot non si contestano.
 - **Slot scelto dal capogruppo (barca gestita):** stessa pagina **senza banner**; il pulsante "Persone" della 3.0 porta qui (bozza 70).
-- **Richiedi dipendenti da altri team:** disponibile anche al capogruppo, con il suo nome come richiedente ("da A. Conti" nella pagina Richieste). Stesso modal del supervisore; la richiesta va al capogruppo dell'altro team (stato "Inviata").
+- **Richiedi dipendenti da altri team:** disponibile anche al capogruppo, con il suo nome come richiedente ("da A. Conti" nella pagina Richieste). Stesso offcanvas del supervisore; la richiesta va al capogruppo dell'altro team (stato "Inviata").
 - Sezioni Gruisti, Mulettisti, Operai, ordinamenti e toast con Annulla identici a 3.5.
 
 ### 4.3 Maschera 3.0 — Pianifica la barca (versione capogruppo)
@@ -427,7 +427,7 @@ Un capogruppo chiede una persona di un altro team per un singolo slot; il superv
 La richiesta resta "Inviata" finché il capogruppo del team della persona accetta o rifiuta; il supervisore può decidere al posto suo.
 
 1. Il richiedente apre la 2.1 dello slot (3.5 o 4.2) e preme "Richiedi dipendenti da altri team".
-2. Nel modal sceglie la persona (liberi prima, poi non liberi) e preme "Richiedi": la riga diventa "Inviata" e compare il toast "Richiesta inviata al capogruppo del Team 4" (Annulla la ritira).
+2. Nell'offcanvas sceglie la persona (liberi prima, poi non liberi) e preme "Richiedi": la riga diventa "Inviata" e compare il toast "Richiesta inviata al capogruppo del Team 4" (Annulla la ritira).
 3. La richiesta compare in "Richieste ricevute" del capogruppo del team della persona (4.4), con il badge in sidebar e la riga "Cosa succede" che segnala eventuali turni sovrapposti.
 4. Il capogruppo **accetta**: la persona lavora per il team richiedente solo in quello slot; entra nella lista della 2.1 del richiedente. Oppure **rifiuta**, senza motivo.
 5. In alternativa decide il supervisore, dalla pagina Richieste (3.7), al posto di quel capogruppo; lo stato finale riporta "Mario Rossi, al posto di A. Gallo".
@@ -506,8 +506,8 @@ Il prototipo cliccabile ([prototipo.html](<../03-mockup/prototipo.html>)) ha 151
 | Supervisore | Pagina 2.0 | Trascina un team su slot occupato | Conferma sostituzione | Open overlay |
 | Supervisore | Pagina 2.0 | Trascina un team in barca gestita | Conferma inserimento → 2.0 con toast | Open overlay |
 | Supervisore | Pagina 2.1 | ← Barca A · Sito 1 | Pagina 2.0 | Navigate to |
-| Supervisore | Pagina 2.1 | + Aggiungi / Sostituisci | Dropdown persone | Open overlay |
-| Supervisore | Pagina 2.1 | Richiedi dipendenti da altri team | Modal richieste | Open overlay |
+| Supervisore | Pagina 2.1 | + Aggiungi / Sostituisci | Offcanvas persone | Open overlay |
+| Supervisore | Pagina 2.1 | Richiedi dipendenti da altri team | Offcanvas richieste | Open overlay |
 | Supervisore | Pagina 2.1 | X su una persona | 2.1 con sezione vuota e toast | Variante |
 | Supervisore | Maschera 3.0 | Blocca giorno | Toast (o conferma se slot scelti dal capogruppo) | Variante / Open overlay |
 | Supervisore | Maschera 3.0 | Selettore team gestore | Elenco → conferma → toast | Open overlay |
@@ -531,7 +531,7 @@ Il prototipo cliccabile ([prototipo.html](<../03-mockup/prototipo.html>)) ha 151
 | Capogruppo | Home | Pianifica o barra "Gestisci tu" | 3.0 capogruppo | Open overlay |
 | Capogruppo | 3.0 capogruppo | Cella "Da scegliere" | Cella "Il team lavora" + toast | Variante |
 | Capogruppo | 3.0 capogruppo | Pulsante Persone | 2.1 senza banner | Navigate to |
-| Capogruppo | 2.1 capogruppo | Richiedi dipendenti | Modal richieste | Open overlay |
+| Capogruppo | 2.1 capogruppo | Richiedi dipendenti | Offcanvas richieste | Open overlay |
 | Capogruppo | Sidebar | Richieste | Richieste ricevute | Navigate to |
 | Capogruppo | Richieste ricevute | Accetta / Rifiuta | Riga spostata + toast | Variante |
 | Capogruppo | Sidebar | Avvisi | Avvisi | Navigate to |
