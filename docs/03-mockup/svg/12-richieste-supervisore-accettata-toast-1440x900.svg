@@ -16,7 +16,7 @@
 <g transform="translate(28 266)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7 L12 14 L22 7"/></g>
 <text x="64" y="284" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start">Richieste</text>
 <g id="Badge-richieste"><circle cx="206" cy="278" r="11" fill="#FFFFFF"/>
-<text x="206" y="283" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="middle">2</text>
+<text x="206" y="283" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="middle">1</text>
 </g>
 <g transform="translate(28 316)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21 q0 -8 8 -8 t8 8"/></g>
 <text x="64" y="336" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Utenti</text>
@@ -36,7 +36,7 @@
 <text x="320" y="115" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#055160" text-anchor="start">Come supervisore puoi accettare o rifiutare le richieste al posto di qualsiasi capogruppo. Scadono quando inizia lo slot richiesto.</text>
 </g>
 <g id="Schede-stato">
-<text x="272" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#0D6EFD" text-anchor="start">In attesa (2)</text>
+<text x="272" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#0D6EFD" text-anchor="start">In attesa (1)</text>
 <rect x="268" y="190" width="126.8" height="3" fill="#0D6EFD"/>
 <text x="424" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#6C757D" text-anchor="start">Accettate (9)</text>
 <text x="576" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#6C757D" text-anchor="start">Rifiutate (2)</text>
@@ -55,20 +55,24 @@
 <g id="Chevron-giorno" transform="translate(1018 219) scale(1)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5 l6 6 l6 -6"/></g>
 </g>
 <g id="Tabella-richieste">
-<rect x="272" y="264" width="1136" height="188" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
+<rect x="272" y="264" width="1136" height="116" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
 <text x="296" y="291" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">PERSONA RICHIESTA</text>
 <text x="530" y="291" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">RICHIESTA DA</text>
 <text x="770" y="291" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">CAPOGRUPPO</text>
 <text x="960" y="291" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">DOVE E QUANDO</text>
 <text x="1180" y="291" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">AZIONI</text>
 <line x1="272" y1="308" x2="1408" y2="308" stroke="#DEE2E6"/>
-<text x="296" y="338" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Paola Greco</text>
-<text x="296" y="360" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Operaio · Team 5</text>
-<text x="530" y="338" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Team 2</text>
-<text x="530" y="360" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">da Mario Rossi (supervisore)</text>
-<text x="770" y="349" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">R. Costa (Team 5)</text>
-<text x="960" y="338" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Barca A · Sito 1</text>
-<text x="960" y="360" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Mer 18 nov · Slot 0 – 6</text>
+<text x="296" y="338" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Sara Fontana</text>
+<text x="296" y="360" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Operaio · Team 2</text>
+<text x="530" y="338" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Team 4</text>
+<text x="530" y="360" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">da S. Fabbri</text>
+<text x="770" y="338" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">A. Conti (Team 2)</text>
+<g id="Pill-capogruppo-assente-1"><rect x="770" y="346" width="169.1" height="24" rx="12" fill="#F8D7DA"/>
+<g id="Pill-capogruppo-assente-1-icona" transform="translate(778 350) scale(1)" fill="none" stroke="#842029" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="798" y="362.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#842029" text-anchor="start">Assente 18 – 20 nov</text>
+</g>
+<text x="960" y="338" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Barca C · Sito 4</text>
+<text x="960" y="360" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Ven 20 nov · Slot 12 – 18</text>
 <g id="Accetta-1"><rect x="1180" y="328" width="100" height="32" rx="6" fill="#0D6EFD" stroke="#0D6EFD"/>
 <g id="Accetta-1-icona" transform="translate(1193.1 337.0) scale(0.875)" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5 L6.5 12.5 L13.5 4"/></g>
 <text x="1215.1" y="349.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start">Accetta</text>
@@ -76,26 +80,6 @@
 <g id="Rifiuta-1"><rect x="1288" y="328" width="100" height="32" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
 <g id="Rifiuta-1-icona" transform="translate(1301.1 337.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
 <text x="1323.1" y="349.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Rifiuta</text>
-</g>
-<line x1="272" y1="380" x2="1408" y2="380" stroke="#DEE2E6"/>
-<text x="296" y="410" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Sara Fontana</text>
-<text x="296" y="432" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Operaio · Team 2</text>
-<text x="530" y="410" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Team 4</text>
-<text x="530" y="432" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">da S. Fabbri</text>
-<text x="770" y="410" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">A. Conti (Team 2)</text>
-<g id="Pill-capogruppo-assente-2"><rect x="770" y="418" width="169.1" height="24" rx="12" fill="#F8D7DA"/>
-<g id="Pill-capogruppo-assente-2-icona" transform="translate(778 422) scale(1)" fill="none" stroke="#842029" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
-<text x="798" y="434.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#842029" text-anchor="start">Assente 18 – 20 nov</text>
-</g>
-<text x="960" y="410" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Barca C · Sito 4</text>
-<text x="960" y="432" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Ven 20 nov · Slot 12 – 18</text>
-<g id="Accetta-2"><rect x="1180" y="400" width="100" height="32" rx="6" fill="#0D6EFD" stroke="#0D6EFD"/>
-<g id="Accetta-2-icona" transform="translate(1193.1 409.0) scale(0.875)" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5 L6.5 12.5 L13.5 4"/></g>
-<text x="1215.1" y="421.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start">Accetta</text>
-</g>
-<g id="Rifiuta-2"><rect x="1288" y="400" width="100" height="32" rx="6" fill="#FFFFFF" stroke="#6C757D"/>
-<g id="Rifiuta-2-icona" transform="translate(1301.1 409.0) scale(0.875)" fill="none" stroke="#212529" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
-<text x="1323.1" y="421.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Rifiuta</text>
 </g>
 </g>
 <g id="Toast-accettata">

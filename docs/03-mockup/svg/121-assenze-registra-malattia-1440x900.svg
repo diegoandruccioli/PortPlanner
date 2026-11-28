@@ -18,7 +18,7 @@
 <g id="cal-Nav-Richieste-icona" transform="translate(28 266)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7 L12 14 L22 7"/></g>
 <text x="64" y="284" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Richieste</text>
 <g id="cal-Badge-richieste"><circle cx="206" cy="278" r="11" fill="#FFFFFF"/></g>
-<text x="206" y="283" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="middle">3</text>
+<text x="206" y="283" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="middle">2</text>
 <g id="cal-Nav-Utenti-icona" transform="translate(28 316)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21 q0 -8 8 -8 t8 8"/></g>
 <text x="64" y="336" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Utenti</text>
 <g id="cal-Nav-Ore-icona" transform="translate(28 368)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7 V12 L15 14"/></g>
@@ -48,20 +48,10 @@
 <g id="cal-Mese-successivo" transform="translate(480 191) scale(1)" fill="none" stroke="#0D6EFD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 L11 8 L5 14"/></g>
 <text x="392" y="204" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="middle">Novembre 2026</text>
 </g>
-<g id="cal-Legenda-Ferie"><rect x="760" y="187" width="72.5" height="24" rx="12" fill="#CFE2FF"/>
-<g id="cal-Legenda-Ferie-icona" transform="translate(768 191) scale(1)" fill="none" stroke="#052C65" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><path d="M8 1 V3 M8 13 V15 M1 8 H3 M13 8 H15 M3 3 L4.4 4.4 M11.6 11.6 L13 13 M3 13 L4.4 11.6 M11.6 4.4 L13 3"/></g>
-<text x="788" y="203.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="start">Ferie</text>
-</g>
-<g id="cal-Legenda-Permesso"><rect x="840.5" y="187" width="93.2" height="24" rx="12" fill="#CFF4FC"/>
-<g id="cal-Legenda-Permesso-icona" transform="translate(848.5 191) scale(1)" fill="none" stroke="#055160" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 1.5 H10 L13 4.5 V14.5 H3 Z"/><path d="M5.5 8 H10.5 M5.5 11 H10.5"/></g>
-<text x="868.5" y="203.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#055160" text-anchor="start">Permesso</text>
-</g>
-<g id="cal-Legenda-Malattia"><rect x="941.7" y="187" width="93.2" height="24" rx="12" fill="#F8D7DA"/>
-<g id="cal-Legenda-Malattia-icona" transform="translate(949.7 191) scale(1)" fill="none" stroke="#842029" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 14 C2 10 1 6 3.2 4 C5 2.6 7 3.4 8 5 C9 3.4 11 2.6 12.8 4 C15 6 14 10 8 14 Z"/></g>
-<text x="969.7" y="203.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#842029" text-anchor="start">Malattia</text>
-</g>
-<g id="cal-Legenda-in-attesa"><rect x="1046.9" y="189" width="28" height="20" rx="6" fill="#FFFFFF" stroke="#0D6EFD" stroke-dasharray="4 3"/></g>
-<text x="1082.9" y="204" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">in attesa</text>
+
+
+
+
 <g id="cal-Calendario-assenze">
 <rect x="272" y="232" width="1136" height="576" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
 <text x="296" y="266" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="start">LAVORATORE</text>

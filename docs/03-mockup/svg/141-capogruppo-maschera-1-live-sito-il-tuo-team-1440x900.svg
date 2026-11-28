@@ -146,23 +146,7 @@
 <rect id="home-Slot-4-4-E" x="913" y="504" width="27" height="16" rx="3" fill="#FFFFFF" stroke="#0D6EFD" stroke-width="1.5" stroke-dasharray="3 2"/>
 <text x="880.0" y="536" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="middle">2 slot · 1 da scegliere</text>
 </g>
-<g id="home-Legenda">
-<rect x="296" y="806" width="22" height="14" rx="3" fill="#0D6EFD"/>
-<text x="326" y="818" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Il tuo team lavora</text>
-<rect x="466.8" y="806" width="22" height="14" rx="3" fill="#CFE2FF" stroke="#9EC5FE"/>
-<g id="home-Legenda-scudo" transform="translate(472.8 808) scale(0.62)" fill="none" stroke="#052C65" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1.5 L13.5 3.5 V8 C13.5 11.5 11 13.5 8 14.5 C5 13.5 2.5 11.5 2.5 8 V3.5 Z"/></g>
-<text x="496.8" y="818" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Imposto dal supervisore</text>
-<rect x="670.6" y="806" width="22" height="14" rx="3" fill="url(#cap-hatch)" stroke="#ADB5BD"/>
-<text x="700.6" y="818" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Non lavori</text>
-<rect x="788.6" y="806" width="22" height="14" rx="3" fill="#FFFFFF" stroke="#0D6EFD" stroke-width="1.5" stroke-dasharray="3 2"/>
-<text x="818.6" y="818" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Da scegliere</text>
-<rect x="919.8" y="806" width="22" height="14" rx="3" fill="#CED4DA"/>
-<text x="949.8" y="818" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Altro team</text>
-<rect x="1037.8" y="805" width="28" height="16" rx="5" fill="#0D6EFD"/>
-<text x="1073.8" y="818" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Barca gestita da te</text>
-<rect x="1225.0" y="805" width="28" height="16" rx="5" fill="#6C757D"/>
-<text x="1261.0" y="818" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Altra barca</text>
-</g>
+
 </g>
 </g>
 <rect id="Sfondo-oscurato" width="1440" height="900" fill="#000000" fill-opacity="0.5"/>
