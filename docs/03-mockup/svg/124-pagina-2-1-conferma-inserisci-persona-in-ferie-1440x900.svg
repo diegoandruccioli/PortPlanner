@@ -19,7 +19,7 @@
 <g transform="translate(28 266)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7 L12 14 L22 7"/></g>
 <text x="64" y="284" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Richieste</text>
 <g id="Badge-richieste"><circle cx="206" cy="278" r="11" fill="#FFFFFF"/></g>
-<text x="206" y="283" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="middle">3</text>
+<text x="206" y="283" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="middle">2</text>
 <g transform="translate(28 316)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21 q0 -8 8 -8 t8 8"/></g>
 <text x="64" y="336" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Utenti</text>
 <g transform="translate(28 368)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7 V12 L15 14"/></g>
@@ -122,42 +122,132 @@
 <g id="Rimuovi-Sara-Fontana" transform="translate(1352 576) scale(1)" fill="none" stroke="#212529" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
 </g>
 </g>
-<g id="Dropdown-aggiungi-persona">
-<rect x="960" y="208" width="424" height="396" rx="8" fill="#000000" fill-opacity="0.10"/>
-<rect x="960" y="204" width="424" height="396" rx="8" fill="#FFFFFF" stroke="#DEE2E6"/>
-<rect x="972" y="216" width="400" height="38" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/>
-<g id="Icona-cerca" transform="translate(984 227) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5"/><path d="M11 11 L15 15"/></g>
-<text x="1010" y="240" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Cerca un gruista</text>
-<text x="980" y="276" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="start">Solo membri del Team 2</text>
-<text x="980" y="310" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">PATENTE GRU VALIDA</text>
-<text x="1004" y="341" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Paolo Riva</text>
-<g id="Icona-dd-Paolo-Riva" transform="translate(980 328) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
-<g id="Criterio-Paolo-Riva-pref"><rect x="1226.5" y="324" width="141.5" height="24" rx="12" fill="#CFE2FF"/>
-<g id="Criterio-Paolo-Riva-pref-icona" transform="translate(1234.5 328) scale(1)" fill="none" stroke="#052C65" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
-<text x="1254.5" y="340.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="start">Preferisce slot</text>
+<rect id="Sfondo-oscurato" width="1440" height="900" fill="#000000" fill-opacity="0.5"/>
+<g id="Offcanvas">
+<rect x="956" y="0" width="484" height="900" fill="#000000" fill-opacity="0.08"/>
+<rect x="960" y="0" width="480" height="900" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="984" y="46" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#212529" text-anchor="start">Aggiungi un gruista</text>
+<text x="984" y="68" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Barca A · Sito 1 · Mar 17 nov · Slot 6 – 12</text>
+<g id="Chiudi-offcanvas" transform="translate(1396 28) scale(1.1)" fill="none" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
+<line x1="960" y1="84" x2="1440" y2="84" stroke="#DEE2E6"/>
+<g id="Offcanvas-ricerca"><rect x="984" y="98" width="432" height="38" rx="6" fill="#FFFFFF" stroke="#DEE2E6"/></g>
+<g id="Icona-cerca" transform="translate(996 109) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="5"/><path d="M11 11 L15 15"/></g>
+<text x="1022" y="122" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Cerca un gruista</text>
+<g id="Offcanvas-filtro-ruolo">
+<rect x="984" y="148" width="100" height="32" fill="#0D6EFD" stroke="#0D6EFD"/>
+<text x="1034" y="169" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Gruista</text>
+<rect x="1084" y="148" width="100" height="32" fill="#FFFFFF" stroke="#0D6EFD"/>
+<text x="1134" y="169" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="13" font-weight="400" fill="#0D6EFD" text-anchor="middle">Muletista</text>
+<rect x="1184" y="148" width="100" height="32" fill="#FFFFFF" stroke="#0D6EFD"/>
+<text x="1234" y="169" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="13" font-weight="400" fill="#0D6EFD" text-anchor="middle">Operaio</text>
 </g>
-<g id="Criterio-Paolo-Riva-ore"><rect x="1106.6" y="324" width="113.9" height="24" rx="12" fill="#CFE2FF"/>
-<g id="Criterio-Paolo-Riva-ore-icona" transform="translate(1114.6 328) scale(1)" fill="none" stroke="#052C65" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5 V8 L10.5 9.5"/></g>
-<text x="1134.6" y="340.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="start">Mancano 8 h</text>
+<text x="984" y="210" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="start">MEMBRI DEL TEAM 2</text>
+<g id="Icona-persona-Paolo-Riva" transform="translate(984 228) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="1008" y="242" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Paolo Riva</text>
+<text x="1008" y="260" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Operaio · gru valida</text>
+<g id="Stato-Paolo-Riva"><rect x="1008" y="268" width="79.4" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Stato-Paolo-Riva-icona" transform="translate(1016 272) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1036" y="284.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Libero</text>
 </g>
-<g id="Icona-vincolo-dd-Paolo-Riva" transform="translate(1004 350) scale(0.75)" fill="none" stroke="#664D03" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
-<text x="1022" y="361" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#664D03" text-anchor="start">Riposo inferiore a 11 h dopo Lun 16 · 18 – 24</text>
-<rect x="968" y="372" width="408" height="36" rx="4" fill="#E9ECEF"/>
-<g id="Icona-occupata-Giorgio-Neri" transform="translate(980 382) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M3.4 3.4 L12.6 12.6"/></g>
-<text x="1004" y="395" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Giorgio Neri</text>
-<text x="1364" y="395" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#495057" text-anchor="end">Già nello slot come muletista</text>
-<text x="980" y="434" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#6C757D" text-anchor="start">ASSENTI IN QUESTO GIORNO</text>
-<g id="Icona-dd-Davide-Longo" transform="translate(980 452) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
-<text x="1004" y="465" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#212529" text-anchor="start">Davide Longo</text>
-<g id="Assenza-Davide-Longo"><rect x="1178.2" y="448" width="189.8" height="24" rx="12" fill="#F8D7DA"/>
-<g id="Assenza-Davide-Longo-icona" transform="translate(1186.2 452) scale(1)" fill="none" stroke="#842029" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
-<text x="1206.2" y="464.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#842029" text-anchor="start">In ferie · 16 – 20 nov</text>
+<g id="Criterio-Paolo-Riva-1"><rect x="1093.4" y="268" width="113.9" height="24" rx="12" fill="#CFE2FF"/>
+<g id="Criterio-Paolo-Riva-1-icona" transform="translate(1101.4 272) scale(1)" fill="none" stroke="#052C65" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5 V8 L10.5 9.5"/></g>
+<text x="1121.4" y="284.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="start">Mancano 8 h</text>
 </g>
-<text x="1004" y="485" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Selezionabile: chiede conferma, mai bloccato</text>
-<line x1="960" y1="498" x2="1384" y2="498" stroke="#DEE2E6"/>
-<text x="980" y="520" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#212529" text-anchor="start">Persone di altri team: usa Richiedi dipendenti.</text>
-<text x="980" y="538" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Ordine: libero, patente del ruolo, vincoli, ore da completare,</text>
-<text x="980" y="554" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">preferenza di slot, poi alfabetico. Gli avvisi non bloccano.</text>
+<g id="Criterio-Paolo-Riva-2"><rect x="1213.3000000000002" y="268" width="141.5" height="24" rx="12" fill="#CFE2FF"/>
+<g id="Criterio-Paolo-Riva-2-icona" transform="translate(1221.3000000000002 272) scale(1)" fill="none" stroke="#052C65" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1241.3000000000002" y="284.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="start">Preferisce slot</text>
+</g>
+<g id="Vincolo-icona-Paolo-Riva" transform="translate(1008 300) scale(0.75)" fill="none" stroke="#664D03" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="1026" y="311" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#664D03" text-anchor="start">Riposo inferiore a 11 h dopo Lun 16 · 18 – 24</text>
+<g id="Azione-Paolo-Riva"><rect x="1324" y="230" width="92" height="32" rx="6" fill="#FFFFFF" stroke="#0D6EFD"/>
+<text x="1329.4" y="251.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0D6EFD" text-anchor="start">Aggiungi</text>
+</g>
+<line x1="976" y1="326" x2="1424" y2="326" stroke="#DEE2E6"/>
+<rect x="972" y="330" width="456" height="48" rx="4" fill="#E9ECEF"/>
+<g id="Icona-occupata-Giorgio-Neri" transform="translate(984 344) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M3.4 3.4 L12.6 12.6"/></g>
+<text x="1008" y="359" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Giorgio Neri</text>
+<text x="1416" y="359" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#495057" text-anchor="end">Già nello slot come muletista</text>
+<line x1="976" y1="382" x2="1424" y2="382" stroke="#DEE2E6"/>
+<g id="Icona-persona-Davide-Longo" transform="translate(984 390) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="1008" y="404" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Davide Longo</text>
+<text x="1008" y="422" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Operaio · gru valida</text>
+<g id="Assenza-Davide-Longo"><rect x="1008" y="430" width="189.8" height="24" rx="12" fill="#F8D7DA"/>
+<g id="Assenza-Davide-Longo-icona" transform="translate(1016 434) scale(1)" fill="none" stroke="#842029" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="1036" y="446.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#842029" text-anchor="start">In ferie · 16 – 20 nov</text>
+</g>
+<g id="Vincolo-icona-Davide-Longo" transform="translate(1008 462) scale(0.75)" fill="none" stroke="#842029" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="1026" y="473" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#842029" text-anchor="start">Selezionabile: chiede conferma, mai bloccato</text>
+<g id="Azione-Davide-Longo"><rect x="1324" y="392" width="92" height="32" rx="6" fill="#FFFFFF" stroke="#0D6EFD"/>
+<text x="1329.4" y="413.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0D6EFD" text-anchor="start">Aggiungi</text>
+</g>
+<line x1="976" y1="488" x2="1424" y2="488" stroke="#DEE2E6"/>
+<text x="984" y="510" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="start">ALTRI TEAM</text>
+<g id="Icona-persona-Elisa-Ferri" transform="translate(984 528) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="1008" y="542" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Elisa Ferri</text>
+<text x="1008" y="560" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Gruista · Senza team (subito)</text>
+<g id="Stato-Elisa-Ferri"><rect x="1008" y="568" width="79.4" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Stato-Elisa-Ferri-icona" transform="translate(1016 572) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1036" y="584.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Libero</text>
+</g>
+<g id="Criterio-Elisa-Ferri-1"><rect x="1093.4" y="568" width="113.9" height="24" rx="12" fill="#CFE2FF"/>
+<g id="Criterio-Elisa-Ferri-1-icona" transform="translate(1101.4 572) scale(1)" fill="none" stroke="#052C65" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5 V8 L10.5 9.5"/></g>
+<text x="1121.4" y="584.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="start">Mancano 4 h</text>
+</g>
+<g id="Azione-Elisa-Ferri"><rect x="1324" y="530" width="92" height="32" rx="6" fill="#FFFFFF" stroke="#0D6EFD"/>
+<text x="1329.4" y="551.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0D6EFD" text-anchor="start">Aggiungi</text>
+</g>
+<line x1="976" y1="604" x2="1424" y2="604" stroke="#DEE2E6"/>
+<g id="Icona-persona-Paola-Greco" transform="translate(984 612) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="1008" y="626" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Paola Greco</text>
+<text x="1008" y="644" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Operaio · Team 5 · senza patente gru</text>
+<g id="Stato-Paola-Greco"><rect x="1008" y="652" width="79.4" height="24" rx="12" fill="#D1E7DD"/>
+<g id="Stato-Paola-Greco-icona" transform="translate(1016 656) scale(1)" fill="none" stroke="#146C43" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="1036" y="668.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#146C43" text-anchor="start">Libero</text>
+</g>
+<g id="Criterio-Paola-Greco-1"><rect x="1093.4" y="652" width="113.9" height="24" rx="12" fill="#CFE2FF"/>
+<g id="Criterio-Paola-Greco-1-icona" transform="translate(1101.4 656) scale(1)" fill="none" stroke="#052C65" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5 V8 L10.5 9.5"/></g>
+<text x="1121.4" y="668.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="start">Mancano 6 h</text>
+</g>
+<g id="Azione-Paola-Greco"><rect x="1324" y="614" width="92" height="32" rx="6" fill="#FFFFFF" stroke="#0D6EFD"/>
+<text x="1329.4" y="635.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0D6EFD" text-anchor="start">Aggiungi</text>
+</g>
+<line x1="976" y1="688" x2="1424" y2="688" stroke="#DEE2E6"/>
+<g id="Icona-persona-Marco-Bruno" transform="translate(984 696) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="1008" y="710" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Marco Bruno</text>
+<text x="1008" y="728" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Gruista · Team 4 · gru valida</text>
+<g id="Assenza-Marco-Bruno"><rect x="1008" y="736" width="189.8" height="24" rx="12" fill="#F8D7DA"/>
+<g id="Assenza-Marco-Bruno-icona" transform="translate(1016 740) scale(1)" fill="none" stroke="#842029" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 L15 14 H1 Z"/><path d="M8 7 V10.5"/><circle cx="8" cy="12.2" r="0.4"/></g>
+<text x="1036" y="752.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#842029" text-anchor="start">In ferie · 16 – 20 nov</text>
+</g>
+<g id="Criterio-Marco-Bruno-1"><rect x="1203.8" y="736" width="120.80000000000001" height="24" rx="12" fill="#CFE2FF"/>
+<g id="Criterio-Marco-Bruno-1-icona" transform="translate(1211.8 740) scale(1)" fill="none" stroke="#052C65" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5 V8 L10.5 9.5"/></g>
+<text x="1231.8" y="752.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="start">Mancano 14 h</text>
+</g>
+<g id="Azione-Marco-Bruno"><rect x="1324" y="698" width="92" height="32" rx="6" fill="#FFFFFF" stroke="#0D6EFD"/>
+<text x="1329.4" y="719.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0D6EFD" text-anchor="start">Aggiungi</text>
+</g>
+<line x1="976" y1="772" x2="1424" y2="772" stroke="#DEE2E6"/>
+<g id="Icona-persona-Elena-Ricci" transform="translate(984 780) scale(1)" fill="none" stroke="#6C757D" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2.5 15 q0 -6 5.5 -6 t5.5 6"/></g>
+<text x="1008" y="794" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#212529" text-anchor="start">Elena Ricci</text>
+<text x="1008" y="812" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Gruista · Team 1 · gru valida</text>
+<g id="Stato-Elena-Ricci"><rect x="1008" y="820" width="107.0" height="24" rx="12" fill="#E9ECEF"/>
+<g id="Stato-Elena-Ricci-icona" transform="translate(1016 824) scale(1)" fill="none" stroke="#495057" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M3.4 3.4 L12.6 12.6"/></g>
+<text x="1036" y="836.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#495057" text-anchor="start">Non libero</text>
+</g>
+<g id="Criterio-Elena-Ricci-1"><rect x="1121.0" y="820" width="120.80000000000001" height="24" rx="12" fill="#CFE2FF"/>
+<g id="Criterio-Elena-Ricci-1-icona" transform="translate(1129.0 824) scale(1)" fill="none" stroke="#052C65" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5 V8 L10.5 9.5"/></g>
+<text x="1149.0" y="836.5" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#052C65" text-anchor="start">Mancano 22 h</text>
+</g>
+<g id="Azione-Elena-Ricci"><rect x="1324" y="782" width="92" height="32" rx="6" fill="#FFFFFF" stroke="#0D6EFD"/>
+<text x="1329.4" y="803.0" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0D6EFD" text-anchor="start">Aggiungi</text>
+</g>
+<line x1="976" y1="856" x2="1424" y2="856" stroke="#DEE2E6"/>
+<rect x="1430" y="204" width="5" height="360" rx="2.5" fill="#ADB5BD"/>
+<rect x="960" y="812" width="480" height="88" fill="#FFFFFF"/>
+<line x1="960" y1="812" x2="1440" y2="812" stroke="#DEE2E6"/>
+<text x="984" y="836" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Ordine: liberi, patente del ruolo, vincoli, ore mancanti, preferenza di slot.</text>
+<text x="984" y="856" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#212529" text-anchor="start">Come supervisore aggiungi subito: i due capigruppo ricevono un avviso.</text>
+<text x="984" y="874" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Le persone senza team non hanno un capogruppo da avvisare.</text>
 </g>
 
 </g>

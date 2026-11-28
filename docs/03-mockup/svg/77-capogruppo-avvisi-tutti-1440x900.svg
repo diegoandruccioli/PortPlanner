@@ -84,15 +84,19 @@
 <line x1="272" y1="558" x2="1408" y2="558" stroke="#DEE2E6"/>
 <circle cx="340" cy="595" r="20" fill="#CFE2FF"/>
 <g id="Icona-avviso-6" transform="translate(331 586) scale(1.1)" fill="none" stroke="#052C65" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5 H13 M10 2 L13 5 L10 8 M14 11 H3 M6 8 L3 11 L6 14"/></g>
-<text x="380" y="587" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#212529" text-anchor="start">Richiesta accettata: Elena Ricci (Team 1)</text>
-<text x="380" y="607" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Mer 18 nov · Slot 6 – 12 · Barca A. Deciso da L. Bianchi: lavora per il tuo team.</text>
-<text x="380" y="623" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">L. Bianchi (Team 1) · Ieri 15:30</text>
+<text x="380" y="587" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#212529" text-anchor="start">Elena Ricci (Team 1) lavora con il tuo team</text>
+<text x="380" y="607" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Mer 18 nov · Slot 6 – 12 · Barca A. Aggiunta dal supervisore: L. Bianchi è stato avvisato.</text>
+<text x="380" y="623" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Mario Rossi (supervisore) · Ieri 15:30</text>
+<text x="1267.8" y="600" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0D6EFD" text-anchor="start">Vedi la barca</text>
+<g id="Link-chevron-6" transform="translate(1368 590) scale(0.8)" fill="none" stroke="#0D6EFD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 L11 8 L5 14"/></g>
 <line x1="272" y1="632" x2="1408" y2="632" stroke="#DEE2E6"/>
 <circle cx="340" cy="669" r="20" fill="#CFE2FF"/>
 <g id="Icona-avviso-7" transform="translate(331 660) scale(1.1)" fill="none" stroke="#052C65" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5 H13 M10 2 L13 5 L10 8 M14 11 H3 M6 8 L3 11 L6 14"/></g>
-<text x="380" y="661" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#212529" text-anchor="start">Marco Bruno ora è a chiamata</text>
-<text x="380" y="681" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Dal 16 nov. 2 turni futuri con avviso; la disponibilità va dichiarata.</text>
+<text x="380" y="661" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#212529" text-anchor="start">Paolo Riva lavora con il Team 4</text>
+<text x="380" y="681" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#6C757D" text-anchor="start">Mer 18 nov · Slot 12 – 18 · Barca B. Aggiunto dal supervisore: la persona esce dal tuo team solo per questo slot.</text>
 <text x="380" y="697" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#6C757D" text-anchor="start">Mario Rossi (supervisore) · Lun 16 nov, 11:20</text>
+<text x="1267.8" y="674" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0D6EFD" text-anchor="start">Vedi la barca</text>
+<g id="Link-chevron-7" transform="translate(1368 664) scale(0.8)" fill="none" stroke="#0D6EFD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2 L11 8 L5 14"/></g>
 <line x1="272" y1="706" x2="1408" y2="706" stroke="#DEE2E6"/>
 <circle cx="340" cy="743" r="20" fill="#CFE2FF"/>
 <g id="Icona-avviso-8" transform="translate(331 734) scale(1.1)" fill="none" stroke="#052C65" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1.5 L13.5 3.5 V8 C13.5 11.5 11 13.5 8 14.5 C5 13.5 2.5 11.5 2.5 8 V3.5 Z"/></g>

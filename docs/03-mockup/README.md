@@ -27,6 +27,7 @@ I nomi dei file sono `NN-descrizione-LARGHEZZAxALTEZZA.svg`. Il numero è l'ordi
 | 01–64, 80–81, 90–92 | Supervisore: home, dettaglio barca e giorno (2.0), gestione team slot (2.1), dettaglio totale barca (3.0, con blocco giorno e cambio del team gestore), richieste, gestione team, gestione utenti, dettaglio utente, pianificazione | 1440×900 |
 | 65–79 | Capogruppo: home, 2.1, 3.0, richieste ricevute, avvisi | 1440×900 |
 | 82–89, 99 | Dipendente: turni, disponibilità, preferenze, profilo (con contratto e a chiamata) | 390×844 |
+| 153–157 | 2.1 con offcanvas Sostituisci (supervisore e capogruppo), persona di un altro team aggiunta con toast, persona sostituita con toast, richiesta inviata (capogruppo) | 1440×900 |
 | 93–98, 100–102 | Stati del dettaglio utente (creato, disponibilità, tutti i turni, eliminazione), vincoli contrattuali, filtri, 2.1 senza membri disponibili | 1440×900 |
 | 103–114 | Ore e straordinari, notifiche del dipendente | 1440×900 e 390×844 |
 | 115–134 | Assenze (ferie, permessi, malattia) e cambio contratto | 1440×900 e 390×844 |

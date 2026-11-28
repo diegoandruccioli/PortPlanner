@@ -16,7 +16,7 @@
 <g transform="translate(28 266)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7 L12 14 L22 7"/></g>
 <text x="64" y="284" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start">Richieste</text>
 <g id="Badge-richieste"><circle cx="206" cy="278" r="11" fill="#FFFFFF"/>
-<text x="206" y="283" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="middle">3</text>
+<text x="206" y="283" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#0D6EFD" text-anchor="middle">2</text>
 </g>
 <g transform="translate(28 316)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21 q0 -8 8 -8 t8 8"/></g>
 <text x="64" y="336" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#FFFFFF" text-anchor="start">Utenti</text>
@@ -36,7 +36,7 @@
 <text x="320" y="115" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="400" fill="#055160" text-anchor="start">Come supervisore puoi accettare o rifiutare le richieste al posto di qualsiasi capogruppo. Scadono quando inizia lo slot richiesto.</text>
 </g>
 <g id="Schede-stato">
-<text x="272" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#6C757D" text-anchor="start">In attesa (3)</text>
+<text x="272" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#6C757D" text-anchor="start">In attesa (2)</text>
 <text x="424" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="400" fill="#6C757D" text-anchor="start">Accettate (8)</text>
 <text x="576" y="180" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#0D6EFD" text-anchor="start">Rifiutate (2)</text>
 <rect x="572" y="190" width="126.8" height="3" fill="#0D6EFD"/>

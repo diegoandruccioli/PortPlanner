@@ -78,9 +78,19 @@
 <rect x="180" y="701" width="480" height="56" rx="6" fill="#000000" fill-opacity="0.10"/>
 <rect x="180" y="698" width="480" height="56" rx="6" fill="#D1E7DD" stroke="#A3CFBB"/>
 <g id="Toast-Aggiunta diretta-icona" transform="translate(196 714) scale(1.5)" fill="none" stroke="#146C43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
-<text x="232" y="732" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0A3622" text-anchor="start">Marco Bruno aggiunto · Team 4 avvisato</text>
+<text x="232" y="732" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0A3622" text-anchor="start">Elisa Ferri aggiunta · nessun capogruppo da avvisare</text>
 <text x="604" y="732" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#146C43" text-anchor="end">Annulla</text>
 <line x1="562" y1="736" x2="604" y2="736" stroke="#146C43" stroke-width="1.2"/>
 <g id="Toast-Aggiunta diretta-chiudi" transform="translate(624 718) scale(1)" fill="none" stroke="#146C43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
+</g>
+<text x="40" y="816" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#6C757D" text-anchor="start">Altro team</text>
+<g id="Toast-Altro team">
+<rect x="180" y="785" width="480" height="56" rx="6" fill="#000000" fill-opacity="0.10"/>
+<rect x="180" y="782" width="480" height="56" rx="6" fill="#D1E7DD" stroke="#A3CFBB"/>
+<g id="Toast-Altro team-icona" transform="translate(196 798) scale(1.5)" fill="none" stroke="#146C43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 L7.2 10.4 L11 6"/></g>
+<text x="232" y="816" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#0A3622" text-anchor="start">Paola Greco aggiunta · due capigruppo avvisati</text>
+<text x="604" y="816" font-family="Inter, system-ui, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#146C43" text-anchor="end">Annulla</text>
+<line x1="562" y1="820" x2="604" y2="820" stroke="#146C43" stroke-width="1.2"/>
+<g id="Toast-Altro team-chiudi" transform="translate(624 802) scale(1)" fill="none" stroke="#146C43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3 L13 13 M13 3 L3 13"/></g>
 </g>
 </svg>
